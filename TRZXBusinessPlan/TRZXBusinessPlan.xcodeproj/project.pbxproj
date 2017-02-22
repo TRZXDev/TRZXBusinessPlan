@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204229253C6CD1A1680E7A9F /* libPods-TRZXBusinessPlanTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9398B750F7B764E3B129F6 /* libPods-TRZXBusinessPlanTests.a */; };
 		76B547FF1E5D67B800847D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B547FE1E5D67B800847D6C /* main.m */; };
 		76B548021E5D67B800847D6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548011E5D67B800847D6C /* AppDelegate.m */; };
 		76B548051E5D67B800847D6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548041E5D67B800847D6C /* ViewController.m */; };
@@ -15,6 +16,50 @@
 		76B5480D1E5D67B800847D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B5480B1E5D67B800847D6C /* LaunchScreen.storyboard */; };
 		76B548181E5D67B800847D6C /* TRZXBusinessPlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548171E5D67B800847D6C /* TRZXBusinessPlanTests.m */; };
 		76B548231E5D67B800847D6C /* TRZXBusinessPlanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548221E5D67B800847D6C /* TRZXBusinessPlanUITests.m */; };
+		76B548381E5D692500847D6C /* KipoMyBusinessPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548371E5D692500847D6C /* KipoMyBusinessPlanViewController.m */; };
+		76B5483B1E5D699600847D6C /* KipoMyBusinessPlanViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5483A1E5D699600847D6C /* KipoMyBusinessPlanViewModel.m */; };
+		76B5486A1E5D6CA800847D6C /* lableMonle.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548591E5D6CA800847D6C /* lableMonle.m */; };
+		76B5486B1E5D6CA800847D6C /* NewBPBusinessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5485B1E5D6CA800847D6C /* NewBPBusinessModel.m */; };
+		76B5486C1E5D6CA800847D6C /* NewBPCoreTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5485D1E5D6CA800847D6C /* NewBPCoreTeamModel.m */; };
+		76B5486D1E5D6CA800847D6C /* NewBPMarketAnalysisModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5485F1E5D6CA800847D6C /* NewBPMarketAnalysisModel.m */; };
+		76B5486E1E5D6CA800847D6C /* NewBPMoneyPlanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548611E5D6CA800847D6C /* NewBPMoneyPlanModel.m */; };
+		76B5486F1E5D6CA800847D6C /* NewBPProjectAbsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548631E5D6CA800847D6C /* NewBPProjectAbsModel.m */; };
+		76B548701E5D6CA800847D6C /* NewBPProjectProgressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548651E5D6CA800847D6C /* NewBPProjectProgressModel.m */; };
+		76B548711E5D6CA800847D6C /* NewBPTeamMemberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548671E5D6CA800847D6C /* NewBPTeamMemberModel.m */; };
+		76B548721E5D6CA800847D6C /* NewMyBPTeamMerberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548691E5D6CA800847D6C /* NewMyBPTeamMerberModel.m */; };
+		76B548751E5D6CD600847D6C /* NewMyProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548741E5D6CD600847D6C /* NewMyProjectModel.m */; };
+		76B548A21E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548781E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.m */; };
+		76B548A31E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B548791E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.xib */; };
+		76B548A41E5D6D5800847D6C /* CTTeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5487B1E5D6D5800847D6C /* CTTeamTableViewCell.m */; };
+		76B548A51E5D6D5800847D6C /* CTTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B5487C1E5D6D5800847D6C /* CTTeamTableViewCell.xib */; };
+		76B548A61E5D6D5800847D6C /* FinancingSourceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5487F1E5D6D5800847D6C /* FinancingSourceTableViewCell.m */; };
+		76B548A71E5D6D5800847D6C /* FinancingSourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B548801E5D6D5800847D6C /* FinancingSourceTableViewCell.xib */; };
+		76B548A81E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548821E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.m */; };
+		76B548A91E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B548831E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.xib */; };
+		76B548AA1E5D6D5800847D6C /* BPProjectCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548861E5D6D5800847D6C /* BPProjectCommentTableViewCell.m */; };
+		76B548AB1E5D6D5800847D6C /* BPProjectCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B548871E5D6D5800847D6C /* BPProjectCommentTableViewCell.xib */; };
+		76B548AC1E5D6D5800847D6C /* BPSelectInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548891E5D6D5800847D6C /* BPSelectInfoTableViewCell.m */; };
+		76B548AD1E5D6D5800847D6C /* BPSelectInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B5488A1E5D6D5800847D6C /* BPSelectInfoTableViewCell.xib */; };
+		76B548AE1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5488C1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.m */; };
+		76B548AF1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B5488D1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.xib */; };
+		76B548B01E5D6D5800847D6C /* BPProFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548901E5D6D5800847D6C /* BPProFirstTableViewCell.m */; };
+		76B548B11E5D6D5800847D6C /* BPProSecondsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548921E5D6D5800847D6C /* BPProSecondsTableViewCell.m */; };
+		76B548B21E5D6D5800847D6C /* BPProSecondsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B548931E5D6D5800847D6C /* BPProSecondsTableViewCell.xib */; };
+		76B548B31E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548951E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.m */; };
+		76B548B41E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B548961E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.xib */; };
+		76B548B51E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548981E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.m */; };
+		76B548B61E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B548991E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.xib */; };
+		76B548B71E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5489B1E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.m */; };
+		76B548B81E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B5489C1E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.xib */; };
+		76B548B91E5D6D5800847D6C /* MyBusinessFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5489E1E5D6D5800847D6C /* MyBusinessFooterView.m */; };
+		76B548BA1E5D6D5800847D6C /* MyBusinessListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548A01E5D6D5800847D6C /* MyBusinessListTableViewCell.m */; };
+		76B548BB1E5D6D5800847D6C /* MyBusinessListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B548A11E5D6D5800847D6C /* MyBusinessListTableViewCell.xib */; };
+		76B548BE1E5D6DDC00847D6C /* BusinessMemoryCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548BD1E5D6DDC00847D6C /* BusinessMemoryCacheTool.m */; };
+		76B548C11E5D710600847D6C /* UIView+WalletFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548C01E5D710600847D6C /* UIView+WalletFrame.m */; };
+		76B548C41E5D745600847D6C /* BPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548C31E5D745600847D6C /* BPBaseViewController.m */; };
+		76B548C61E5D773200847D6C /* business_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B548C51E5D773200847D6C /* business_back.png */; };
+		B2C02EF00EE95672FE3203DF /* libPods-TRZXBusinessPlanUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130037715055EEF01985EA9F /* libPods-TRZXBusinessPlanUITests.a */; };
+		DAEB48F09CB01B8E6B24A372 /* libPods-TRZXBusinessPlan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ED766540383D19484B0704 /* libPods-TRZXBusinessPlan.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130037715055EEF01985EA9F /* libPods-TRZXBusinessPlanUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXBusinessPlanUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9398B750F7B764E3B129F6 /* libPods-TRZXBusinessPlanTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXBusinessPlanTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		756C9A9CF31858821D2F9359 /* Pods-TRZXBusinessPlanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlanUITests/Pods-TRZXBusinessPlanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		76B547FA1E5D67B800847D6C /* TRZXBusinessPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXBusinessPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B547FE1E5D67B800847D6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76B548001E5D67B800847D6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +99,84 @@
 		76B5481E1E5D67B800847D6C /* TRZXBusinessPlanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXBusinessPlanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B548221E5D67B800847D6C /* TRZXBusinessPlanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXBusinessPlanUITests.m; sourceTree = "<group>"; };
 		76B548241E5D67B800847D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B548361E5D692500847D6C /* KipoMyBusinessPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KipoMyBusinessPlanViewController.h; sourceTree = "<group>"; };
+		76B548371E5D692500847D6C /* KipoMyBusinessPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KipoMyBusinessPlanViewController.m; sourceTree = "<group>"; };
+		76B548391E5D699600847D6C /* KipoMyBusinessPlanViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KipoMyBusinessPlanViewModel.h; sourceTree = "<group>"; };
+		76B5483A1E5D699600847D6C /* KipoMyBusinessPlanViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KipoMyBusinessPlanViewModel.m; sourceTree = "<group>"; };
+		76B548571E5D6C0C00847D6C /* TRZXBusinessPlanHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRZXBusinessPlanHeader.h; sourceTree = "<group>"; };
+		76B548581E5D6CA800847D6C /* lableMonle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lableMonle.h; sourceTree = "<group>"; };
+		76B548591E5D6CA800847D6C /* lableMonle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lableMonle.m; sourceTree = "<group>"; };
+		76B5485A1E5D6CA800847D6C /* NewBPBusinessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBPBusinessModel.h; sourceTree = "<group>"; };
+		76B5485B1E5D6CA800847D6C /* NewBPBusinessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBPBusinessModel.m; sourceTree = "<group>"; };
+		76B5485C1E5D6CA800847D6C /* NewBPCoreTeamModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBPCoreTeamModel.h; sourceTree = "<group>"; };
+		76B5485D1E5D6CA800847D6C /* NewBPCoreTeamModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBPCoreTeamModel.m; sourceTree = "<group>"; };
+		76B5485E1E5D6CA800847D6C /* NewBPMarketAnalysisModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBPMarketAnalysisModel.h; sourceTree = "<group>"; };
+		76B5485F1E5D6CA800847D6C /* NewBPMarketAnalysisModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBPMarketAnalysisModel.m; sourceTree = "<group>"; };
+		76B548601E5D6CA800847D6C /* NewBPMoneyPlanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBPMoneyPlanModel.h; sourceTree = "<group>"; };
+		76B548611E5D6CA800847D6C /* NewBPMoneyPlanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBPMoneyPlanModel.m; sourceTree = "<group>"; };
+		76B548621E5D6CA800847D6C /* NewBPProjectAbsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBPProjectAbsModel.h; sourceTree = "<group>"; };
+		76B548631E5D6CA800847D6C /* NewBPProjectAbsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBPProjectAbsModel.m; sourceTree = "<group>"; };
+		76B548641E5D6CA800847D6C /* NewBPProjectProgressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBPProjectProgressModel.h; sourceTree = "<group>"; };
+		76B548651E5D6CA800847D6C /* NewBPProjectProgressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBPProjectProgressModel.m; sourceTree = "<group>"; };
+		76B548661E5D6CA800847D6C /* NewBPTeamMemberModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewBPTeamMemberModel.h; sourceTree = "<group>"; };
+		76B548671E5D6CA800847D6C /* NewBPTeamMemberModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewBPTeamMemberModel.m; sourceTree = "<group>"; };
+		76B548681E5D6CA800847D6C /* NewMyBPTeamMerberModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMyBPTeamMerberModel.h; sourceTree = "<group>"; };
+		76B548691E5D6CA800847D6C /* NewMyBPTeamMerberModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMyBPTeamMerberModel.m; sourceTree = "<group>"; };
+		76B548731E5D6CD600847D6C /* NewMyProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewMyProjectModel.h; sourceTree = "<group>"; };
+		76B548741E5D6CD600847D6C /* NewMyProjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewMyProjectModel.m; sourceTree = "<group>"; };
+		76B548771E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPCoreTeamMessageCellTableViewCell.h; sourceTree = "<group>"; };
+		76B548781E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPCoreTeamMessageCellTableViewCell.m; sourceTree = "<group>"; };
+		76B548791E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPCoreTeamMessageCellTableViewCell.xib; sourceTree = "<group>"; };
+		76B5487A1E5D6D5800847D6C /* CTTeamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTTeamTableViewCell.h; sourceTree = "<group>"; };
+		76B5487B1E5D6D5800847D6C /* CTTeamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTeamTableViewCell.m; sourceTree = "<group>"; };
+		76B5487C1E5D6D5800847D6C /* CTTeamTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTTeamTableViewCell.xib; sourceTree = "<group>"; };
+		76B5487E1E5D6D5800847D6C /* FinancingSourceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancingSourceTableViewCell.h; sourceTree = "<group>"; };
+		76B5487F1E5D6D5800847D6C /* FinancingSourceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancingSourceTableViewCell.m; sourceTree = "<group>"; };
+		76B548801E5D6D5800847D6C /* FinancingSourceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinancingSourceTableViewCell.xib; sourceTree = "<group>"; };
+		76B548811E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancingSourceTwoTableViewCell.h; sourceTree = "<group>"; };
+		76B548821E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancingSourceTwoTableViewCell.m; sourceTree = "<group>"; };
+		76B548831E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinancingSourceTwoTableViewCell.xib; sourceTree = "<group>"; };
+		76B548851E5D6D5800847D6C /* BPProjectCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPProjectCommentTableViewCell.h; sourceTree = "<group>"; };
+		76B548861E5D6D5800847D6C /* BPProjectCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPProjectCommentTableViewCell.m; sourceTree = "<group>"; };
+		76B548871E5D6D5800847D6C /* BPProjectCommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPProjectCommentTableViewCell.xib; sourceTree = "<group>"; };
+		76B548881E5D6D5800847D6C /* BPSelectInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPSelectInfoTableViewCell.h; sourceTree = "<group>"; };
+		76B548891E5D6D5800847D6C /* BPSelectInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPSelectInfoTableViewCell.m; sourceTree = "<group>"; };
+		76B5488A1E5D6D5800847D6C /* BPSelectInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPSelectInfoTableViewCell.xib; sourceTree = "<group>"; };
+		76B5488B1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTradeInfoCollectionViewCell.h; sourceTree = "<group>"; };
+		76B5488C1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTradeInfoCollectionViewCell.m; sourceTree = "<group>"; };
+		76B5488D1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPTradeInfoCollectionViewCell.xib; sourceTree = "<group>"; };
+		76B5488F1E5D6D5800847D6C /* BPProFirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPProFirstTableViewCell.h; sourceTree = "<group>"; };
+		76B548901E5D6D5800847D6C /* BPProFirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPProFirstTableViewCell.m; sourceTree = "<group>"; };
+		76B548911E5D6D5800847D6C /* BPProSecondsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPProSecondsTableViewCell.h; sourceTree = "<group>"; };
+		76B548921E5D6D5800847D6C /* BPProSecondsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPProSecondsTableViewCell.m; sourceTree = "<group>"; };
+		76B548931E5D6D5800847D6C /* BPProSecondsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPProSecondsTableViewCell.xib; sourceTree = "<group>"; };
+		76B548941E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBussinessFlowFlagTableViewCell.h; sourceTree = "<group>"; };
+		76B548951E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBussinessFlowFlagTableViewCell.m; sourceTree = "<group>"; };
+		76B548961E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPBussinessFlowFlagTableViewCell.xib; sourceTree = "<group>"; };
+		76B548971E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPhotoShowMsgTableViewCell.h; sourceTree = "<group>"; };
+		76B548981E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPhotoShowMsgTableViewCell.m; sourceTree = "<group>"; };
+		76B548991E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPPhotoShowMsgTableViewCell.xib; sourceTree = "<group>"; };
+		76B5489A1E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BussinessPlanStatusTableViewCell.h; sourceTree = "<group>"; };
+		76B5489B1E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BussinessPlanStatusTableViewCell.m; sourceTree = "<group>"; };
+		76B5489C1E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BussinessPlanStatusTableViewCell.xib; sourceTree = "<group>"; };
+		76B5489D1E5D6D5800847D6C /* MyBusinessFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBusinessFooterView.h; sourceTree = "<group>"; };
+		76B5489E1E5D6D5800847D6C /* MyBusinessFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBusinessFooterView.m; sourceTree = "<group>"; };
+		76B5489F1E5D6D5800847D6C /* MyBusinessListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBusinessListTableViewCell.h; sourceTree = "<group>"; };
+		76B548A01E5D6D5800847D6C /* MyBusinessListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBusinessListTableViewCell.m; sourceTree = "<group>"; };
+		76B548A11E5D6D5800847D6C /* MyBusinessListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyBusinessListTableViewCell.xib; sourceTree = "<group>"; };
+		76B548BC1E5D6DDC00847D6C /* BusinessMemoryCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessMemoryCacheTool.h; sourceTree = "<group>"; };
+		76B548BD1E5D6DDC00847D6C /* BusinessMemoryCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessMemoryCacheTool.m; sourceTree = "<group>"; };
+		76B548BF1E5D710600847D6C /* UIView+WalletFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WalletFrame.h"; sourceTree = "<group>"; };
+		76B548C01E5D710600847D6C /* UIView+WalletFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WalletFrame.m"; sourceTree = "<group>"; };
+		76B548C21E5D745600847D6C /* BPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBaseViewController.h; sourceTree = "<group>"; };
+		76B548C31E5D745600847D6C /* BPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBaseViewController.m; sourceTree = "<group>"; };
+		76B548C51E5D773200847D6C /* business_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business_back.png; sourceTree = "<group>"; };
+		B9A06B39E3BA7F87553FE56B /* Pods-TRZXBusinessPlanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlanTests/Pods-TRZXBusinessPlanTests.release.xcconfig"; sourceTree = "<group>"; };
+		D0ED766540383D19484B0704 /* libPods-TRZXBusinessPlan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXBusinessPlan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B2D223D265ABA9439D21DD /* Pods-TRZXBusinessPlanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlanUITests/Pods-TRZXBusinessPlanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D85FE3CB0A5E99B521841B97 /* Pods-TRZXBusinessPlan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlan/Pods-TRZXBusinessPlan.debug.xcconfig"; sourceTree = "<group>"; };
+		DDC66978D1AA7696D98176E5 /* Pods-TRZXBusinessPlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlan.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlan/Pods-TRZXBusinessPlan.release.xcconfig"; sourceTree = "<group>"; };
+		FC1F3E7396BD4203FFEB276D /* Pods-TRZXBusinessPlanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlanTests/Pods-TRZXBusinessPlanTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEB48F09CB01B8E6B24A372 /* libPods-TRZXBusinessPlan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204229253C6CD1A1680E7A9F /* libPods-TRZXBusinessPlanTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +200,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C02EF00EE95672FE3203DF /* libPods-TRZXBusinessPlanUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D463ABF886D71F66D54B64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0ED766540383D19484B0704 /* libPods-TRZXBusinessPlan.a */,
+				4E9398B750F7B764E3B129F6 /* libPods-TRZXBusinessPlanTests.a */,
+				130037715055EEF01985EA9F /* libPods-TRZXBusinessPlanUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76B547F11E5D67B800847D6C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +224,8 @@
 				76B548161E5D67B800847D6C /* TRZXBusinessPlanTests */,
 				76B548211E5D67B800847D6C /* TRZXBusinessPlanUITests */,
 				76B547FB1E5D67B800847D6C /* Products */,
+				B9ACF84C8D13B5C889FE635E /* Pods */,
+				09D463ABF886D71F66D54B64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +246,7 @@
 				76B548011E5D67B800847D6C /* AppDelegate.m */,
 				76B548031E5D67B800847D6C /* ViewController.h */,
 				76B548041E5D67B800847D6C /* ViewController.m */,
+				76B548301E5D68EF00847D6C /* TRZXBusinessPlan */,
 				76B548061E5D67B800847D6C /* Main.storyboard */,
 				76B548091E5D67B800847D6C /* Assets.xcassets */,
 				76B5480B1E5D67B800847D6C /* LaunchScreen.storyboard */,
@@ -140,6 +282,170 @@
 			path = TRZXBusinessPlanUITests;
 			sourceTree = "<group>";
 		};
+		76B548301E5D68EF00847D6C /* TRZXBusinessPlan */ = {
+			isa = PBXGroup;
+			children = (
+				76B548311E5D68EF00847D6C /* Controller */,
+				76B548321E5D68EF00847D6C /* Model */,
+				76B548331E5D68EF00847D6C /* Other */,
+				76B548341E5D68EF00847D6C /* Resources */,
+				76B548351E5D68EF00847D6C /* View */,
+			);
+			path = TRZXBusinessPlan;
+			sourceTree = "<group>";
+		};
+		76B548311E5D68EF00847D6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76B548361E5D692500847D6C /* KipoMyBusinessPlanViewController.h */,
+				76B548371E5D692500847D6C /* KipoMyBusinessPlanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76B548321E5D68EF00847D6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76B548731E5D6CD600847D6C /* NewMyProjectModel.h */,
+				76B548741E5D6CD600847D6C /* NewMyProjectModel.m */,
+				76B548581E5D6CA800847D6C /* lableMonle.h */,
+				76B548591E5D6CA800847D6C /* lableMonle.m */,
+				76B5485A1E5D6CA800847D6C /* NewBPBusinessModel.h */,
+				76B5485B1E5D6CA800847D6C /* NewBPBusinessModel.m */,
+				76B5485C1E5D6CA800847D6C /* NewBPCoreTeamModel.h */,
+				76B5485D1E5D6CA800847D6C /* NewBPCoreTeamModel.m */,
+				76B5485E1E5D6CA800847D6C /* NewBPMarketAnalysisModel.h */,
+				76B5485F1E5D6CA800847D6C /* NewBPMarketAnalysisModel.m */,
+				76B548601E5D6CA800847D6C /* NewBPMoneyPlanModel.h */,
+				76B548611E5D6CA800847D6C /* NewBPMoneyPlanModel.m */,
+				76B548621E5D6CA800847D6C /* NewBPProjectAbsModel.h */,
+				76B548631E5D6CA800847D6C /* NewBPProjectAbsModel.m */,
+				76B548641E5D6CA800847D6C /* NewBPProjectProgressModel.h */,
+				76B548651E5D6CA800847D6C /* NewBPProjectProgressModel.m */,
+				76B548661E5D6CA800847D6C /* NewBPTeamMemberModel.h */,
+				76B548671E5D6CA800847D6C /* NewBPTeamMemberModel.m */,
+				76B548681E5D6CA800847D6C /* NewMyBPTeamMerberModel.h */,
+				76B548691E5D6CA800847D6C /* NewMyBPTeamMerberModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76B548331E5D68EF00847D6C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				76B548571E5D6C0C00847D6C /* TRZXBusinessPlanHeader.h */,
+				76B548391E5D699600847D6C /* KipoMyBusinessPlanViewModel.h */,
+				76B5483A1E5D699600847D6C /* KipoMyBusinessPlanViewModel.m */,
+				76B548BC1E5D6DDC00847D6C /* BusinessMemoryCacheTool.h */,
+				76B548BD1E5D6DDC00847D6C /* BusinessMemoryCacheTool.m */,
+				76B548BF1E5D710600847D6C /* UIView+WalletFrame.h */,
+				76B548C01E5D710600847D6C /* UIView+WalletFrame.m */,
+				76B548C21E5D745600847D6C /* BPBaseViewController.h */,
+				76B548C31E5D745600847D6C /* BPBaseViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		76B548341E5D68EF00847D6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76B548C51E5D773200847D6C /* business_back.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76B548351E5D68EF00847D6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76B548761E5D6D5800847D6C /* 核心团队 */,
+				76B5487D1E5D6D5800847D6C /* 融资计划 */,
+				76B548841E5D6D5800847D6C /* 项目概述 */,
+				76B5488E1E5D6D5800847D6C /* 项目进展 */,
+				76B548941E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.h */,
+				76B548951E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.m */,
+				76B548961E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.xib */,
+				76B548971E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.h */,
+				76B548981E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.m */,
+				76B548991E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.xib */,
+				76B5489A1E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.h */,
+				76B5489B1E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.m */,
+				76B5489C1E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.xib */,
+				76B5489D1E5D6D5800847D6C /* MyBusinessFooterView.h */,
+				76B5489E1E5D6D5800847D6C /* MyBusinessFooterView.m */,
+				76B5489F1E5D6D5800847D6C /* MyBusinessListTableViewCell.h */,
+				76B548A01E5D6D5800847D6C /* MyBusinessListTableViewCell.m */,
+				76B548A11E5D6D5800847D6C /* MyBusinessListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76B548761E5D6D5800847D6C /* 核心团队 */ = {
+			isa = PBXGroup;
+			children = (
+				76B548771E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.h */,
+				76B548781E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.m */,
+				76B548791E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.xib */,
+				76B5487A1E5D6D5800847D6C /* CTTeamTableViewCell.h */,
+				76B5487B1E5D6D5800847D6C /* CTTeamTableViewCell.m */,
+				76B5487C1E5D6D5800847D6C /* CTTeamTableViewCell.xib */,
+			);
+			path = "核心团队";
+			sourceTree = "<group>";
+		};
+		76B5487D1E5D6D5800847D6C /* 融资计划 */ = {
+			isa = PBXGroup;
+			children = (
+				76B5487E1E5D6D5800847D6C /* FinancingSourceTableViewCell.h */,
+				76B5487F1E5D6D5800847D6C /* FinancingSourceTableViewCell.m */,
+				76B548801E5D6D5800847D6C /* FinancingSourceTableViewCell.xib */,
+				76B548811E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.h */,
+				76B548821E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.m */,
+				76B548831E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.xib */,
+			);
+			path = "融资计划";
+			sourceTree = "<group>";
+		};
+		76B548841E5D6D5800847D6C /* 项目概述 */ = {
+			isa = PBXGroup;
+			children = (
+				76B548851E5D6D5800847D6C /* BPProjectCommentTableViewCell.h */,
+				76B548861E5D6D5800847D6C /* BPProjectCommentTableViewCell.m */,
+				76B548871E5D6D5800847D6C /* BPProjectCommentTableViewCell.xib */,
+				76B548881E5D6D5800847D6C /* BPSelectInfoTableViewCell.h */,
+				76B548891E5D6D5800847D6C /* BPSelectInfoTableViewCell.m */,
+				76B5488A1E5D6D5800847D6C /* BPSelectInfoTableViewCell.xib */,
+				76B5488B1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.h */,
+				76B5488C1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.m */,
+				76B5488D1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.xib */,
+			);
+			path = "项目概述";
+			sourceTree = "<group>";
+		};
+		76B5488E1E5D6D5800847D6C /* 项目进展 */ = {
+			isa = PBXGroup;
+			children = (
+				76B5488F1E5D6D5800847D6C /* BPProFirstTableViewCell.h */,
+				76B548901E5D6D5800847D6C /* BPProFirstTableViewCell.m */,
+				76B548911E5D6D5800847D6C /* BPProSecondsTableViewCell.h */,
+				76B548921E5D6D5800847D6C /* BPProSecondsTableViewCell.m */,
+				76B548931E5D6D5800847D6C /* BPProSecondsTableViewCell.xib */,
+			);
+			path = "项目进展";
+			sourceTree = "<group>";
+		};
+		B9ACF84C8D13B5C889FE635E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D85FE3CB0A5E99B521841B97 /* Pods-TRZXBusinessPlan.debug.xcconfig */,
+				DDC66978D1AA7696D98176E5 /* Pods-TRZXBusinessPlan.release.xcconfig */,
+				FC1F3E7396BD4203FFEB276D /* Pods-TRZXBusinessPlanTests.debug.xcconfig */,
+				B9A06B39E3BA7F87553FE56B /* Pods-TRZXBusinessPlanTests.release.xcconfig */,
+				756C9A9CF31858821D2F9359 /* Pods-TRZXBusinessPlanUITests.debug.xcconfig */,
+				D7B2D223D265ABA9439D21DD /* Pods-TRZXBusinessPlanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +453,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76B548271E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlan" */;
 			buildPhases = (
+				90D5154E413769FAE5BBB406 /* [CP] Check Pods Manifest.lock */,
 				76B547F61E5D67B800847D6C /* Sources */,
 				76B547F71E5D67B800847D6C /* Frameworks */,
 				76B547F81E5D67B800847D6C /* Resources */,
+				DB1D162E185651DB1611AC69 /* [CP] Embed Pods Frameworks */,
+				F9F56D0159497C053EE02A75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +473,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76B5482A1E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlanTests" */;
 			buildPhases = (
+				3A18F91DA212EA9A906F6BE3 /* [CP] Check Pods Manifest.lock */,
 				76B5480F1E5D67B800847D6C /* Sources */,
 				76B548101E5D67B800847D6C /* Frameworks */,
 				76B548111E5D67B800847D6C /* Resources */,
+				9146FD146D17DF16B90CD19F /* [CP] Embed Pods Frameworks */,
+				0FA65D42AC0B527D47816317 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +494,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76B5482D1E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlanUITests" */;
 			buildPhases = (
+				35481402D40D56BAB7742C63 /* [CP] Check Pods Manifest.lock */,
 				76B5481A1E5D67B800847D6C /* Sources */,
 				76B5481B1E5D67B800847D6C /* Frameworks */,
 				76B5481C1E5D67B800847D6C /* Resources */,
+				F17917C33EED62D711D7FDF7 /* [CP] Embed Pods Frameworks */,
+				CB090555794E66D54A9D35CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,9 +561,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B548C61E5D773200847D6C /* business_back.png in Resources */,
+				76B548B81E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.xib in Resources */,
+				76B548B61E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.xib in Resources */,
+				76B548A51E5D6D5800847D6C /* CTTeamTableViewCell.xib in Resources */,
 				76B5480D1E5D67B800847D6C /* LaunchScreen.storyboard in Resources */,
+				76B548A31E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.xib in Resources */,
+				76B548BB1E5D6D5800847D6C /* MyBusinessListTableViewCell.xib in Resources */,
+				76B548B41E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.xib in Resources */,
+				76B548AB1E5D6D5800847D6C /* BPProjectCommentTableViewCell.xib in Resources */,
 				76B5480A1E5D67B800847D6C /* Assets.xcassets in Resources */,
+				76B548B21E5D6D5800847D6C /* BPProSecondsTableViewCell.xib in Resources */,
+				76B548AD1E5D6D5800847D6C /* BPSelectInfoTableViewCell.xib in Resources */,
+				76B548A71E5D6D5800847D6C /* FinancingSourceTableViewCell.xib in Resources */,
+				76B548A91E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.xib in Resources */,
 				76B548081E5D67B800847D6C /* Main.storyboard in Resources */,
+				76B548AF1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,14 +596,181 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FA65D42AC0B527D47816317 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXBusinessPlanTests/Pods-TRZXBusinessPlanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35481402D40D56BAB7742C63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A18F91DA212EA9A906F6BE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90D5154E413769FAE5BBB406 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9146FD146D17DF16B90CD19F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXBusinessPlanTests/Pods-TRZXBusinessPlanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB090555794E66D54A9D35CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXBusinessPlanUITests/Pods-TRZXBusinessPlanUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB1D162E185651DB1611AC69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXBusinessPlan/Pods-TRZXBusinessPlan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F17917C33EED62D711D7FDF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXBusinessPlanUITests/Pods-TRZXBusinessPlanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F56D0159497C053EE02A75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXBusinessPlan/Pods-TRZXBusinessPlan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76B547F61E5D67B800847D6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76B548381E5D692500847D6C /* KipoMyBusinessPlanViewController.m in Sources */,
+				76B5483B1E5D699600847D6C /* KipoMyBusinessPlanViewModel.m in Sources */,
+				76B548A61E5D6D5800847D6C /* FinancingSourceTableViewCell.m in Sources */,
+				76B5486B1E5D6CA800847D6C /* NewBPBusinessModel.m in Sources */,
+				76B5486D1E5D6CA800847D6C /* NewBPMarketAnalysisModel.m in Sources */,
+				76B548B01E5D6D5800847D6C /* BPProFirstTableViewCell.m in Sources */,
+				76B548B71E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.m in Sources */,
+				76B5486E1E5D6CA800847D6C /* NewBPMoneyPlanModel.m in Sources */,
+				76B548751E5D6CD600847D6C /* NewMyProjectModel.m in Sources */,
+				76B548A81E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.m in Sources */,
+				76B5486A1E5D6CA800847D6C /* lableMonle.m in Sources */,
+				76B548A41E5D6D5800847D6C /* CTTeamTableViewCell.m in Sources */,
+				76B548B31E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.m in Sources */,
+				76B5486C1E5D6CA800847D6C /* NewBPCoreTeamModel.m in Sources */,
+				76B548C11E5D710600847D6C /* UIView+WalletFrame.m in Sources */,
+				76B5486F1E5D6CA800847D6C /* NewBPProjectAbsModel.m in Sources */,
+				76B548A21E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.m in Sources */,
+				76B548721E5D6CA800847D6C /* NewMyBPTeamMerberModel.m in Sources */,
+				76B548AC1E5D6D5800847D6C /* BPSelectInfoTableViewCell.m in Sources */,
 				76B548051E5D67B800847D6C /* ViewController.m in Sources */,
 				76B548021E5D67B800847D6C /* AppDelegate.m in Sources */,
 				76B547FF1E5D67B800847D6C /* main.m in Sources */,
+				76B548B91E5D6D5800847D6C /* MyBusinessFooterView.m in Sources */,
+				76B548B11E5D6D5800847D6C /* BPProSecondsTableViewCell.m in Sources */,
+				76B548B51E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.m in Sources */,
+				76B548AA1E5D6D5800847D6C /* BPProjectCommentTableViewCell.m in Sources */,
+				76B548701E5D6CA800847D6C /* NewBPProjectProgressModel.m in Sources */,
+				76B548711E5D6CA800847D6C /* NewBPTeamMemberModel.m in Sources */,
+				76B548BE1E5D6DDC00847D6C /* BusinessMemoryCacheTool.m in Sources */,
+				76B548C41E5D745600847D6C /* BPBaseViewController.m in Sources */,
+				76B548AE1E5D6D5800847D6C /* BPTradeInfoCollectionViewCell.m in Sources */,
+				76B548BA1E5D6D5800847D6C /* MyBusinessListTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +917,7 @@
 		};
 		76B548281E5D67B800847D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85FE3CB0A5E99B521841B97 /* Pods-TRZXBusinessPlan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TRZXBusinessPlan/Info.plist;
@@ -433,6 +929,7 @@
 		};
 		76B548291E5D67B800847D6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC66978D1AA7696D98176E5 /* Pods-TRZXBusinessPlan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TRZXBusinessPlan/Info.plist;
@@ -444,6 +941,7 @@
 		};
 		76B5482B1E5D67B800847D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1F3E7396BD4203FFEB276D /* Pods-TRZXBusinessPlanTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TRZXBusinessPlanTests/Info.plist;
@@ -456,6 +954,7 @@
 		};
 		76B5482C1E5D67B800847D6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A06B39E3BA7F87553FE56B /* Pods-TRZXBusinessPlanTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TRZXBusinessPlanTests/Info.plist;
@@ -468,6 +967,7 @@
 		};
 		76B5482E1E5D67B800847D6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756C9A9CF31858821D2F9359 /* Pods-TRZXBusinessPlanUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TRZXBusinessPlanUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -479,6 +979,7 @@
 		};
 		76B5482F1E5D67B800847D6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B2D223D265ABA9439D21DD /* Pods-TRZXBusinessPlanUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = TRZXBusinessPlanUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -507,6 +1008,7 @@
 				76B548291E5D67B800847D6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76B5482A1E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlanTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +1017,7 @@
 				76B5482C1E5D67B800847D6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76B5482D1E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlanUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +1026,7 @@
 				76B5482F1E5D67B800847D6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
