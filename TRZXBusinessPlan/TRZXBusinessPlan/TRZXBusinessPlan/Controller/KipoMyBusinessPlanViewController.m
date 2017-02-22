@@ -7,7 +7,7 @@
 //
 
 #import "KipoMyBusinessPlanViewController.h"
-//#import "ProjectManagementViewController.h"
+#import "ProjectManagementViewController.h"
 //#import "MarketAnalysisViewController.h"
 //#import "BusinessSimulationViewController.h"
 //#import "ProjectProgressViewController.h"
@@ -282,25 +282,25 @@ static CGFloat cellHeight = 83;
     NSString *string = self.viewNameSource[indexPath.row];
     Class className =  NSClassFromString(string);
     UIViewController *vc = [[className alloc]init];
-//    if (indexPath.row == 0) {
-//        //项目概述
-//        ProjectManagementViewController *PMVC = (ProjectManagementViewController *)vc;
-//        
-//        if ([BTStaus  isEqualToString:@"0"]) {
-//            
-//        }else
-//        {
-//            PMVC.model = self.planAbsModel;
-//            PMVC.dataArr = self.tradesArray;
-//        }
-//        
-//        PMVC.saveSuccessPM = ^(NewBPProjectAbsModel *model)
-//        {
-//            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:0];
-//            cell.statusButton.selected = YES;
-//            self.planAbsModel = model;
-//        };
-//    }else if (indexPath.row == 1)
+    if (indexPath.row == 0) {
+        //项目概述
+        ProjectManagementViewController *PMVC = (ProjectManagementViewController *)vc;
+        
+        if ([BTStaus  isEqualToString:@"0"]) {
+            
+        }else
+        {
+            PMVC.model = self.planAbsModel;
+            PMVC.dataArr = self.tradesArray;
+        }
+        
+        PMVC.saveSuccessPM = ^(NewBPProjectAbsModel *model)
+        {
+            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:0];
+            cell.statusButton.selected = YES;
+            self.planAbsModel = model;
+        };
+    } //else if (indexPath.row == 1)
 //    {
 //        //市场分析
 //        MarketAnalysisViewController *MAVC = (MarketAnalysisViewController *)vc;

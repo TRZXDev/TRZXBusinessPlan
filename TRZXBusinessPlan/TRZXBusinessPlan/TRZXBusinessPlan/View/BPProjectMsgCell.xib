@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BPProjectMsgCell">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="179"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJG-Mg-kp8">
+                        <rect key="frame" x="8" y="10" width="300" height="169.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbA-ZP-0T4" userLabel="line">
+                                <rect key="frame" x="10" y="35" width="280" height="1"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Tsw-L3-NTj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6S-2Y-soX">
+                                <rect key="frame" x="10" y="10" width="61.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fmH-co-gNx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ujf-FM-gkU">
+                                <rect key="frame" x="10" y="41" width="280" height="120.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500字" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iva-3v-kQz">
+                                <rect key="frame" x="220" y="155.5" width="70" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="R11-vd-pNw"/>
+                                    <constraint firstAttribute="height" constant="14" id="vjR-JU-7LI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最少100字" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUc-GA-l45">
+                                <rect key="frame" x="10" y="44" width="280" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gUc-GA-l45" secondAttribute="trailing" constant="10" id="1kz-7M-hop"/>
+                            <constraint firstAttribute="trailing" secondItem="Iva-3v-kQz" secondAttribute="trailing" constant="10" id="2eS-DF-jTs"/>
+                            <constraint firstAttribute="bottom" secondItem="Iva-3v-kQz" secondAttribute="bottom" id="44J-qS-FuC"/>
+                            <constraint firstItem="ujf-FM-gkU" firstAttribute="top" secondItem="bbA-ZP-0T4" secondAttribute="bottom" constant="5" id="DVa-5q-jX4"/>
+                            <constraint firstItem="M6S-2Y-soX" firstAttribute="top" secondItem="JJG-Mg-kp8" secondAttribute="top" constant="10" id="Gf3-W3-YJA"/>
+                            <constraint firstItem="bbA-ZP-0T4" firstAttribute="leading" secondItem="JJG-Mg-kp8" secondAttribute="leading" constant="10" id="KfN-Ma-2NV"/>
+                            <constraint firstItem="gUc-GA-l45" firstAttribute="top" secondItem="bbA-ZP-0T4" secondAttribute="bottom" constant="8" id="MLc-4U-ntC"/>
+                            <constraint firstAttribute="bottom" secondItem="ujf-FM-gkU" secondAttribute="bottom" constant="8" id="PDg-yG-HdS"/>
+                            <constraint firstItem="bbA-ZP-0T4" firstAttribute="top" secondItem="M6S-2Y-soX" secondAttribute="bottom" constant="4" id="hiU-R2-oj5"/>
+                            <constraint firstItem="ujf-FM-gkU" firstAttribute="top" secondItem="bbA-ZP-0T4" secondAttribute="bottom" constant="2" id="mB6-8H-x3L"/>
+                            <constraint firstItem="M6S-2Y-soX" firstAttribute="leading" secondItem="JJG-Mg-kp8" secondAttribute="leading" constant="10" id="pWS-26-o5B"/>
+                            <constraint firstItem="ujf-FM-gkU" firstAttribute="leading" secondItem="JJG-Mg-kp8" secondAttribute="leading" constant="10" id="pfC-9y-ZeD"/>
+                            <constraint firstItem="gUc-GA-l45" firstAttribute="leading" secondItem="JJG-Mg-kp8" secondAttribute="leading" constant="10" id="t1g-Tj-Xd0"/>
+                            <constraint firstAttribute="trailing" secondItem="ujf-FM-gkU" secondAttribute="trailing" constant="10" id="uU2-p6-8eK"/>
+                            <constraint firstAttribute="trailing" secondItem="bbA-ZP-0T4" secondAttribute="trailing" constant="10" id="ui6-U6-pGi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mB6-8H-x3L"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JJG-Mg-kp8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7EE-em-qVk"/>
+                    <constraint firstItem="JJG-Mg-kp8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="YcN-h0-cNO"/>
+                    <constraint firstAttribute="trailing" secondItem="JJG-Mg-kp8" secondAttribute="trailing" constant="8" id="ZFS-dD-c7j"/>
+                    <constraint firstAttribute="bottom" secondItem="JJG-Mg-kp8" secondAttribute="bottom" id="j0W-z8-fM3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="bgView" destination="JJG-Mg-kp8" id="dHo-rx-bxM"/>
+                <outlet property="countCharacter" destination="Iva-3v-kQz" id="Cht-52-uyn"/>
+                <outlet property="placeHoderLable" destination="gUc-GA-l45" id="0eP-xM-Gpt"/>
+                <outlet property="textViewMsg" destination="ujf-FM-gkU" id="4bY-1J-vHW"/>
+                <outlet property="titleLable" destination="M6S-2Y-soX" id="GLU-nD-5uo"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

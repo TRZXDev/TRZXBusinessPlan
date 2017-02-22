@@ -17,10 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBar.translucent = YES;
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBar.translucent = YES;
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
     KipoMyBusinessPlanViewController *bs = [[KipoMyBusinessPlanViewController alloc]init];
     bs.titleStr = @"我的商业计划书";
     [self.navigationController pushViewController:bs animated:YES];

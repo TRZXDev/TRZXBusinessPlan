@@ -34,6 +34,12 @@
     [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBar.translucent = YES;
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+}
 
 -(void)viewDidLoad
 {
