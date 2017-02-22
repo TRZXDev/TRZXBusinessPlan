@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76B547FF1E5D67B800847D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B547FE1E5D67B800847D6C /* main.m */; };
+		76B548021E5D67B800847D6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548011E5D67B800847D6C /* AppDelegate.m */; };
+		76B548051E5D67B800847D6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548041E5D67B800847D6C /* ViewController.m */; };
+		76B548081E5D67B800847D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B548061E5D67B800847D6C /* Main.storyboard */; };
+		76B5480A1E5D67B800847D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B548091E5D67B800847D6C /* Assets.xcassets */; };
+		76B5480D1E5D67B800847D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B5480B1E5D67B800847D6C /* LaunchScreen.storyboard */; };
+		76B548181E5D67B800847D6C /* TRZXBusinessPlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548171E5D67B800847D6C /* TRZXBusinessPlanTests.m */; };
+		76B548231E5D67B800847D6C /* TRZXBusinessPlanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548221E5D67B800847D6C /* TRZXBusinessPlanUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76B548141E5D67B800847D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76B547F21E5D67B800847D6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76B547F91E5D67B800847D6C;
+			remoteInfo = TRZXBusinessPlan;
+		};
+		76B5481F1E5D67B800847D6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76B547F21E5D67B800847D6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76B547F91E5D67B800847D6C;
+			remoteInfo = TRZXBusinessPlan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76B547FA1E5D67B800847D6C /* TRZXBusinessPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXBusinessPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B547FE1E5D67B800847D6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		76B548001E5D67B800847D6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		76B548011E5D67B800847D6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		76B548031E5D67B800847D6C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		76B548041E5D67B800847D6C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		76B548071E5D67B800847D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76B548091E5D67B800847D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76B5480C1E5D67B800847D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76B5480E1E5D67B800847D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B548131E5D67B800847D6C /* TRZXBusinessPlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXBusinessPlanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B548171E5D67B800847D6C /* TRZXBusinessPlanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXBusinessPlanTests.m; sourceTree = "<group>"; };
+		76B548191E5D67B800847D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B5481E1E5D67B800847D6C /* TRZXBusinessPlanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXBusinessPlanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B548221E5D67B800847D6C /* TRZXBusinessPlanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXBusinessPlanUITests.m; sourceTree = "<group>"; };
+		76B548241E5D67B800847D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76B547F71E5D67B800847D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B548101E5D67B800847D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B5481B1E5D67B800847D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76B547F11E5D67B800847D6C = {
+			isa = PBXGroup;
+			children = (
+				76B547FC1E5D67B800847D6C /* TRZXBusinessPlan */,
+				76B548161E5D67B800847D6C /* TRZXBusinessPlanTests */,
+				76B548211E5D67B800847D6C /* TRZXBusinessPlanUITests */,
+				76B547FB1E5D67B800847D6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76B547FB1E5D67B800847D6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76B547FA1E5D67B800847D6C /* TRZXBusinessPlan.app */,
+				76B548131E5D67B800847D6C /* TRZXBusinessPlanTests.xctest */,
+				76B5481E1E5D67B800847D6C /* TRZXBusinessPlanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76B547FC1E5D67B800847D6C /* TRZXBusinessPlan */ = {
+			isa = PBXGroup;
+			children = (
+				76B548001E5D67B800847D6C /* AppDelegate.h */,
+				76B548011E5D67B800847D6C /* AppDelegate.m */,
+				76B548031E5D67B800847D6C /* ViewController.h */,
+				76B548041E5D67B800847D6C /* ViewController.m */,
+				76B548061E5D67B800847D6C /* Main.storyboard */,
+				76B548091E5D67B800847D6C /* Assets.xcassets */,
+				76B5480B1E5D67B800847D6C /* LaunchScreen.storyboard */,
+				76B5480E1E5D67B800847D6C /* Info.plist */,
+				76B547FD1E5D67B800847D6C /* Supporting Files */,
+			);
+			path = TRZXBusinessPlan;
+			sourceTree = "<group>";
+		};
+		76B547FD1E5D67B800847D6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76B547FE1E5D67B800847D6C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76B548161E5D67B800847D6C /* TRZXBusinessPlanTests */ = {
+			isa = PBXGroup;
+			children = (
+				76B548171E5D67B800847D6C /* TRZXBusinessPlanTests.m */,
+				76B548191E5D67B800847D6C /* Info.plist */,
+			);
+			path = TRZXBusinessPlanTests;
+			sourceTree = "<group>";
+		};
+		76B548211E5D67B800847D6C /* TRZXBusinessPlanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76B548221E5D67B800847D6C /* TRZXBusinessPlanUITests.m */,
+				76B548241E5D67B800847D6C /* Info.plist */,
+			);
+			path = TRZXBusinessPlanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76B547F91E5D67B800847D6C /* TRZXBusinessPlan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B548271E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlan" */;
+			buildPhases = (
+				76B547F61E5D67B800847D6C /* Sources */,
+				76B547F71E5D67B800847D6C /* Frameworks */,
+				76B547F81E5D67B800847D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRZXBusinessPlan;
+			productName = TRZXBusinessPlan;
+			productReference = 76B547FA1E5D67B800847D6C /* TRZXBusinessPlan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76B548121E5D67B800847D6C /* TRZXBusinessPlanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B5482A1E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlanTests" */;
+			buildPhases = (
+				76B5480F1E5D67B800847D6C /* Sources */,
+				76B548101E5D67B800847D6C /* Frameworks */,
+				76B548111E5D67B800847D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76B548151E5D67B800847D6C /* PBXTargetDependency */,
+			);
+			name = TRZXBusinessPlanTests;
+			productName = TRZXBusinessPlanTests;
+			productReference = 76B548131E5D67B800847D6C /* TRZXBusinessPlanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76B5481D1E5D67B800847D6C /* TRZXBusinessPlanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B5482D1E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlanUITests" */;
+			buildPhases = (
+				76B5481A1E5D67B800847D6C /* Sources */,
+				76B5481B1E5D67B800847D6C /* Frameworks */,
+				76B5481C1E5D67B800847D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76B548201E5D67B800847D6C /* PBXTargetDependency */,
+			);
+			name = TRZXBusinessPlanUITests;
+			productName = TRZXBusinessPlanUITests;
+			productReference = 76B5481E1E5D67B800847D6C /* TRZXBusinessPlanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76B547F21E5D67B800847D6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Rhino;
+				TargetAttributes = {
+					76B547F91E5D67B800847D6C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					76B548121E5D67B800847D6C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 76B547F91E5D67B800847D6C;
+					};
+					76B5481D1E5D67B800847D6C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 76B547F91E5D67B800847D6C;
+					};
+				};
+			};
+			buildConfigurationList = 76B547F51E5D67B800847D6C /* Build configuration list for PBXProject "TRZXBusinessPlan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76B547F11E5D67B800847D6C;
+			productRefGroup = 76B547FB1E5D67B800847D6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76B547F91E5D67B800847D6C /* TRZXBusinessPlan */,
+				76B548121E5D67B800847D6C /* TRZXBusinessPlanTests */,
+				76B5481D1E5D67B800847D6C /* TRZXBusinessPlanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76B547F81E5D67B800847D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B5480D1E5D67B800847D6C /* LaunchScreen.storyboard in Resources */,
+				76B5480A1E5D67B800847D6C /* Assets.xcassets in Resources */,
+				76B548081E5D67B800847D6C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B548111E5D67B800847D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B5481C1E5D67B800847D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76B547F61E5D67B800847D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B548051E5D67B800847D6C /* ViewController.m in Sources */,
+				76B548021E5D67B800847D6C /* AppDelegate.m in Sources */,
+				76B547FF1E5D67B800847D6C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B5480F1E5D67B800847D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B548181E5D67B800847D6C /* TRZXBusinessPlanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B5481A1E5D67B800847D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B548231E5D67B800847D6C /* TRZXBusinessPlanUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76B548151E5D67B800847D6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76B547F91E5D67B800847D6C /* TRZXBusinessPlan */;
+			targetProxy = 76B548141E5D67B800847D6C /* PBXContainerItemProxy */;
+		};
+		76B548201E5D67B800847D6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76B547F91E5D67B800847D6C /* TRZXBusinessPlan */;
+			targetProxy = 76B5481F1E5D67B800847D6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76B548061E5D67B800847D6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76B548071E5D67B800847D6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76B5480B1E5D67B800847D6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76B5480C1E5D67B800847D6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76B548251E5D67B800847D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76B548261E5D67B800847D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76B548281E5D67B800847D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TRZXBusinessPlan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kipo.TRZXBusinessPlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		76B548291E5D67B800847D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TRZXBusinessPlan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kipo.TRZXBusinessPlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		76B5482B1E5D67B800847D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TRZXBusinessPlanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kipo.TRZXBusinessPlanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRZXBusinessPlan.app/TRZXBusinessPlan";
+			};
+			name = Debug;
+		};
+		76B5482C1E5D67B800847D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TRZXBusinessPlanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kipo.TRZXBusinessPlanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRZXBusinessPlan.app/TRZXBusinessPlan";
+			};
+			name = Release;
+		};
+		76B5482E1E5D67B800847D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TRZXBusinessPlanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kipo.TRZXBusinessPlanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TRZXBusinessPlan;
+			};
+			name = Debug;
+		};
+		76B5482F1E5D67B800847D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TRZXBusinessPlanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kipo.TRZXBusinessPlanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TRZXBusinessPlan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76B547F51E5D67B800847D6C /* Build configuration list for PBXProject "TRZXBusinessPlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B548251E5D67B800847D6C /* Debug */,
+				76B548261E5D67B800847D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76B548271E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B548281E5D67B800847D6C /* Debug */,
+				76B548291E5D67B800847D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76B5482A1E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B5482B1E5D67B800847D6C /* Debug */,
+				76B5482C1E5D67B800847D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76B5482D1E5D67B800847D6C /* Build configuration list for PBXNativeTarget "TRZXBusinessPlanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B5482E1E5D67B800847D6C /* Debug */,
+				76B5482F1E5D67B800847D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76B547F21E5D67B800847D6C /* Project object */;
+}
