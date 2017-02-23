@@ -14,7 +14,9 @@
 #import "NewBPMoneyPlanModel.h"
 #import "NewBPCoreTeamModel.h"
 #import "NewBPTeamMemberModel.h"
-//#import "LivePreviewModel.h"
+
+#import "TRZXNetwork.h"
+#import "AFNetworking.h"
 
 @implementation KipoMyBusinessPlanViewModel
 
@@ -29,7 +31,16 @@
                             @"creatData":creatData,
                             @"tradeIds":tradeIds,
                             };
-    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
     
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
@@ -62,7 +73,16 @@
                             @"competeTwo":model.competeTwo,//竞争同行2
                             @"advantage":model.advantage, //我们优势
                             };
-    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 //    
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
@@ -84,91 +104,90 @@
 {
    
     
-//    NSMutableArray *imageArray = [[NSMutableArray alloc]init];
-//    for (UIImage *img  in imageData) {
-//
-//        
-//        UIImage *image = [img kipo_normalizedImage];
-//       [imageArray addObject:[image kipo_dataCompress]];
-//        
-//    }
-//
-//    NSDictionary *param = @{
-//                            @"apiType":@"businessModel",
-//                            @"requestType":@"Business_Plan_Api",
-//                            @"productType":model.productType?model.productType:@"",//产品类型
-//                            @"function":model.function?model.function:@"",//功能服务
-//                            @"market":model.market?model.market:@"",//市场定位
-//                            @"gain":model.gain?model.gain:@"",//盈利模式
-//                            @"flow":model.flow?model.flow:@"",//是否有流水  1 有 0 没有
-//                            @"money":model.money?model.money:@"",//每月流水
-//                            @"gainFlag":model.gainFlag?model.gainFlag:@"",//盈利状况  0为盈利  1已盈利
-//                            @"gainMoney":model.gainMoney?model.gainMoney:@"",//每月营业
-//                            @"channel":model.channel?model.channel:@"",//推广渠道
-//                            @"strategy":model.strategy?model.strategy:@"", //推广策略
-//                            @"risk":model.risk?model.risk:@"",//风险预测
-//                            @"control":model.control?model.control:@"机动"//控制策略
-//                            };
-//    
-//    
-//    
-//    
-//    
-//    
-//    
-//
-//    AFHTTPSessionManager *_manager = [AFHTTPSessionManager manager];
-//    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/json",
-//                                                                               @"text/html",
-//                                                                               @"text/json",
-//                                                                               @"text/plain",
-//                                                                               @"text/javascript",
-//                                                                               @"text/xml",
-//                                                                               @"image/*"]];
-//    
-//    
-//    [_manager POST:[KipoServerConfig serverURL] parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-//        
-//        for (int i = 0; i<imageArray.count; i++) {
-//            NSData *data = imageArray[i];
-//            [formData appendPartWithFileData:data name:[NSString stringWithFormat:@"file%d",i+1] fileName:[NSString stringWithFormat:@"image.png"] mimeType:@"image/*"];
-//        }
-//        
-//        
-//    } success:^(NSURLSessionTask *operation, id responseObject) {
-//
-//        success(responseObject);
-//        
-//        
-//    } failure:^(NSURLSessionTask *operation, NSError *error) {
-//
-//        success(error);
-//        
-//    }];
+    NSMutableArray *imageArray = [[NSMutableArray alloc]init];
+    for (UIImage *img  in imageData) {
+       UIImage *image = [self normalizedImage:img];
+       [imageArray addObject:[self OriginImage:image]];
+    }
+
+    NSDictionary *param = @{
+                            @"apiType":@"businessModel",
+                            @"requestType":@"Business_Plan_Api",
+                            @"productType":model.productType?model.productType:@"",//产品类型
+                            @"function":model.function?model.function:@"",//功能服务
+                            @"market":model.market?model.market:@"",//市场定位
+                            @"gain":model.gain?model.gain:@"",//盈利模式
+                            @"flow":model.flow?model.flow:@"",//是否有流水  1 有 0 没有
+                            @"money":model.money?model.money:@"",//每月流水
+                            @"gainFlag":model.gainFlag?model.gainFlag:@"",//盈利状况  0为盈利  1已盈利
+                            @"gainMoney":model.gainMoney?model.gainMoney:@"",//每月营业
+                            @"channel":model.channel?model.channel:@"",//推广渠道
+                            @"strategy":model.strategy?model.strategy:@"", //推广策略
+                            @"risk":model.risk?model.risk:@"",//风险预测
+                            @"control":model.control?model.control:@"机动"//控制策略
+                            };
+
+    AFHTTPSessionManager *_manager = [AFHTTPSessionManager manager];
+    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/json",
+                                                                               @"text/html",
+                                                                               @"text/json",
+                                                                               @"text/plain",
+                                                                               @"text/javascript",
+                                                                               @"text/xml",
+                                                                               @"image/*"]];
+    
+    
+    [_manager POST:nil parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+        for (int i = 0; i<imageArray.count; i++) {
+            NSData *data = imageArray[i];
+            [formData appendPartWithFileData:data name:[NSString stringWithFormat:@"file%d",i+1] fileName:[NSString stringWithFormat:@"image.png"] mimeType:@"image/*"];
+        }
+        
+        
+    } success:^(NSURLSessionTask *operation, id responseObject) {
+
+        success(responseObject);
+        
+        
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+
+        success(error);
+        
+    }];
     
 }
 
 //图片处理，图片压缩
-+ (UIImage*)OriginImage:(UIImage *)image scaleToSize:(CGSize)size
++ (NSData *)OriginImage:(UIImage *)image
 {
-    UIGraphicsBeginImageContext(size);  //你所需要的图片尺寸
-    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
-    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return scaledImage;   //返回已变图片
+    NSData *data=UIImageJPEGRepresentation(image, 1.0);
+    
+    if (data.length>100*1024) {
+        if (data.length>1024*1024) {//1M以及以上
+            data=UIImageJPEGRepresentation(image, 0.5);
+        }else if (data.length>512*1024) {//0.5M-1M
+            data=UIImageJPEGRepresentation(image, 1.0);
+        }else if (data.length>200*1024) {//0.25M-0.5M
+            data=UIImageJPEGRepresentation(image, 1.0);
+        }
+    }
+    
+    
+    return data;
 }
 
 //处理直接拍照上传照片 图片翻转的问题
-//+ (UIImage *)normalizedImage:(UIImage *)image
-//{
-//    if (image.imageOrientation == UIImageOrientationUp) return image;
-//    
-//    UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
-//    [image drawInRect:(CGRect){0, 0, image.size}];
-//    UIImage *normalizedImage = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-//    return normalizedImage;
-//}
++ (UIImage *)normalizedImage:(UIImage *)image
+{
+    if (image.imageOrientation == UIImageOrientationUp) return image;
+    
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
+    [image drawInRect:(CGRect){0, 0, image.size}];
+    UIImage *normalizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return normalizedImage;
+}
 
 
 //项目进展
@@ -189,7 +208,16 @@
                            
                             };
     
-    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
@@ -216,44 +244,44 @@
                             };
     
 //    [LCProgressHUD showLoading:@"正在上传"];   // 显示等待
-//    
-//    
-//    
-//    
-//    
-//    
-//    AFHTTPSessionManager *_manager = [AFHTTPSessionManager manager];
-//    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/json",
-//                                                                               @"text/html",
-//                                                                               @"text/json",
-//                                                                               @"text/plain",
-//                                                                               @"text/javascript",
-//                                                                               @"text/xml",
-//                                                                               @"image/*"]];
-//    
-//    
-//    [_manager POST:[KipoServerConfig serverURL] parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-//
-//        
-//        NSData *imageData = UIImagePNGRepresentation(image);
-//        
-//            [formData appendPartWithFileData:imageData name:[NSString stringWithFormat:@"file"] fileName:[NSString stringWithFormat:@"image.png"] mimeType:@"image/*"];
-//        
-//        
-//    } success:^(NSURLSessionTask *operation, id responseObject) {
+    
+    
+    
+    
+    
+    
+    AFHTTPSessionManager *_manager = [AFHTTPSessionManager manager];
+    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/json",
+                                                                               @"text/html",
+                                                                               @"text/json",
+                                                                               @"text/plain",
+                                                                               @"text/javascript",
+                                                                               @"text/xml",
+                                                                               @"image/*"]];
+    
+    
+    [_manager POST:nil parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+
+        
+        NSData *imageData = UIImagePNGRepresentation(image);
+        
+            [formData appendPartWithFileData:imageData name:[NSString stringWithFormat:@"file"] fileName:[NSString stringWithFormat:@"image.png"] mimeType:@"image/*"];
+        
+        
+    } success:^(NSURLSessionTask *operation, id responseObject) {
 //        [LCProgressHUD showSuccess:@"上传成功"];   // 显示成功
-//
-//
-//
-//        success(responseObject);
-//
-//
-//    } failure:^(NSURLSessionTask *operation, NSError *error) {
-//        
+
+
+
+        success(responseObject);
+
+
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        
 //        [NSObject showError:error];
-//        success(error);
-//        
-//    }];
+        success(error);
+        
+    }];
     
 }
 
@@ -273,44 +301,44 @@
                             };
 
 //    [LCProgressHUD showLoading:@"正在上传"];   // 显示等待
-//
-//    
-//    AFHTTPSessionManager *_manager = [AFHTTPSessionManager manager];
-//    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/json",
-//                                                                               @"text/html",
-//                                                                               @"text/json",
-//                                                                               @"text/plain",
-//                                                                               @"text/javascript",
-//                                                                               @"text/xml",
-//                                                                               @"image/*"]];
-//    
-//    
-//    [_manager POST:[KipoServerConfig serverURL] parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-//        
-//         NSData *imageData = UIImagePNGRepresentation(image);
-//        [formData appendPartWithFileData:imageData name:[NSString stringWithFormat:@"file"] fileName:[NSString stringWithFormat:@"image.png"] mimeType:@"image/*"];
-//        
-//    } success:^(NSURLSessionTask *operation, id responseObject) {
-//        
-//        
-//        if ([responseObject[@"status_code"] isEqualToString:@"200"]) {
-//            
-//            [LCProgressHUD showSuccess:@"上传成功"];   // 显示成功
-//
-//        } else {
-//            [LCProgressHUD showFailure:@"上传失败"];   // 显示失败
-//
-//        }
-//        
-//        success(responseObject);
-//        
-//        
-//    } failure:^(NSURLSessionTask *operation, NSError *error) {
-//        [NSObject showError:error];
-//
-//        success(error);
-//        
-//    }];
+
+    
+    AFHTTPSessionManager *_manager = [AFHTTPSessionManager manager];
+    _manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"application/json",
+                                                                               @"text/html",
+                                                                               @"text/json",
+                                                                               @"text/plain",
+                                                                               @"text/javascript",
+                                                                               @"text/xml",
+                                                                               @"image/*"]];
+    
+    
+    [_manager POST:nil parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+         NSData *imageData = UIImagePNGRepresentation(image);
+        [formData appendPartWithFileData:imageData name:[NSString stringWithFormat:@"file"] fileName:[NSString stringWithFormat:@"image.png"] mimeType:@"image/*"];
+        
+    } success:^(NSURLSessionTask *operation, id responseObject) {
+        
+        
+        if ([responseObject[@"status_code"] isEqualToString:@"200"]) {
+            
+   //         [LCProgressHUD showSuccess:@"上传成功"];   // 显示成功
+
+        } else {
+ //           [LCProgressHUD showFailure:@"上传失败"];   // 显示失败
+
+        }
+        
+        success(responseObject);
+        
+        
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+ //       [NSObject showError:error];
+
+        success(error);
+        
+    }];
     
 
     
@@ -324,8 +352,17 @@
                             @"requestType":@"Business_Plan_Api"
                             };
     
-    
-//    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
+//
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
 //        
@@ -348,7 +385,16 @@
                             @"requestType":@"Business_Plan_Api"
                             };
         
-        
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
@@ -386,7 +432,16 @@
                             @"financialForecast":model.financialForecast //财务预测
                             };
     
-    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
@@ -411,7 +466,16 @@
                             @"requestType":@"Business_Plan_Api"
                             };
     
-    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
@@ -437,7 +501,16 @@
                             @"requestType":@"Business_Plan_Api"
                             };
     
-    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
@@ -463,7 +536,16 @@
                             @"requestType":@"Business_Plan_Api"
                             };
     
-    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
@@ -489,7 +571,16 @@
                             @"planUser":mid,
                             };
     
-    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
@@ -514,7 +605,16 @@
                             };
     
     
-    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
     
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
@@ -540,8 +640,17 @@
                             };
     
     
-    
-//    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
+//
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
 //        
@@ -564,8 +673,17 @@
                             };
     
     
-    
-//    
+    [TRZXNetwork configHttpHeaders:@{@"equipment":@"ios",
+                                     @"token":@"9bfc515a2fc0ea364a4340f38f7f47ff",
+                                     @"userId":@"60a121b25cb34088987041b3b7632098"}];
+    [TRZXNetwork requestWithUrl:nil params:param method:POST cachePolicy:NetworkingReloadIgnoringLocalCacheData callbackBlock:^(id response, NSError *error) {
+        if (response) {
+            success(response);
+        }else{
+            failure(error);
+        }
+    }];
+//
 //    [KipoNetworking post:[KipoServerConfig serverURL] params:param success:^(id json) {
 //        
 //        

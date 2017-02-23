@@ -115,24 +115,24 @@ static CGFloat cellHeight = 83;
     //如果有多个alertView，需要通过tag值区分
     
     //一个警告框里通过buttonIndex来区分点击的是哪个按钮
-//    if (buttonIndex == 0) {
+    if (buttonIndex == 0) {
 //        TRZXLog(@"取消按钮被点击");
-//    } else
-//    {
-//        [BusinessMemoryCacheTool cleanAllCache];
-//        [KipoMyBusinessPlanViewModel clearBusinessSuccess:^(id json) {
-//            
-//            NSDictionary *dict = json;
-//            if ([dict[@"status_code"] isEqualToString:@"200"]) {
+    } else
+    {
+        [BusinessMemoryCacheTool cleanAllCache];
+        [KipoMyBusinessPlanViewModel clearBusinessSuccess:^(id json) {
+            
+            NSDictionary *dict = json;
+            if ([dict[@"status_code"] isEqualToString:@"200"]) {
 //                [LCProgressHUD showInfoMsg:@"清除成功"];
-//                [self loadData];
-//                return;
-//            }
-//        } failure:^(NSError *error) {
-//        }];
-//        
-//        
-//    }
+                [self loadData];
+                return;
+            }
+        } failure:^(NSError *error) {
+        }];
+        
+        
+    }
 }
 #pragma mark - 请求数据
 - (void)loadData
