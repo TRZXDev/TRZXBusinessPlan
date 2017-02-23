@@ -114,7 +114,7 @@
             cell.headImageView.image = self.selectedImage;
         }else
         {
-            [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:self.model.groupPic] placeholderImage:[UIImage imageNamed:@"addPhoto"]];
+            [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:self.model.groupPic] placeholderImage:[UIImage imageNamed:@"bp_addPhoto"]];
         }
         __weak  CoreTeamViewController *weakSelf = self;
         cell.selectImage = ^(UIImage *image)
@@ -157,8 +157,8 @@
         }
         cell.lineView.hidden = YES;
         NewBPTeamMemberModel *model = self.dataSource[indexPath.row -2];
-        [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:model.memberPic] placeholderImage:[UIImage imageNamed:@"addPhoto"]];
-        //        if (![cell.headImageView.image isEqual:[UIImage imageNamed:@"addPhoto"]]) {
+        [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:model.memberPic] placeholderImage:[UIImage imageNamed:@"bp_addPhoto"]];
+        //        if (![cell.headImageView.image isEqual:[UIImage imageNamed:@"bp_addPhoto"]]) {
         //            self.selectedImage = cell.headImageView.image;
         //        }
         cell.nameLabel.text = [NSString stringWithFormat:@"%@ %@",model.name,model.position];
@@ -360,7 +360,7 @@
     [self.view endEditing:YES];
     NSString *messageAlert =nil;
     
-    if (![firstCell.headImageView.image isEqual:[UIImage imageNamed:@"addPhoto"]]) {
+    if (![firstCell.headImageView.image isEqual:[UIImage imageNamed:@"bp_addPhoto"]]) {
         self.selectedImage = firstCell.headImageView.image;
     }
     

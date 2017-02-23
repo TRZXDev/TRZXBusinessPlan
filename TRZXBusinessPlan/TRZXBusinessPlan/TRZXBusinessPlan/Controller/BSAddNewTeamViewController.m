@@ -109,7 +109,7 @@
         
         cell.MsgTitleLable.hidden = YES;
         cell.referenceVC = self;
-        [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:self.model.memberPic] placeholderImage:[UIImage imageNamed:@"addPhoto"]];
+        [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:self.model.memberPic] placeholderImage:[UIImage imageNamed:@"bp_addPhoto"]];
         cell.contentView.backgroundColor = backColor;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
@@ -445,7 +445,7 @@
         return;
     }
     
-    UIImage *imageData = [UIImage imageNamed:@"addPhoto"];
+    UIImage *imageData = [UIImage imageNamed:@"bp_addPhoto"];
     NSIndexPath *indexPath  = [NSIndexPath indexPathForRow:3 inSection:0];
     AddMemberCell2 *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     self.image = cell.headImageView.image;
