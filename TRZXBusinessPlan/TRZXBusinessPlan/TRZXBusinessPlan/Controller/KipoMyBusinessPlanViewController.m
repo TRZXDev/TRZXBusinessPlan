@@ -7,8 +7,9 @@
 //
 
 #import "KipoMyBusinessPlanViewController.h"
-#import "ProjectManagementViewController.h"
-//#import "MarketAnalysisViewController.h"
+#import "ProjectManagementViewController.h" //项目概述
+#import "MarketAnalysisViewController.h"  //市场分析
+
 //#import "BusinessSimulationViewController.h"
 //#import "ProjectProgressViewController.h"
 //#import "CoreTeamViewController.h"
@@ -300,26 +301,26 @@ static CGFloat cellHeight = 83;
             cell.statusButton.selected = YES;
             self.planAbsModel = model;
         };
-    } //else if (indexPath.row == 1)
-//    {
-//        //市场分析
-//        MarketAnalysisViewController *MAVC = (MarketAnalysisViewController *)vc;
-//        
-//        if ([BTStaus  isEqualToString:@"0"]) {
-//            
-//        }else
-//        {
-//            MAVC.model = self.marketAnalysisModel;
-//        }
-//        
-//        
-//        MAVC.saveSuccessMA = ^(NSString *str)
-//        {
-//            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:1];
-//            cell.xuanTianStatus.text = str;
-//            cell.statusButton.selected = YES;
-//        };
-//    }else if (indexPath.row == 2)
+    } else if (indexPath.row == 1)
+    {
+        //市场分析
+        MarketAnalysisViewController *MAVC = (MarketAnalysisViewController *)vc;
+        
+        if ([BTStaus  isEqualToString:@"0"]) {
+            
+        }else
+        {
+            MAVC.model = self.marketAnalysisModel;
+        }
+        
+        
+        MAVC.saveSuccessMA = ^(NSString *str)
+        {
+            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:1];
+            cell.xuanTianStatus.text = str;
+            cell.statusButton.selected = YES;
+        };
+    } //else if (indexPath.row == 2)
 //    {//商业模式
 //        BusinessSimulationViewController *BSVC = (BusinessSimulationViewController *)vc;
 //        

@@ -61,6 +61,20 @@
 		76B548CC1E5D821D00847D6C /* BPProjectMsgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548CB1E5D821D00847D6C /* BPProjectMsgCell.m */; };
 		76B548CE1E5D826100847D6C /* BPProjectMsgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76B548CD1E5D826100847D6C /* BPProjectMsgCell.xib */; };
 		76B548D11E5D836100847D6C /* BPTagCollectionLayout.h.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548D01E5D836100847D6C /* BPTagCollectionLayout.h.m */; };
+		76B549721E5E7AAA00847D6C /* MarketAnalysisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549711E5E7AAA00847D6C /* MarketAnalysisViewController.m */; };
+		76B549751E5E7C1300847D6C /* BusinessSimulationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549741E5E7C1300847D6C /* BusinessSimulationViewController.m */; };
+		76B549B61E5E7D4600847D6C /* AJGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B5499E1E5E7D4600847D6C /* AJGradientView.m */; };
+		76B549B71E5E7D4600847D6C /* AJPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549A01E5E7D4600847D6C /* AJPhotoGroupCell.m */; };
+		76B549B81E5E7D4600847D6C /* AJPhotoGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549A21E5E7D4600847D6C /* AJPhotoGroupView.m */; };
+		76B549B91E5E7D4600847D6C /* AJPhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549A41E5E7D4600847D6C /* AJPhotoListCell.m */; };
+		76B549BA1E5E7D4600847D6C /* AJPhotoListCellTapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549A61E5E7D4600847D6C /* AJPhotoListCellTapView.m */; };
+		76B549BB1E5E7D4600847D6C /* AJPhotoListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549A81E5E7D4600847D6C /* AJPhotoListView.m */; };
+		76B549BC1E5E7D4600847D6C /* AJPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549AA1E5E7D4600847D6C /* AJPhotoPickerViewController.m */; };
+		76B549BD1E5E7D4600847D6C /* BoPhotoPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76B549AB1E5E7D4600847D6C /* BoPhotoPicker.bundle */; };
+		76B549BE1E5E7D4600847D6C /* AJPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549AF1E5E7D4600847D6C /* AJPhotoBrowserViewController.m */; };
+		76B549BF1E5E7D4600847D6C /* AJPhotoTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549B11E5E7D4600847D6C /* AJPhotoTapDetectingImageView.m */; };
+		76B549C01E5E7D4600847D6C /* AJPhotoZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549B31E5E7D4600847D6C /* AJPhotoZoomingScrollView.m */; };
+		76B549C11E5E7D4600847D6C /* AJTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549B51E5E7D4600847D6C /* AJTapDetectingView.m */; };
 		B2C02EF00EE95672FE3203DF /* libPods-TRZXBusinessPlanUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130037715055EEF01985EA9F /* libPods-TRZXBusinessPlanUITests.a */; };
 		DAEB48F09CB01B8E6B24A372 /* libPods-TRZXBusinessPlan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ED766540383D19484B0704 /* libPods-TRZXBusinessPlan.a */; };
 /* End PBXBuildFile section */
@@ -180,6 +194,33 @@
 		76B548CD1E5D826100847D6C /* BPProjectMsgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPProjectMsgCell.xib; sourceTree = "<group>"; };
 		76B548CF1E5D836100847D6C /* BPTagCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTagCollectionLayout.h; sourceTree = "<group>"; };
 		76B548D01E5D836100847D6C /* BPTagCollectionLayout.h.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTagCollectionLayout.h.m; sourceTree = "<group>"; };
+		76B549701E5E7AAA00847D6C /* MarketAnalysisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketAnalysisViewController.h; sourceTree = "<group>"; };
+		76B549711E5E7AAA00847D6C /* MarketAnalysisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketAnalysisViewController.m; sourceTree = "<group>"; };
+		76B549731E5E7C1300847D6C /* BusinessSimulationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessSimulationViewController.h; sourceTree = "<group>"; };
+		76B549741E5E7C1300847D6C /* BusinessSimulationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessSimulationViewController.m; sourceTree = "<group>"; };
+		76B5499D1E5E7D4600847D6C /* AJGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJGradientView.h; sourceTree = "<group>"; };
+		76B5499E1E5E7D4600847D6C /* AJGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJGradientView.m; sourceTree = "<group>"; };
+		76B5499F1E5E7D4600847D6C /* AJPhotoGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoGroupCell.h; sourceTree = "<group>"; };
+		76B549A01E5E7D4600847D6C /* AJPhotoGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoGroupCell.m; sourceTree = "<group>"; };
+		76B549A11E5E7D4600847D6C /* AJPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoGroupView.h; sourceTree = "<group>"; };
+		76B549A21E5E7D4600847D6C /* AJPhotoGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoGroupView.m; sourceTree = "<group>"; };
+		76B549A31E5E7D4600847D6C /* AJPhotoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoListCell.h; sourceTree = "<group>"; };
+		76B549A41E5E7D4600847D6C /* AJPhotoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoListCell.m; sourceTree = "<group>"; };
+		76B549A51E5E7D4600847D6C /* AJPhotoListCellTapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoListCellTapView.h; sourceTree = "<group>"; };
+		76B549A61E5E7D4600847D6C /* AJPhotoListCellTapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoListCellTapView.m; sourceTree = "<group>"; };
+		76B549A71E5E7D4600847D6C /* AJPhotoListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoListView.h; sourceTree = "<group>"; };
+		76B549A81E5E7D4600847D6C /* AJPhotoListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoListView.m; sourceTree = "<group>"; };
+		76B549A91E5E7D4600847D6C /* AJPhotoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoPickerViewController.h; sourceTree = "<group>"; };
+		76B549AA1E5E7D4600847D6C /* AJPhotoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoPickerViewController.m; sourceTree = "<group>"; };
+		76B549AB1E5E7D4600847D6C /* BoPhotoPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BoPhotoPicker.bundle; sourceTree = "<group>"; };
+		76B549AE1E5E7D4600847D6C /* AJPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		76B549AF1E5E7D4600847D6C /* AJPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		76B549B01E5E7D4600847D6C /* AJPhotoTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoTapDetectingImageView.h; sourceTree = "<group>"; };
+		76B549B11E5E7D4600847D6C /* AJPhotoTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoTapDetectingImageView.m; sourceTree = "<group>"; };
+		76B549B21E5E7D4600847D6C /* AJPhotoZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoZoomingScrollView.h; sourceTree = "<group>"; };
+		76B549B31E5E7D4600847D6C /* AJPhotoZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoZoomingScrollView.m; sourceTree = "<group>"; };
+		76B549B41E5E7D4600847D6C /* AJTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTapDetectingView.h; sourceTree = "<group>"; };
+		76B549B51E5E7D4600847D6C /* AJTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTapDetectingView.m; sourceTree = "<group>"; };
 		B9A06B39E3BA7F87553FE56B /* Pods-TRZXBusinessPlanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlanTests/Pods-TRZXBusinessPlanTests.release.xcconfig"; sourceTree = "<group>"; };
 		D0ED766540383D19484B0704 /* libPods-TRZXBusinessPlan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXBusinessPlan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B2D223D265ABA9439D21DD /* Pods-TRZXBusinessPlanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlanUITests/Pods-TRZXBusinessPlanUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -293,6 +334,7 @@
 		76B548301E5D68EF00847D6C /* TRZXBusinessPlan */ = {
 			isa = PBXGroup;
 			children = (
+				76B5499C1E5E7D4600847D6C /* AJPhotoPicker */,
 				76B548311E5D68EF00847D6C /* Controller */,
 				76B548321E5D68EF00847D6C /* Model */,
 				76B548331E5D68EF00847D6C /* Other */,
@@ -309,6 +351,10 @@
 				76B548371E5D692500847D6C /* KipoMyBusinessPlanViewController.m */,
 				76B548C71E5D818600847D6C /* ProjectManagementViewController.h */,
 				76B548C81E5D818600847D6C /* ProjectManagementViewController.m */,
+				76B549701E5E7AAA00847D6C /* MarketAnalysisViewController.h */,
+				76B549711E5E7AAA00847D6C /* MarketAnalysisViewController.m */,
+				76B549731E5E7C1300847D6C /* BusinessSimulationViewController.h */,
+				76B549741E5E7C1300847D6C /* BusinessSimulationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,9 +389,9 @@
 		76B548331E5D68EF00847D6C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				76B548571E5D6C0C00847D6C /* TRZXBusinessPlanHeader.h */,
 				76B548CF1E5D836100847D6C /* BPTagCollectionLayout.h */,
 				76B548D01E5D836100847D6C /* BPTagCollectionLayout.h.m */,
-				76B548571E5D6C0C00847D6C /* TRZXBusinessPlanHeader.h */,
 				76B548391E5D699600847D6C /* KipoMyBusinessPlanViewModel.h */,
 				76B5483A1E5D699600847D6C /* KipoMyBusinessPlanViewModel.m */,
 				76B548BC1E5D6DDC00847D6C /* BusinessMemoryCacheTool.h */,
@@ -446,6 +492,52 @@
 				76B548931E5D6D5800847D6C /* BPProSecondsTableViewCell.xib */,
 			);
 			path = "项目进展";
+			sourceTree = "<group>";
+		};
+		76B5499C1E5E7D4600847D6C /* AJPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				76B5499D1E5E7D4600847D6C /* AJGradientView.h */,
+				76B5499E1E5E7D4600847D6C /* AJGradientView.m */,
+				76B5499F1E5E7D4600847D6C /* AJPhotoGroupCell.h */,
+				76B549A01E5E7D4600847D6C /* AJPhotoGroupCell.m */,
+				76B549A11E5E7D4600847D6C /* AJPhotoGroupView.h */,
+				76B549A21E5E7D4600847D6C /* AJPhotoGroupView.m */,
+				76B549A31E5E7D4600847D6C /* AJPhotoListCell.h */,
+				76B549A41E5E7D4600847D6C /* AJPhotoListCell.m */,
+				76B549A51E5E7D4600847D6C /* AJPhotoListCellTapView.h */,
+				76B549A61E5E7D4600847D6C /* AJPhotoListCellTapView.m */,
+				76B549A71E5E7D4600847D6C /* AJPhotoListView.h */,
+				76B549A81E5E7D4600847D6C /* AJPhotoListView.m */,
+				76B549A91E5E7D4600847D6C /* AJPhotoPickerViewController.h */,
+				76B549AA1E5E7D4600847D6C /* AJPhotoPickerViewController.m */,
+				76B549AB1E5E7D4600847D6C /* BoPhotoPicker.bundle */,
+				76B549AC1E5E7D4600847D6C /* Vendor */,
+			);
+			path = AJPhotoPicker;
+			sourceTree = "<group>";
+		};
+		76B549AC1E5E7D4600847D6C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				76B549AD1E5E7D4600847D6C /* AJPhotoBrowser */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		76B549AD1E5E7D4600847D6C /* AJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				76B549AE1E5E7D4600847D6C /* AJPhotoBrowserViewController.h */,
+				76B549AF1E5E7D4600847D6C /* AJPhotoBrowserViewController.m */,
+				76B549B01E5E7D4600847D6C /* AJPhotoTapDetectingImageView.h */,
+				76B549B11E5E7D4600847D6C /* AJPhotoTapDetectingImageView.m */,
+				76B549B21E5E7D4600847D6C /* AJPhotoZoomingScrollView.h */,
+				76B549B31E5E7D4600847D6C /* AJPhotoZoomingScrollView.m */,
+				76B549B41E5E7D4600847D6C /* AJTapDetectingView.h */,
+				76B549B51E5E7D4600847D6C /* AJTapDetectingView.m */,
+			);
+			path = AJPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		B9ACF84C8D13B5C889FE635E /* Pods */ = {
@@ -588,6 +680,7 @@
 				76B548AB1E5D6D5800847D6C /* BPProjectCommentTableViewCell.xib in Resources */,
 				76B5480A1E5D67B800847D6C /* Assets.xcassets in Resources */,
 				76B548B21E5D6D5800847D6C /* BPProSecondsTableViewCell.xib in Resources */,
+				76B549BD1E5E7D4600847D6C /* BoPhotoPicker.bundle in Resources */,
 				76B548AD1E5D6D5800847D6C /* BPSelectInfoTableViewCell.xib in Resources */,
 				76B548A71E5D6D5800847D6C /* FinancingSourceTableViewCell.xib in Resources */,
 				76B548A91E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.xib in Resources */,
@@ -759,13 +852,19 @@
 				76B548A61E5D6D5800847D6C /* FinancingSourceTableViewCell.m in Sources */,
 				76B548D11E5D836100847D6C /* BPTagCollectionLayout.h.m in Sources */,
 				76B5486B1E5D6CA800847D6C /* NewBPBusinessModel.m in Sources */,
+				76B549B61E5E7D4600847D6C /* AJGradientView.m in Sources */,
+				76B549BC1E5E7D4600847D6C /* AJPhotoPickerViewController.m in Sources */,
 				76B5486D1E5D6CA800847D6C /* NewBPMarketAnalysisModel.m in Sources */,
 				76B548B01E5D6D5800847D6C /* BPProFirstTableViewCell.m in Sources */,
 				76B548B71E5D6D5800847D6C /* BussinessPlanStatusTableViewCell.m in Sources */,
+				76B549BF1E5E7D4600847D6C /* AJPhotoTapDetectingImageView.m in Sources */,
 				76B5486E1E5D6CA800847D6C /* NewBPMoneyPlanModel.m in Sources */,
 				76B548751E5D6CD600847D6C /* NewMyProjectModel.m in Sources */,
+				76B549B91E5E7D4600847D6C /* AJPhotoListCell.m in Sources */,
 				76B548A81E5D6D5800847D6C /* FinancingSourceTwoTableViewCell.m in Sources */,
 				76B5486A1E5D6CA800847D6C /* lableMonle.m in Sources */,
+				76B549BE1E5E7D4600847D6C /* AJPhotoBrowserViewController.m in Sources */,
+				76B549C11E5E7D4600847D6C /* AJTapDetectingView.m in Sources */,
 				76B548A41E5D6D5800847D6C /* CTTeamTableViewCell.m in Sources */,
 				76B548B31E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.m in Sources */,
 				76B5486C1E5D6CA800847D6C /* NewBPCoreTeamModel.m in Sources */,
@@ -778,12 +877,19 @@
 				76B548051E5D67B800847D6C /* ViewController.m in Sources */,
 				76B548021E5D67B800847D6C /* AppDelegate.m in Sources */,
 				76B547FF1E5D67B800847D6C /* main.m in Sources */,
+				76B549721E5E7AAA00847D6C /* MarketAnalysisViewController.m in Sources */,
+				76B549B71E5E7D4600847D6C /* AJPhotoGroupCell.m in Sources */,
+				76B549C01E5E7D4600847D6C /* AJPhotoZoomingScrollView.m in Sources */,
 				76B548B91E5D6D5800847D6C /* MyBusinessFooterView.m in Sources */,
 				76B548B11E5D6D5800847D6C /* BPProSecondsTableViewCell.m in Sources */,
+				76B549BB1E5E7D4600847D6C /* AJPhotoListView.m in Sources */,
+				76B549BA1E5E7D4600847D6C /* AJPhotoListCellTapView.m in Sources */,
 				76B548CC1E5D821D00847D6C /* BPProjectMsgCell.m in Sources */,
 				76B548B51E5D6D5800847D6C /* BPPhotoShowMsgTableViewCell.m in Sources */,
+				76B549751E5E7C1300847D6C /* BusinessSimulationViewController.m in Sources */,
 				76B548AA1E5D6D5800847D6C /* BPProjectCommentTableViewCell.m in Sources */,
 				76B548701E5D6CA800847D6C /* NewBPProjectProgressModel.m in Sources */,
+				76B549B81E5E7D4600847D6C /* AJPhotoGroupView.m in Sources */,
 				76B548711E5D6CA800847D6C /* NewBPTeamMemberModel.m in Sources */,
 				76B548BE1E5D6DDC00847D6C /* BusinessMemoryCacheTool.m in Sources */,
 				76B548C41E5D745600847D6C /* BPBaseViewController.m in Sources */,
