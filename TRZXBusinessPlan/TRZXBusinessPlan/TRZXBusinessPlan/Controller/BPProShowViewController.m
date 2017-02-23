@@ -8,12 +8,12 @@
 
 #import "BPProShowViewController.h"
 
-#import "ProjectDynamicCell1.h"
-#import "ProjectDynamicCell2.h"
-#import "ButtonTableViewCell.h"
+#import "BPProjectDynamicCell1.h"
+#import "BPProjectDynamicCell2.h"
+#import "BPButtonTableViewCell.h"
 #import "BPAddNewThinkViewController.h"
 
-#import "NewMyProjectModel.h"
+#import "BPNewMyProjectModel.h"
 #import "KipoMyBusinessPlanViewModel.h"
 #import "BusinessMemoryCacheTool.h"
 #import "TRZXBusinessPlanHeader.h"
@@ -22,7 +22,7 @@
 
 @property (nonatomic,strong)UITableView *tableView;
 
-@property (nonatomic,strong)DynamicList *model;
+@property (nonatomic,strong)BPDynamicList *model;
 
 @end
 
@@ -79,9 +79,9 @@
         
         if (indexPath.row == 1)
         {
-            ProjectDynamicCell1 *cell = [tableView dequeueReusableCellWithIdentifier:@"team"];
+            BPProjectDynamicCell1 *cell = [tableView dequeueReusableCellWithIdentifier:@"team"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle]loadNibNamed:@"ProjectDynamicCell1" owner:self options:nil] firstObject];
+                cell = [[[NSBundle mainBundle]loadNibNamed:@"BPProjectDynamicCell1" owner:self options:nil] firstObject];
             }
             cell.contentView.backgroundColor = BPbackColor;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -90,9 +90,9 @@
         }else if (indexPath.row == self.dataSource.count +2)
             //添加新事件
         {
-            ButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"add"];
+            BPButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"add"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle]loadNibNamed:@"ButtonTableViewCell" owner:self options:nil] firstObject];
+                cell = [[[NSBundle mainBundle]loadNibNamed:@"BPButtonTableViewCell" owner:self options:nil] firstObject];
             }
             cell.contentView.backgroundColor = BPbackColor;
             cell.bgView.backgroundColor = BPbackColor;
@@ -103,10 +103,10 @@
             return cell;
         }else
         {
-            DynamicList *model = self.dataSource[indexPath.row - 2];
-            ProjectDynamicCell2 *cell = [tableView dequeueReusableCellWithIdentifier:@"team"];
+            BPDynamicList *model = self.dataSource[indexPath.row - 2];
+            BPProjectDynamicCell2 *cell = [tableView dequeueReusableCellWithIdentifier:@"team"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle]loadNibNamed:@"ProjectDynamicCell2" owner:self options:nil] firstObject];
+                cell = [[[NSBundle mainBundle]loadNibNamed:@"BPProjectDynamicCell2" owner:self options:nil] firstObject];
             }
             cell.titleLabel.text = model.dynamicDate;
             cell.detailLabel.text = model.abstractz;
@@ -120,9 +120,9 @@
         if (indexPath.row == 1)
             //添加新事件
         {
-            ButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"add"];
+            BPButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"add"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle]loadNibNamed:@"ButtonTableViewCell" owner:self options:nil] firstObject];
+                cell = [[[NSBundle mainBundle]loadNibNamed:@"BPButtonTableViewCell" owner:self options:nil] firstObject];
             }
             cell.contentView.backgroundColor = BPbackColor;
             cell.bgView.backgroundColor = BPbackColor;
@@ -173,7 +173,7 @@
         if (indexPath.row == 1) {
             //添加新事件
             BPAddNewThinkViewController *vc = [[BPAddNewThinkViewController alloc]init];
-            vc.textModleBlock = ^(DynamicList *model)
+            vc.textModleBlock = ^(BPDynamicList *model)
             {
                 if (model != nil) {
                     [self.dataSource addObject:model];
@@ -193,7 +193,7 @@
         }
         //添加新事件
         BPAddNewThinkViewController *vc = [[BPAddNewThinkViewController alloc]init];
-        vc.textModleBlock = ^(DynamicList *model)
+        vc.textModleBlock = ^(BPDynamicList *model)
         {
             if (model != nil) {
                 [self.dataSource addObject:model];
@@ -206,10 +206,10 @@
     {
         //添加新事件
         BPAddNewThinkViewController *vc = [[BPAddNewThinkViewController alloc]init];
-        DynamicList *model = self.dataSource[indexPath.row - 2];
+        BPDynamicList *model = self.dataSource[indexPath.row - 2];
         vc.model = model;
         vc.isUpdate = YES;
-        vc.textModleBlock = ^(DynamicList *newmodel)
+        vc.textModleBlock = ^(BPDynamicList *newmodel)
         {
             if (model != nil) {
                 [self.dataSource removeObject:model];
@@ -272,7 +272,7 @@
 - (void)postData
 {
     
-    NSArray *dictArray = [DynamicList mj_keyValuesArrayWithObjectArray:self.dataSource];
+    NSArray *dictArray = [BPDynamicList mj_keyValuesArrayWithObjectArray:self.dataSource];
     NSError *error;
     NSData * JSONData = [NSJSONSerialization dataWithJSONObject:dictArray
                                                         options:NSJSONWritingPrettyPrinted

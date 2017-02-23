@@ -7,8 +7,8 @@
 //
 
 #import "BusinessMemoryCacheTool.h"
-#import "lableMonle.h"
-#import "NewMyProjectModel.h"
+#import "BPLableMonle.h"
+#import "BPNewMyProjectModel.h"
 #import "TRZXBusinessPlanHeader.h"
 
 //NSUserDefaults 实例化
@@ -82,7 +82,7 @@ static NSString* projectProgressAllEventKey = @"projectProgressAllEvent";
 //行业领域
 +(NSArray *)tradeinfos{
     NSArray *array = [USER_DEFAULT objectForKey:tradesKey];
-    NSArray *arrayModle = [lableMonle mj_objectArrayWithKeyValuesArray:array];
+    NSArray *arrayModle = [BPLableMonle mj_objectArrayWithKeyValuesArray:array];
     return arrayModle;
 }
 //团队成员
@@ -97,7 +97,7 @@ static NSString* projectProgressAllEventKey = @"projectProgressAllEvent";
 //项目里程碑
 +(NSMutableArray *) ProjectProgressAllEvent{
     NSArray *array = [USER_DEFAULT objectForKey:projectProgressAllEventKey];
-    NSArray *arrayModle = [DynamicList mj_objectArrayWithKeyValuesArray:array];
+    NSArray *arrayModle = [BPDynamicList mj_objectArrayWithKeyValuesArray:array];
     NSMutableArray *arrayMutable = [[NSMutableArray alloc]init];
     [arrayMutable addObjectsFromArray:arrayModle];
     return arrayMutable;
@@ -147,7 +147,7 @@ static NSString* projectProgressAllEventKey = @"projectProgressAllEvent";
 //行业领域
 +(void)memoryCacheProjectAbsTradeinfos:(NSArray *)array{
     //数组里面装的是对象,需转化为字典
-    NSArray *arrayDict = [lableMonle mj_keyValuesArrayWithObjectArray:array];
+    NSArray *arrayDict = [BPLableMonle mj_keyValuesArrayWithObjectArray:array];
     [USER_DEFAULT setObject:arrayDict forKey:tradesKey];
 }
 
@@ -164,7 +164,7 @@ static NSString* projectProgressAllEventKey = @"projectProgressAllEvent";
 //项目里程碑所有事件
 +(void)memoryCacheProjectProgressALLEventArray:(NSArray *)array{
     //数组里面装的是对象,需转化为字典
-    NSArray *arrayDict = [DynamicList mj_keyValuesArrayWithObjectArray:array];
+    NSArray *arrayDict = [BPDynamicList mj_keyValuesArrayWithObjectArray:array];
     [USER_DEFAULT setObject:arrayDict forKey:projectProgressAllEventKey];
 }
 

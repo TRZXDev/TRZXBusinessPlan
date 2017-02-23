@@ -1,5 +1,5 @@
 //
-//  ProjectDynamicCell2.h
+//  ProjectDynamicCell1.h
 //  tourongzhuanjia
 //
 //  Created by 移动微 on 16/4/21.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProjectDynamicCell2 : UITableViewCell
+@interface BPProjectDynamicCell1 : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (weak, nonatomic) IBOutlet UIView *bgView;
 
 @end

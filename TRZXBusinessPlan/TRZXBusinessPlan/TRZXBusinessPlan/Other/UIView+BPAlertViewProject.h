@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (AlertViewProject)
+@interface UIView (BPAlertViewProject)
 
 
-- (void)reboundEffectAnimationDuration:(CGFloat)duration;
+- (void)bp_reboundEffectAnimationDuration:(CGFloat)duration;
 
 @end

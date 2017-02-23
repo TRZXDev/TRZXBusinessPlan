@@ -8,15 +8,15 @@
 
 #import "BPBaseViewController.h"
 
-@class DynamicList;
+@class BPDynamicList;
 /**
  *  添加新事件
  */
 @interface BPAddNewThinkViewController : BPBaseViewController
 
-@property (nonatomic,copy)void (^textModleBlock)(DynamicList  *);
+@property (nonatomic,copy)void (^textModleBlock)(BPDynamicList  *);
 
-@property (nonatomic,strong)DynamicList *model;
+@property (nonatomic,strong)BPDynamicList *model;
 
 @property (nonatomic,assign)BOOL isUpdate;
 

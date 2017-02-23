@@ -15,7 +15,7 @@
 
 #import "KipoMyBusinessPlanViewModel.h"
 //#import ""
-#import "cityMode.h"
+#import "BPCityMode.h"
 #import "TRZXBusinessPlanHeader.h"
 #import "BusinessMemoryCacheTool.h"
 
@@ -86,7 +86,7 @@
 //        
 //        if ([object[@"status_code"] isEqualToString:@"200"]) {
 //            
-//            self.finalType = [cityMode mj_objectArrayWithKeyValuesArray:object[@"data"]];
+//            self.finalType = [BPCityMode mj_objectArrayWithKeyValuesArray:object[@"data"]];
 //            [sexPickerView reloadAllComponents];
 //            [self.tableView reloadData];
 //        }
@@ -112,9 +112,9 @@
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showPickerView)];
         [cell.firstView addGestureRecognizer:tap];
         
-        cityMode *seleModle;
+        BPCityMode *seleModle;
         if (self.finalType.count >0 ) {
-            for (cityMode *model in self.finalType) {
+            for (BPCityMode *model in self.finalType) {
                 if ([model.mid isEqualToString:self.model.areaStage]) {
                     seleModle = model;
                 }
@@ -425,7 +425,7 @@
     
     
     if (!self.isScroll) {
-        cityMode *cityModel  = [self.finalType firstObject];
+        BPCityMode *cityModel  = [self.finalType firstObject];
         self.model.areaStage = cityModel.mid;
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
         FinancingSourceTableViewCell *cell  = [self.tableView cellForRowAtIndexPath:indexPath];
@@ -477,7 +477,7 @@
 //初始化每个组件每一行数据
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    cityMode *model = self.finalType[row];
+    BPCityMode *model = self.finalType[row];
     return model.name;
 }
 
@@ -500,7 +500,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     self.isScroll = YES;
-    cityMode *cityModel  = self.finalType[row];
+    BPCityMode *cityModel  = self.finalType[row];
     self.model.areaStage = cityModel.mid;
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     FinancingSourceTableViewCell *cell  = [self.tableView cellForRowAtIndexPath:indexPath];

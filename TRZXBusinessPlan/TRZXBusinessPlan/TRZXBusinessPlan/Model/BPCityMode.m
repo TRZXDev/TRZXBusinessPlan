@@ -6,8 +6,8 @@
 //  Copyright © 2015年 JWZhang. All rights reserved.
 //
 
-#import "cityMode.h"
+#import "BPCityMode.h"
 
-@implementation cityMode
+@implementation BPCityMode
 
 @end

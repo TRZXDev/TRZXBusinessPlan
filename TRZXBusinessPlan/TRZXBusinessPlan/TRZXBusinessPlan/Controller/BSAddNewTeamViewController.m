@@ -10,9 +10,8 @@
 
 
 #import "BSAddNewTeamViewController.h"
-#import  "BPProjectMsgCell.h"
-#import  "AddMemberCell2.h"
-#import  "AddMemberCell.h"
+#import "BPProjectMsgCell.h"
+#import "BPAddMemberCell2.h"
 #import "CTTeamTableViewCell.h"
 
 #import "NewBPTeamMemberModel.h"
@@ -105,7 +104,7 @@
         
     }else if (indexPath.row == 3)
     {
-        AddMemberCell2 *cell = [[[NSBundle mainBundle]loadNibNamed:@"AddMemberCell2" owner:self options:nil] firstObject];
+        BPAddMemberCell2 *cell = [[[NSBundle mainBundle]loadNibNamed:@"BPAddMemberCell2" owner:self options:nil] firstObject];
         
         cell.MsgTitleLable.hidden = YES;
         cell.referenceVC = self;
@@ -447,7 +446,7 @@
     
     UIImage *imageData = [UIImage imageNamed:@"bp_addPhoto"];
     NSIndexPath *indexPath  = [NSIndexPath indexPathForRow:3 inSection:0];
-    AddMemberCell2 *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    BPAddMemberCell2 *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     self.image = cell.headImageView.image;
     
     if ([imageData isEqual:self.image]) {

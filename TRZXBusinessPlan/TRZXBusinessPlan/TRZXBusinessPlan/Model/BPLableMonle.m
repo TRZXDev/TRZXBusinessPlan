@@ -6,8 +6,8 @@
 //  Copyright © 2015年 JWZhang. All rights reserved.
 //
 
-#import "lableMonle.h"
+#import "BPLableMonle.h"
 
-@implementation lableMonle
+@implementation BPLableMonle
 
 @end

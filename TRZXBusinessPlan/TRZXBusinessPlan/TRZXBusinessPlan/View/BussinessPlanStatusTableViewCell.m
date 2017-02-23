@@ -26,8 +26,8 @@
         self.yesWater.layer.borderWidth = 1;
 
     
-    self.noneWater.cornerRadius = 13.5;
-    self.yesWater.cornerRadius = 13.5;
+    self.noneWater.bp_cornerRadius = 13.5;
+    self.yesWater.bp_cornerRadius = 13.5;
 }
 //  颜色转换为背景图片
 - (UIImage *)imageWithColor:(UIColor *)color {
@@ -57,8 +57,8 @@
     self.noneWater.layer.borderWidth = 1;
     self.yesWater.layer.borderWidth = 1;
     
-    self.noneWater.cornerRadius = 13.5;
-    self.yesWater.cornerRadius = 13.5;
+    self.noneWater.bp_cornerRadius = 13.5;
+    self.yesWater.bp_cornerRadius = 13.5;
     
     
     if (self.clickStatusBlock) {
@@ -76,8 +76,8 @@
     self.noneWater.layer.borderWidth = 1;
     self.yesWater.layer.borderWidth = 1;
     
-    self.noneWater.cornerRadius = 13.5;
-    self.yesWater.cornerRadius = 13.5;
+    self.noneWater.bp_cornerRadius = 13.5;
+    self.yesWater.bp_cornerRadius = 13.5;
     
     self.noneWater.selected = NO;
     self.yesWater.selected = YES;

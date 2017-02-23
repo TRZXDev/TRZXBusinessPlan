@@ -17,14 +17,14 @@
 
 #import "KipoMyBusinessPlanViewModel.h"
 #import "NewBPProjectAbsModel.h"
-#import "lableMonle.h"
+#import "BPLableMonle.h"
 #import "NewBPMarketAnalysisModel.h"
 #import "NewBPBusinessModel.h"
 #import "NewBPMoneyPlanModel.h"
 #import "NewBPProjectProgressModel.h"
-#import "NewMyProjectModel.h"
+#import "BPNewMyProjectModel.h"
 #import "NewBPCoreTeamModel.h"
-#import "NewMyProjectModel.h"
+#import "BPNewMyProjectModel.h"
 #import "NewBPTeamMemberModel.h"
 
 #import "MyBusinessListTableViewCell.h"
@@ -157,7 +157,7 @@ static CGFloat cellHeight = 83;
     //项目概述
     NSDictionary *planAbsDict = dict[@"planAbs"];
     self.planAbsModel = [NewBPProjectAbsModel mj_objectWithKeyValues:planAbsDict];
-    self.tradesArray = [lableMonle mj_objectArrayWithKeyValuesArray:planAbsDict[@"trades"]];
+    self.tradesArray = [BPLableMonle mj_objectArrayWithKeyValuesArray:planAbsDict[@"trades"]];
     
     //市场分析
     self.marketAnalysisModel = [NewBPMarketAnalysisModel mj_objectWithKeyValues:dict[@"marketAnalysis"]];
@@ -171,7 +171,7 @@ static CGFloat cellHeight = 83;
     //    项目进展
     self.progressModel = [NewBPProjectProgressModel mj_objectWithKeyValues:dict[@"progress"]];
     //项目里程碑
-    self.dynamicArray = [[NSMutableArray alloc]initWithArray:[DynamicList mj_objectArrayWithKeyValuesArray:dict[@"projectDynamic"]]];
+    self.dynamicArray = [[NSMutableArray alloc]initWithArray:[BPDynamicList mj_objectArrayWithKeyValuesArray:dict[@"projectDynamic"]]];
     
     //    核心团队
     self.teamModel = [NewBPCoreTeamModel mj_objectWithKeyValues:dict[@"team"]];

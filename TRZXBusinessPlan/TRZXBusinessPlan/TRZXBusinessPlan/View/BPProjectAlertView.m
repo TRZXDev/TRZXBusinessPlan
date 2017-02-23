@@ -6,11 +6,11 @@
 //  Copyright © 2016年 JWZhang. All rights reserved.
 //
 
-#import "ProjectAlertView.h"
-#import "UIView+AlertViewProject.h"
+#import "BPProjectAlertView.h"
+#import "UIView+BPAlertViewProject.h"
 #import "TRZXBusinessPlanHeader.h"
 
-@implementation ProjectAlertView
+@implementation BPProjectAlertView
 
 - (void)awakeFromNib
 {
@@ -63,7 +63,7 @@
     [rtView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[alert]|" options:0 metrics:0 views:dic]];
     [rtView layoutIfNeeded];
     //弹出的动画效果
-    [self.contentView reboundEffectAnimationDuration:0.5];
+    [self.contentView bp_reboundEffectAnimationDuration:0.5];
 }
 
 -(void)dimiss

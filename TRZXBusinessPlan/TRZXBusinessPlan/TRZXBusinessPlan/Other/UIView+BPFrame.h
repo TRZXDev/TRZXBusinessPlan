@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (WalletFrame)
+@interface UIView (BPFrame)
 
-@property (nonatomic,assign)CGFloat cornerRadius;
+@property (nonatomic,assign)CGFloat bp_cornerRadius;
 
+@property (nonatomic, assign)CGFloat business_cornerRadius;
 
 
 @end

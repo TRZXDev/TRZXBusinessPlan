@@ -17,7 +17,7 @@
 
 #import "KipoMyBusinessPlanViewModel.h"
 #import "NewBPProjectAbsModel.h"
-#import "lableMonle.h"
+#import "BPLableMonle.h"
 #import "BPTagCollectionLayout.h"
 
 #import "BusinessMemoryCacheTool.h"
@@ -262,7 +262,7 @@
     
     BPTradeInfoCollectionViewCell *cell  = [collectionView dequeueReusableCellWithReuseIdentifier:@"BPTradeInfoCollectionViewCell" forIndexPath:indexPath];
     cell.button.enabled                  = NO;
-    lableMonle *model                    = _dataArr[indexPath.item];
+    BPLableMonle *model                    = _dataArr[indexPath.item];
     NSString *str                        = model.trade;
     [cell.button setTitle:str forState:UIControlStateNormal];
     //        cell.backgroundColor = [UIColor whiteColor];
@@ -306,7 +306,7 @@
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(BPTagCollectionLayout*)collectionViewLayout widthAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         
-        lableMonle *model = self.dataArr[indexPath.item];
+        BPLableMonle *model = self.dataArr[indexPath.item];
         NSString *itemStr = model.trade;
         
         CGSize size = CGSizeZero;
@@ -507,7 +507,7 @@
 {
     NSMutableString *string = [[NSMutableString alloc]init];
     
-    for (lableMonle *model in self.dataArr) {
+    for (BPLableMonle *model in self.dataArr) {
         [string appendString:[NSString stringWithFormat:@"%@,",model.mid]];
     }
     trades = string;

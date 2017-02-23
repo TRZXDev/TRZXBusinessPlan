@@ -1,21 +1,18 @@
 //
-//  ButtonTableViewCell.m
+//  ProjectDynamicCell2.m
 //  tourongzhuanjia
 //
-//  Created by 投融在线 on 16/2/29.
+//  Created by 移动微 on 16/4/21.
 //  Copyright © 2016年 JWZhang. All rights reserved.
 //
 
-#import "ButtonTableViewCell.h"
+#import "BPProjectDynamicCell2.h"
 
-@implementation ButtonTableViewCell
+@implementation BPProjectDynamicCell2
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
-    self.bgView.layer.cornerRadius = 8;
-    self.bgView.layer.masksToBounds = YES;
-    
+    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

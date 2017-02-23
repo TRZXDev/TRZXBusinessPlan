@@ -1,5 +1,5 @@
 //
-//  ButtonTableViewCell.h
+//  BPButtonTableViewCell.h
 //  tourongzhuanjia
 //
 //  Created by 投融在线 on 16/2/29.
@@ -11,7 +11,7 @@
 /**
  *  修改项目
  */
-@interface ButtonTableViewCell : UITableViewCell
+@interface BPButtonTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLable;
 

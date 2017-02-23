@@ -1,18 +1,20 @@
 //
-//  ProjectDynamicCell2.m
+//  ProjectDynamicCell1.m
 //  tourongzhuanjia
 //
 //  Created by 移动微 on 16/4/21.
 //  Copyright © 2016年 JWZhang. All rights reserved.
 //
 
-#import "ProjectDynamicCell2.h"
+#import "BPProjectDynamicCell1.h"
 
-@implementation ProjectDynamicCell2
+@implementation BPProjectDynamicCell1
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    self.bgView.layer.cornerRadius = 6;
+    self.bgView.layer.masksToBounds = YES;
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProjectMsgCell2 : UITableViewCell
+@interface BPProjectMsgCell2 : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIButton *dateButton;
 
 @property (weak, nonatomic) IBOutlet UILabel *yearLabel;

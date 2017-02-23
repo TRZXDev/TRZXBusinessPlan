@@ -17,7 +17,7 @@
 #import "Masonry.h"
 #import "IQKeyboardManager.h"
 #import "KipoMyBusinessPlanViewModel.h"
-#import "UIView+WalletFrame.h"
+#import "UIView+BPFrame.h"
 #import "UIImageView+WebCache.h"
 
 

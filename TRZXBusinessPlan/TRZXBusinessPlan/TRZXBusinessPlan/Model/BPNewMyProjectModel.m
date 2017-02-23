@@ -6,12 +6,12 @@
 //  Copyright © 2016年 JWZhang. All rights reserved.
 //
 
-#import "NewMyProjectModel.h"
+#import "BPNewMyProjectModel.h"
 #import <objc/runtime.h>
 
 
 
-@implementation NewMyProjectModel
+@implementation BPNewMyProjectModel
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{
     self = [super init];
@@ -79,7 +79,7 @@
 }
 + (NSDictionary *)objectClassInArray
 {
-    return @{@"teamList":[TeamList class],@"dynamicList":[DynamicList class]};
+    return @{@"teamList":[TeamList class],@"dynamicList":[BPDynamicList class]};
 }
 
 @end
@@ -152,7 +152,7 @@
 }
 @end
 
-@implementation DynamicList
+@implementation BPDynamicList
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{
     self = [super init];

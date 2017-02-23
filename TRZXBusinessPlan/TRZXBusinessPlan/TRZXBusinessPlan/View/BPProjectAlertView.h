@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
-@protocol ProjectAlertViewDelegate;
+@protocol BPProjectAlertViewDelegate;
 
 /**
  *  提示框
  */
-@interface ProjectAlertView : UIView
+@interface BPProjectAlertView : UIView
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIButton *cancleButton;
@@ -24,7 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *bottomLable;
 
 
-@property (nonatomic, assign) id<ProjectAlertViewDelegate>delegate;
+@property (nonatomic, assign) id<BPProjectAlertViewDelegate>delegate;
 
 
 -(void)show;
@@ -32,11 +32,11 @@
 
 @end
 
-@protocol ProjectAlertViewDelegate <NSObject>
+@protocol BPProjectAlertViewDelegate <NSObject>
 
 @optional
 
-- (void)AlertView:(ProjectAlertView *)AlertView cancelBtnTapped:(id)sender;
-- (void)AlertView:(ProjectAlertView *)AlertView okBtnTapped:(id)sender;
+- (void)AlertView:(BPProjectAlertView *)AlertView cancelBtnTapped:(id)sender;
+- (void)AlertView:(BPProjectAlertView *)AlertView okBtnTapped:(id)sender;
 
 @end

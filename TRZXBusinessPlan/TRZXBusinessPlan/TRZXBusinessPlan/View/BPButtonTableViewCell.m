@@ -1,20 +1,21 @@
 //
-//  ProjectDynamicCell1.m
+//  BPButtonTableViewCell.m
 //  tourongzhuanjia
 //
-//  Created by 移动微 on 16/4/21.
+//  Created by 投融在线 on 16/2/29.
 //  Copyright © 2016年 JWZhang. All rights reserved.
 //
 
-#import "ProjectDynamicCell1.h"
+#import "BPButtonTableViewCell.h"
 
-@implementation ProjectDynamicCell1
+@implementation BPButtonTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.bgView.layer.cornerRadius = 6;
+    
+    self.bgView.layer.cornerRadius = 8;
     self.bgView.layer.masksToBounds = YES;
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

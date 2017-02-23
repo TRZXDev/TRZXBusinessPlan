@@ -10,8 +10,8 @@
 #import "BSAddNewTeamViewController.h"
 
 #import "BPProjectMsgCell.h"
-#import "AddMemberCell2.h"
-#import "ButtonTableViewCell.h"
+#import "BPAddMemberCell2.h"
+#import "BPButtonTableViewCell.h"
 #import "BPCoreTeamMessageCellTableViewCell.h"
 
 #import "NewBPCoreTeamModel.h"
@@ -22,7 +22,7 @@
 #import "TRZXBusinessPlanHeader.h"
 
 @interface CoreTeamViewController ()<UITableViewDataSource,UITableViewDelegate,UITextViewDelegate>{
-    AddMemberCell2 *firstCell;
+    BPAddMemberCell2 *firstCell;
 }
 
 @property (nonatomic,strong)UITableView *tableView;
@@ -104,7 +104,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        AddMemberCell2 *cell = [[[NSBundle mainBundle]loadNibNamed:@"AddMemberCell2" owner:self options:nil] firstObject];
+        BPAddMemberCell2 *cell = [[[NSBundle mainBundle]loadNibNamed:@"BPAddMemberCell2" owner:self options:nil] firstObject];
         cell.titleLabel.text = @"* 上传团队合影";
         
         if ([cell.titleLabel.text hasPrefix:@"*"]) {
@@ -138,9 +138,9 @@
         
     }else if (indexPath.row == self.dataSource.count + 2)
     {
-        ButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"add"];
+        BPButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"add"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle]loadNibNamed:@"ButtonTableViewCell" owner:self options:nil] firstObject];
+            cell = [[[NSBundle mainBundle]loadNibNamed:@"BPButtonTableViewCell" owner:self options:nil] firstObject];
         }
         cell.contentView.backgroundColor = BPbackColor;
         cell.bgView.backgroundColor = BPbackColor;

@@ -7,9 +7,9 @@
 //
 
 #import "BPAddNewThinkViewController.h"
-#import "ProjectMsgCell2.h"
+#import "BPProjectMsgCell2.h"
 #import "BPProjectMsgCell.h"
-#import "NewMyProjectModel.h"
+#import "BPNewMyProjectModel.h"
 #import "BusinessMemoryCacheTool.h"
 
 #import "TRZXBusinessPlanHeader.h"
@@ -17,7 +17,7 @@
 
 @interface BPAddNewThinkViewController ()<UITableViewDataSource,UITableViewDelegate,UITextViewDelegate>{
     NSString *DateStr;//时间
-    ProjectMsgCell2 *cellTime;
+    BPProjectMsgCell2 *cellTime;
 }
 
 @property (nonatomic,strong)UITableView *tableView;
@@ -61,9 +61,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        ProjectMsgCell2 *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+        BPProjectMsgCell2 *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
         if (cell == nil) {
-            cell = [[[NSBundle mainBundle]loadNibNamed:@"ProjectMsgCell2" owner:self options:nil] firstObject];
+            cell = [[[NSBundle mainBundle]loadNibNamed:@"BPProjectMsgCell2" owner:self options:nil] firstObject];
         }
         cellTime = cell;
         cell.stratDateStr = self.model.dynamicDate;
@@ -373,17 +373,17 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (DynamicList *)model
+- (BPDynamicList *)model
 {
     if (!_model) {
         
         
         NSDictionary *dict = [BusinessMemoryCacheTool ProjectProgressEvent];
         
-        if ([DynamicList mj_objectWithKeyValues:dict]) {
-            _model = [DynamicList mj_objectWithKeyValues:dict];
+        if ([BPDynamicList mj_objectWithKeyValues:dict]) {
+            _model = [BPDynamicList mj_objectWithKeyValues:dict];
         }else{
-            _model = [[DynamicList alloc]init];
+            _model = [[BPDynamicList alloc]init];
         }
     }
     return _model;

@@ -6,12 +6,12 @@
 //  Copyright © 2016年 JWZhang. All rights reserved.
 //
 
-#import "UIView+AlertViewProject.h"
+#import "UIView+BPAlertViewProject.h"
 
-@implementation UIView (AlertViewProject)
+@implementation UIView (BPAlertViewProject)
 
 
-- (void)reboundEffectAnimationDuration:(CGFloat)duration
+- (void)bp_reboundEffectAnimationDuration:(CGFloat)duration
 {   //缩放的动画 效果
     CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
     animation.duration=duration;

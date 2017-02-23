@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddMemberCell2 : UITableViewCell
+@interface BPAddMemberCell2 : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;

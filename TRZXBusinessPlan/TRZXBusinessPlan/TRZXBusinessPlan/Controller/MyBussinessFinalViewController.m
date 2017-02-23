@@ -7,14 +7,14 @@
 //
 
 #import "MyBussinessFinalViewController.h"
-#import "ProjectAlertView.h"
+#import "BPProjectAlertView.h"
 #import "KipoMyBusinessPlanViewModel.h"
 #import "KipoMyBusinessPlanViewController.h"
 #import "MyBusinessFooterView.h"
 #import "TRZXBusinessPlanHeader.h"
 
 
-@interface MyBussinessFinalViewController ()<ProjectAlertViewDelegate>{
+@interface MyBussinessFinalViewController ()<BPProjectAlertViewDelegate>{
     UIButton *shareBtn;
     MyBusinessFooterView *footerView;
 }
@@ -207,7 +207,7 @@
 #pragma mark - 修改我的商业计划书
 - (void)updateButtonClick
 {
-    ProjectAlertView *alert = [[[NSBundle mainBundle] loadNibNamed:@"ProjectAlertView" owner:nil options:nil] firstObject];
+    BPProjectAlertView *alert = [[[NSBundle mainBundle] loadNibNamed:@"ProjectAlertView" owner:nil options:nil] firstObject];
     alert.topLable.text = @"商业计划书修改后";
     alert.leftLable.text = @"需要重新生成";
     alert.delegate = self;
@@ -216,7 +216,7 @@
 }
 
 #pragma mark - alertDelegate
-- (void)AlertView:(ProjectAlertView *)AlertView okBtnTapped:(id)sender
+- (void)AlertView:(BPProjectAlertView *)AlertView okBtnTapped:(id)sender
 {
     [KipoMyBusinessPlanViewModel fixBusinessSuccess:^(id json)
      {
@@ -235,7 +235,7 @@
      }];
     
 }
-- (void)AlertView:(ProjectAlertView *)AlertView cancelBtnTapped:(id)sender
+- (void)AlertView:(BPProjectAlertView *)AlertView cancelBtnTapped:(id)sender
 {
 }
 

@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 
-@class TeamList,DynamicList,ProjectHighlight,BeforeFinancingList;
+@class TeamList,BPDynamicList,ProjectHighlight,BeforeFinancingList;
 
-@interface NewMyProjectModel : NSObject<NSCoding>
+@interface BPNewMyProjectModel : NSObject<NSCoding>
 
 //项目名称
 @property (nonatomic, copy) NSString *name;
@@ -136,7 +136,7 @@
 /**
  *  项目动态 list
  */
-@property (nonatomic, strong)NSMutableArray <DynamicList *> *dynamicList;
+@property (nonatomic, strong)NSMutableArray <BPDynamicList *> *dynamicList;
 
 
 @end
@@ -179,7 +179,7 @@
 /**
  *  项目动态
  */
-@interface DynamicList : NSObject<NSCoding>
+@interface BPDynamicList : NSObject<NSCoding>
 
 /**
  * 项目动态时间

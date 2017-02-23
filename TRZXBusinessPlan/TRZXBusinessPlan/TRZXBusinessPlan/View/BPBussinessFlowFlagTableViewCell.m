@@ -31,8 +31,8 @@
     self.titles3.hidden = YES;
     self.danwei.hidden = YES;
     self.glowMoneyTF.hidden = YES;
-    self.no.cornerRadius = 13.5;
-    self.yes.cornerRadius = 13.5;
+    self.no.bp_cornerRadius = 13.5;
+    self.yes.bp_cornerRadius = 13.5;
     self.no.layer.borderColor = BPxiandeColor.CGColor;
     self.yes.layer.borderColor = BPxiandeColor.CGColor;
     
@@ -59,8 +59,8 @@
     self.no.selected = YES;
     self.no.backgroundColor = BPTRZXMainColor;
     self.yes.backgroundColor = BPbackColor;
-    self.no.cornerRadius = 13.5;
-    self.yes.cornerRadius = 13.5;
+    self.no.bp_cornerRadius = 13.5;
+    self.yes.bp_cornerRadius = 13.5;
     
     self.no.layer.borderColor = BPxiandeColor.CGColor;
     self.yes.layer.borderColor = BPxiandeColor.CGColor;
@@ -81,8 +81,8 @@
     self.yes.selected = YES;
     self.no.backgroundColor = BPbackColor;
     self.yes.backgroundColor = BPTRZXMainColor;
-    self.no.cornerRadius = 13.5;
-    self.yes.cornerRadius = 13.5;
+    self.no.bp_cornerRadius = 13.5;
+    self.yes.bp_cornerRadius = 13.5;
     
     if (self.flowStatusBlock) {
         self.flowStatusBlock(@"1");

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface cityMode : NSObject
+@interface BPCityMode : NSObject
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *mid;
 @property (nonatomic, copy) NSString *selfFlag;

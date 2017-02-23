@@ -21,7 +21,7 @@
     self = [[[NSBundle mainBundle]loadNibNamed:@"BPCoreTeamMessageCellTableViewCell" owner:nil options:nil]lastObject];
     
     self.headImageView.image = headImage;
-    self.headImageView.cornerRadius = 6;
+    self.headImageView.bp_cornerRadius = 6;
     self.nameLabel.text = name;
 //    self.positionLabel.text = position;
     self.detailLabel.text = detail;

@@ -6,11 +6,11 @@
 //  Copyright © 2016年 JWZhang. All rights reserved.
 //
 
-#import "AddMemberCell2.h"
+#import "BPAddMemberCell2.h"
 #import "TRZXBusinessPlanHeader.h"
 
 
-@interface AddMemberCell2 ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate,UIActionSheetDelegate>
+@interface BPAddMemberCell2 ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate,UIActionSheetDelegate>
 
 @property (nonatomic,strong) UIImagePickerController * pickerCamera;
 
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation AddMemberCell2
+@implementation BPAddMemberCell2
 
 #pragma mark - 懒加载
 -(UIImagePickerController *)pickerCamera{

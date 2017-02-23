@@ -6,16 +6,16 @@
 //  Copyright © 2016年 JWZhang. All rights reserved.
 //
 
-#import "ProjectMsgCell2.h"
+#import "BPProjectMsgCell2.h"
 
-@interface ProjectMsgCell2 ()
+@interface BPProjectMsgCell2 ()
 
 
 
 
 @end
 
-@implementation ProjectMsgCell2
+@implementation BPProjectMsgCell2
 
 - (void)awakeFromNib {
     [super awakeFromNib];
