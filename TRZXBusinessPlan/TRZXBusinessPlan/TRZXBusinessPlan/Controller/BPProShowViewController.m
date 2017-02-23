@@ -66,10 +66,10 @@
         if (!cell) {
             cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cells"];
         }
-        cell.contentView.backgroundColor = backColor;
+        cell.contentView.backgroundColor = BPbackColor;
         cell.textLabel.text = @"至少添加一条事件";
         cell.textLabel.font = [UIFont systemFontOfSize:11];
-        cell.textLabel.textColor = zideColor;
+        cell.textLabel.textColor = [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         return cell;
@@ -83,7 +83,7 @@
             if (!cell) {
                 cell = [[[NSBundle mainBundle]loadNibNamed:@"ProjectDynamicCell1" owner:self options:nil] firstObject];
             }
-            cell.contentView.backgroundColor = backColor;
+            cell.contentView.backgroundColor = BPbackColor;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
             
@@ -94,11 +94,11 @@
             if (!cell) {
                 cell = [[[NSBundle mainBundle]loadNibNamed:@"ButtonTableViewCell" owner:self options:nil] firstObject];
             }
-            cell.contentView.backgroundColor = backColor;
-            cell.bgView.backgroundColor = backColor;
+            cell.contentView.backgroundColor = BPbackColor;
+            cell.bgView.backgroundColor = BPbackColor;
             cell.titleLable.text = @"添加新事件";
-            cell.titleLable.backgroundColor = moneyColor;
-            cell.contentView.backgroundColor = backColor;
+            cell.titleLable.backgroundColor = BPmoneyColor;
+            cell.contentView.backgroundColor = BPbackColor;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }else
@@ -110,8 +110,8 @@
             }
             cell.titleLabel.text = model.dynamicDate;
             cell.detailLabel.text = model.abstractz;
-            cell.detailLabel.textColor = heizideColor;
-            cell.contentView.backgroundColor = backColor;
+            cell.detailLabel.textColor = BPheizideColor;
+            cell.contentView.backgroundColor = BPbackColor;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
@@ -124,11 +124,11 @@
             if (!cell) {
                 cell = [[[NSBundle mainBundle]loadNibNamed:@"ButtonTableViewCell" owner:self options:nil] firstObject];
             }
-            cell.contentView.backgroundColor = backColor;
-            cell.bgView.backgroundColor = backColor;
+            cell.contentView.backgroundColor = BPbackColor;
+            cell.bgView.backgroundColor = BPbackColor;
             cell.titleLable.text = @"添加新事件";
-            cell.titleLable.backgroundColor = moneyColor;
-            cell.contentView.backgroundColor = backColor;
+            cell.titleLable.backgroundColor = BPmoneyColor;
+            cell.contentView.backgroundColor = BPbackColor;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
             return cell;
         }
@@ -251,7 +251,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 
@@ -311,8 +311,8 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
-        _tableView.backgroundColor = backColor;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _tableView.backgroundColor = BPbackColor;
         _tableView.delegate =self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

@@ -76,9 +76,9 @@
     {
         BPProjectMsgCell *cell = [[BPProjectMsgCell alloc]initWithTitle:@"事件详情" PlaceHoder:@"例:2013年联合央视少儿频道召开7场、共计4000人参加的儿童情商讲座." CountCharacter:@"20字" TextViewMsg:self.model.abstractz];
         cell.textViewMsg.delegate = self;
-        cell.textViewMsg.textColor = heizideColor;
+        cell.textViewMsg.textColor = BPheizideColor;
 //        cell.textViewMsg.returnKeyType = UIReturnKeyDone;
-        cell.contentView.backgroundColor = backColor;
+        cell.contentView.backgroundColor = BPbackColor;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
         
@@ -192,7 +192,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 
@@ -215,7 +215,7 @@
     DateStr = [outputFormatter stringForObjectValue:self.datePicker.date];
     
     [UIView animateWithDuration:0.5 animations:^{
-        self.datePickerView.frame = CGRectMake(0, SCREEN_HEIGHT - 180, SCREEN_WIDTH, 180);
+        self.datePickerView.frame = CGRectMake(0, BPSCREEN_HEIGHT - 180, BPSCREEN_WIDTH, 180);
     }];
 }
 
@@ -263,7 +263,7 @@
     
     [UIView animateWithDuration:0.5 animations:^{
         
-        self.datePickerView.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 0);
+        self.datePickerView.frame = CGRectMake(0, BPSCREEN_HEIGHT, BPSCREEN_WIDTH, 0);
     }];
     
 }
@@ -271,8 +271,8 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
-        _tableView.backgroundColor = backColor;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _tableView.backgroundColor = BPbackColor;
         _tableView.delegate =self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -283,10 +283,10 @@
 -(UIView *)datePickerView{
     if (!_datePickerView) {
         
-        _datePickerView = [[UIView alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 0)];
+        _datePickerView = [[UIView alloc]initWithFrame:CGRectMake(0, BPSCREEN_HEIGHT, BPSCREEN_WIDTH, 0)];
         _datePickerView.backgroundColor = [UIColor whiteColor];
         
-        UIDatePicker *datePicker = [[UIDatePicker alloc]initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 160)];
+        UIDatePicker *datePicker = [[UIDatePicker alloc]initWithFrame:CGRectMake(0, 20, BPSCREEN_WIDTH, 160)];
         
         datePicker.datePickerMode = UIDatePickerModeDate;
         
@@ -320,13 +320,13 @@
         
         self.datePicker = datePicker;
         
-        UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH - 60, 0, 40, 40)];
+        UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(BPSCREEN_WIDTH - 60, 0, 40, 40)];
         
         [button setTitle:@"确定" forState:UIControlStateNormal];
         
         button.titleLabel.font = [UIFont systemFontOfSize:15];
         
-        [button setTitleColor:TRZXMainColor forState:UIControlStateNormal];
+        [button setTitleColor:BPTRZXMainColor forState:UIControlStateNormal];
         
         [button addTarget:self action:@selector(selectClick:) forControlEvents:UIControlEventTouchUpInside];
         
@@ -336,7 +336,7 @@
         
         buttonCancle.titleLabel.font = [UIFont systemFontOfSize:15];
         
-        [buttonCancle setTitleColor:TRZXMainColor forState:UIControlStateNormal];
+        [buttonCancle setTitleColor:BPTRZXMainColor forState:UIControlStateNormal];
         
         [buttonCancle addTarget:self action:@selector(cancelClick:) forControlEvents:UIControlEventTouchUpInside];
         

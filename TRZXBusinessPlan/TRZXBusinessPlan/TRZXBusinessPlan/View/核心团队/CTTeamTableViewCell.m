@@ -15,7 +15,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.contentView.backgroundColor = backColor;
+    self.contentView.backgroundColor = BPbackColor;
     self.firstView.layer.cornerRadius = 4;
     self.secondView.layer.cornerRadius = 4;
     self.threeView.layer.cornerRadius = 4;
@@ -37,7 +37,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 

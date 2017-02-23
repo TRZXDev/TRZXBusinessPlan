@@ -17,7 +17,7 @@
     [super awakeFromNib];
     self.translatesAutoresizingMaskIntoConstraints  = NO;
     self.contentView.layer.cornerRadius = 5;
-    self.bgView.backgroundColor=RGBA(0, 0, 0, 0.4);
+    self.bgView.backgroundColor=BPRGBA(0, 0, 0, 0.4);
     self.backgroundColor = [UIColor clearColor];
 
     self.cancleButton.layer.cornerRadius = 5;

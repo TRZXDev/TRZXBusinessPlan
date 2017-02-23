@@ -48,7 +48,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.view.backgroundColor = backColor;
+        self.view.backgroundColor = BPbackColor;
         self.automaticallyAdjustsScrollViewInsets = NO;
         _maximumNumberOfSelection = 10;
         _minimumNumberOfSelection = 0;
@@ -119,7 +119,7 @@
     //cancelBtn
     UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
-    [cancelBtn setTitleColor:TRZXMainColor  forState:UIControlStateNormal];
+    [cancelBtn setTitleColor:BPTRZXMainColor  forState:UIControlStateNormal];
     [cancelBtn.titleLabel setFont:[UIFont systemFontOfSize:15]];
     [cancelBtn addTarget:self action:@selector(cancelBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     self.customCancelBtn = cancelBtn;
@@ -134,7 +134,7 @@
     //title
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.textColor = TRZXMainColor;
+    titleLabel.textColor = BPTRZXMainColor;
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [navBar addSubview:titleLabel];
 
@@ -170,7 +170,7 @@
     //okBtn
     UIButton *okBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [okBtn setTitle:@"确定" forState:UIControlStateNormal];
-    [okBtn setTitleColor:TRZXMainColor forState:UIControlStateNormal];
+    [okBtn setTitleColor:BPTRZXMainColor forState:UIControlStateNormal];
     [okBtn.titleLabel setFont:[UIFont systemFontOfSize:15]];
     [okBtn addTarget:self action:@selector(okBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     okBtn.translatesAutoresizingMaskIntoConstraints = NO;

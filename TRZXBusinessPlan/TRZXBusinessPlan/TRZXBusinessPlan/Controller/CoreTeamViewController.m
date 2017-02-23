@@ -96,7 +96,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 
@@ -124,7 +124,7 @@
         cell.MsgTitleLable.hidden = YES;
         
         cell.referenceVC = weakSelf;
-        cell.contentView.backgroundColor = backColor;
+        cell.contentView.backgroundColor = BPbackColor;
         firstCell = cell;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
@@ -132,7 +132,7 @@
     {
         BPProjectMsgCell *cell = [[BPProjectMsgCell alloc]initWithTitle:@"团队口号 *" PlaceHoder:@"例:用我们的专业知识和真挚的爱心，帮助学员进行全方位的素质提升" CountCharacter:@"20字" TextViewMsg:self.model.slogan];
         cell.textViewMsg.delegate = self;
-        cell.contentView.backgroundColor = backColor;
+        cell.contentView.backgroundColor = BPbackColor;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
         
@@ -142,10 +142,10 @@
         if (!cell) {
             cell = [[[NSBundle mainBundle]loadNibNamed:@"ButtonTableViewCell" owner:self options:nil] firstObject];
         }
-        cell.contentView.backgroundColor = backColor;
-        cell.bgView.backgroundColor = backColor;
+        cell.contentView.backgroundColor = BPbackColor;
+        cell.bgView.backgroundColor = BPbackColor;
         cell.titleLable.text = @"添加团队成员";
-        cell.titleLable.backgroundColor = moneyColor;
+        cell.titleLable.backgroundColor = BPmoneyColor;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
         
@@ -165,7 +165,7 @@
 //        cell.positionLabel.text = model.position;
         cell.changeLength = model.name.length;
         cell.detailLabel.text = model.work;
-        cell.contentView.backgroundColor = backColor;
+        cell.contentView.backgroundColor = BPbackColor;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
@@ -175,7 +175,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"block"];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = backColor;
+    cell.backgroundColor = BPbackColor;
     return cell;
 }
 
@@ -418,8 +418,8 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
-        _tableView.backgroundColor = backColor;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _tableView.backgroundColor = BPbackColor;
         _tableView.delegate =self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

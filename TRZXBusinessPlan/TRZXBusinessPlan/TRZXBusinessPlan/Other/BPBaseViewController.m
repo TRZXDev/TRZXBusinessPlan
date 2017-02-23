@@ -104,7 +104,7 @@
     
     _mainTitle = [[UILabel alloc] init];
     _mainTitle.font = [UIFont boldSystemFontOfSize:19];
-    _mainTitle.textColor = grayKColor;
+    _mainTitle.textColor = [UIColor colorWithRed:90 /255.0 green:90 /255.0 blue:90 /255.0 alpha:1];
     //对齐
     _mainTitle.textAlignment = NSTextAlignmentCenter;
     _mainTitle.lineBreakMode = 1;
@@ -122,7 +122,7 @@
     _saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     _saveBtn.hidden = true;
     [_saveBtn setTitle:@"保存" forState:UIControlStateNormal];
-    [_saveBtn setTitleColor:TRZXMainColor forState:UIControlStateNormal];
+    [_saveBtn setTitleColor:BPTRZXMainColor forState:UIControlStateNormal];
     _saveBtn.adjustsImageWhenHighlighted = NO;
     _saveBtn.titleLabel.font = [UIFont systemFontOfSize:16];
     _saveBtn.titleEdgeInsets = UIEdgeInsetsMake(15,0,11,15);

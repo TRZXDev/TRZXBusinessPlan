@@ -108,7 +108,7 @@
     //title
     UILabel *titleLabel = [UILabel new];
     titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    titleLabel.textColor = TRZXMainColor;
+    titleLabel.textColor = BPTRZXMainColor;
     titleLabel.font = [UIFont systemFontOfSize:20.0];
     [topView addSubview:titleLabel];
     titleLabel.text = [NSString stringWithFormat:@"1 / %lu",(unsigned long)_photos.count];
@@ -121,7 +121,7 @@
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.translatesAutoresizingMaskIntoConstraints = NO;
     [btn setTitle:@"完成" forState:UIControlStateNormal];
-    [btn setTitleColor:TRZXMainColor forState:UIControlStateNormal];
+    [btn setTitleColor:BPTRZXMainColor forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(doneBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     self.CustomDoneBtn = btn;
     [topView addSubview:btn];
@@ -134,7 +134,7 @@
     UIButton *delBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     delBtn.translatesAutoresizingMaskIntoConstraints = NO;
     [delBtn setTitle:@"删除" forState:UIControlStateNormal];
-    [delBtn setTitleColor:TRZXMainColor forState:UIControlStateNormal];
+    [delBtn setTitleColor:BPTRZXMainColor forState:UIControlStateNormal];
     [delBtn addTarget:self action:@selector(delBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [topView addSubview:delBtn];
     self.CustomDelBtn = delBtn;

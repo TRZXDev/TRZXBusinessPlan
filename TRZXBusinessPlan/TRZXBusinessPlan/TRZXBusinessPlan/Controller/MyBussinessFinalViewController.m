@@ -39,19 +39,19 @@
 
 
 
-    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64-50)];
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT - 64-50)];
     _webView.dataDetectorTypes = UIDataDetectorTypeAll;
     [self.view addSubview:self.webView];
     [self loadString:self.myBussinessUrl];
 
 
-    _putButton = [[UIButton alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 50, SCREEN_WIDTH, 50)];
+    _putButton = [[UIButton alloc]initWithFrame:CGRectMake(0, BPSCREEN_HEIGHT - 50, BPSCREEN_WIDTH, 50)];
 
 
     if(self.type == 0){
         _putButton.hidden = YES;
         _putButton.frame = CGRectMake(0, 0, 0, 0);
-        _webView.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64);
+        _webView.frame = CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT - 64);
     }else if (self.type == 1)
     {
         [_putButton setTitle:@"生成商业计划书" forState:UIControlStateNormal];
@@ -63,7 +63,7 @@
         [_putButton setTitle:@"撰写商业计划书" forState:UIControlStateNormal];
     }
     //
-    _putButton.backgroundColor = RGBA(215, 0, 15, 1.0);
+    _putButton.backgroundColor = BPRGBA(215, 0, 15, 1.0);
     [_putButton addTarget:self action:@selector(putButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.putButton];
 

@@ -154,7 +154,7 @@ static NSInteger photoCount = 4;
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    return CGSizeMake((SCREEN_WIDTH-16)/3 - 7.5, (SCREEN_WIDTH-16)/3 - 7.5);
+    return CGSizeMake((BPSCREEN_WIDTH-16)/3 - 7.5, (BPSCREEN_WIDTH-16)/3 - 7.5);
 }
 
 
@@ -326,15 +326,15 @@ static NSInteger photoCount = 4;
         if (cells == nil) {
             cells = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"photos"];
         }
-        cells.contentView.backgroundColor = backColor;
+        cells.contentView.backgroundColor = BPbackColor;
         for (UIView *view in cells.contentView.subviews) {
             [view removeFromSuperview];
         }
         
         UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
         
-        UICollectionView *collec = [[UICollectionView alloc] initWithFrame:CGRectMake(8, 10, SCREEN_WIDTH-2*8, (SCREEN_WIDTH-2*8)/3 * 1+10) collectionViewLayout:flow];
-        collec.backgroundColor = backColor;
+        UICollectionView *collec = [[UICollectionView alloc] initWithFrame:CGRectMake(8, 10, BPSCREEN_WIDTH-2*8, (BPSCREEN_WIDTH-2*8)/3 * 1+10) collectionViewLayout:flow];
+        collec.backgroundColor = BPbackColor;
         collec.delegate = self;
         collec.dataSource  =self;
         self.collectionview = collec;
@@ -350,7 +350,7 @@ static NSInteger photoCount = 4;
         //        cell.textViewMsg.editable = NO;
         //        cell.textViewMsg.scrollEnabled = NO;
         cells.selectionStyle = UITableViewCellSelectionStyleNone;
-        cells.contentView.backgroundColor = backColor;
+        cells.contentView.backgroundColor = BPbackColor;
         return cells;
     } else if (indexPath.row == 6) {
         //流水状态
@@ -363,12 +363,12 @@ static NSInteger photoCount = 4;
         if ([self.model.flow isEqualToString:@"0"]) {
             cells.noneWater.selected = YES;
             cells.yesWater.selected = NO;
-            cells.noneWater.backgroundColor = TRZXMainColor;
-            cells.yesWater.backgroundColor = backColor;
+            cells.noneWater.backgroundColor = BPTRZXMainColor;
+            cells.yesWater.backgroundColor = BPbackColor;
         }else if ([self.model.flow isEqualToString:@"1"])
         {
-            cells.noneWater.backgroundColor = backColor;
-            cells.yesWater.backgroundColor = TRZXMainColor;
+            cells.noneWater.backgroundColor = BPbackColor;
+            cells.yesWater.backgroundColor = BPTRZXMainColor;
             cells.yesWater.selected = YES;
             cells.noneWater.selected = NO;
         }
@@ -396,7 +396,7 @@ static NSInteger photoCount = 4;
     {
         cell = [[BPProjectMsgCell alloc]initWithTitle:self.dataSource[indexPath.row] PlaceHoder:self.attributeDataSource[indexPath.row] CountCharacter:@"90字" TextViewMsg:self.textArray[indexPath.row]];
         cell.textViewMsg.delegate = self;
-        cell.textViewMsg.textColor = heizideColor;
+        cell.textViewMsg.textColor = BPheizideColor;
         cell.textViewMsg.tag = TagText + indexPath.row;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
@@ -412,8 +412,8 @@ static NSInteger photoCount = 4;
     if ([self.model.gainFlag isEqualToString:@"0"]) {
         cells.no.selected = YES;
         cells.yes.selected = NO;
-        cells.no.backgroundColor = TRZXMainColor;
-        cells.yes.backgroundColor = backColor;
+        cells.no.backgroundColor = BPTRZXMainColor;
+        cells.yes.backgroundColor = BPbackColor;
         
         cells.titles3.hidden = YES;
         cells.danwei.hidden = YES;
@@ -421,8 +421,8 @@ static NSInteger photoCount = 4;
         
     }else if ([self.model.gainFlag isEqualToString:@"1"])
     {
-        cells.no.backgroundColor = backColor;
-        cells.yes.backgroundColor = TRZXMainColor;
+        cells.no.backgroundColor = BPbackColor;
+        cells.yes.backgroundColor = BPTRZXMainColor;
         cells.yes.selected = YES;
         cells.no.selected = NO;
         cells.titles3.hidden = NO;
@@ -447,12 +447,12 @@ static NSInteger photoCount = 4;
     CGFloat frame;
     if (self.photoArray.count < 3)
     {
-        frame= (SCREEN_WIDTH-16)/3 * 1+10;
+        frame= (BPSCREEN_WIDTH-16)/3 * 1+10;
     }else
     {
-        frame = (SCREEN_WIDTH-16)/3 * 2+7.5+10;
+        frame = (BPSCREEN_WIDTH-16)/3 * 2+7.5+10;
     }
-    self.collectionview.frame =CGRectMake(8, 10, SCREEN_WIDTH-2*8, frame);
+    self.collectionview.frame =CGRectMake(8, 10, BPSCREEN_WIDTH-2*8, frame);
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -461,10 +461,10 @@ static NSInteger photoCount = 4;
         
         if (self.photoArray.count < 3)
         {
-            return (SCREEN_WIDTH-16)/3 * 1+10;
+            return (BPSCREEN_WIDTH-16)/3 * 1+10;
         }else
         {
-            return (SCREEN_WIDTH-16)/3 * 2+7.5+10;
+            return (BPSCREEN_WIDTH-16)/3 * 2+7.5+10;
         }
         
     }else if (indexPath.row <3) {
@@ -751,13 +751,13 @@ static NSInteger photoCount = 4;
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
-        _tableView.backgroundColor = backColor;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _tableView.backgroundColor = BPbackColor;
         _tableView.delegate =self;
         _tableView.dataSource = self;
         _tableView.rowHeight = 120;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.tableHeaderView.backgroundColor = backColor;
+        _tableView.tableHeaderView.backgroundColor = BPbackColor;
     }
     return _tableView;
 }

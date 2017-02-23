@@ -13,12 +13,12 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.titleLable.textColor = RGBA(179, 179, 179, 1.0);
-    self.placeHoderLable.textColor = RGBA(218, 218, 218, 1.0);
+    self.titleLable.textColor = BPRGBA(179, 179, 179, 1.0);
+    self.placeHoderLable.textColor = BPRGBA(218, 218, 218, 1.0);
     self.bgView.layer.cornerRadius = 8;
     self.bgView.layer.masksToBounds = YES;
     
-    self.countCharacter.textColor = RGBA(179, 179, 179, 1.0);
+    self.countCharacter.textColor = BPRGBA(179, 179, 179, 1.0);
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
@@ -60,7 +60,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 

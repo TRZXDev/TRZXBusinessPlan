@@ -37,20 +37,20 @@
     [btn setTitle:@"编辑商业计划书" forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:15];
     [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    btn.backgroundColor = TRZXMainColor;
+    btn.backgroundColor = BPTRZXMainColor;
     [btn addTarget:self action:@selector(firstClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btn];
     
     
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(CGRectGetMaxX(btn.frame), 0, 2, self.frame.size.height)];
-    view.backgroundColor = backColor;
+    view.backgroundColor = BPbackColor;
     [self addSubview:view];
     
     UIButton *btn1 = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(view.frame), 0, self.frame.size.width/2-1, self.frame.size.height)];
     [btn1 setTitle:@"生成商业计划书" forState:UIControlStateNormal];
     btn1.titleLabel.font = [UIFont systemFontOfSize:15];
     [btn1 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    btn1.backgroundColor = TRZXMainColor;
+    btn1.backgroundColor = BPTRZXMainColor;
     btn1.tag = buttonTag +1;
     [btn1 addTarget:self action:@selector(firstClick:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:btn1];

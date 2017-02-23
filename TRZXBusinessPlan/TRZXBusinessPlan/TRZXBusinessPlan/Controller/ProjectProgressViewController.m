@@ -85,7 +85,7 @@
         BPProjectMsgCell *cell = [[BPProjectMsgCell alloc]initWithTitle:_dataSource[indexPath.row] PlaceHoder:_attributeDataSource[indexPath.row] CountCharacter:@"90字" TextViewMsg:self.textArray[indexPath.row]];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.textViewMsg.delegate = self;
-        cell.textViewMsg.textColor = heizideColor;
+        cell.textViewMsg.textColor = BPheizideColor;
         cell.textViewMsg.tag = TagText+indexPath.row;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
@@ -150,7 +150,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"block"];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = backColor;
+    cell.backgroundColor = BPbackColor;
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -426,12 +426,12 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
-        _tableView.backgroundColor = backColor;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _tableView.backgroundColor = BPbackColor;
         _tableView.delegate =self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.tableHeaderView.backgroundColor = RGBA(235, 235, 241, 1);
+        _tableView.tableHeaderView.backgroundColor = BPRGBA(235, 235, 241, 1);
     }
     return _tableView;
 }

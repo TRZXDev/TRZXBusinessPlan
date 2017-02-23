@@ -17,7 +17,7 @@
 - (IBAction)buttonClick:(id)sender {
     self.button.selected = !self.button.selected;
     if (self.button.selected) {
-        self.button.backgroundColor = RGBA(209, 187, 104, 1);
+        self.button.backgroundColor = BPRGBA(209, 187, 104, 1);
     }else
     {
         self.button.backgroundColor = [UIColor whiteColor];

@@ -85,9 +85,9 @@
         BPProjectMsgCell *cell = [[BPProjectMsgCell alloc]initWithTitle:@"毕业学校 *" PlaceHoder:@"例:首都师范大学" CountCharacter:@"20字" TextViewMsg:self.model.school];
         cell.textViewMsg.delegate = self;
         cell.textViewMsg.tag = tagTextView + indexPath.row;
-        cell.textViewMsg.textColor = heizideColor;
+        cell.textViewMsg.textColor = BPheizideColor;
         cell.textViewMsg.returnKeyType = UIReturnKeyDone;
-        cell.contentView.backgroundColor = backColor;
+        cell.contentView.backgroundColor = BPbackColor;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
         
@@ -97,8 +97,8 @@
         BPProjectMsgCell *cell = [[BPProjectMsgCell alloc]initWithTitle:@"工作履历 *" PlaceHoder:@"例:从事儿童情商教育2年。" CountCharacter:@"50字" TextViewMsg:self.model.work];
         cell.textViewMsg.delegate = self;
         cell.textViewMsg.tag = tagTextView + indexPath.row;
-        cell.textViewMsg.textColor = heizideColor;
-        cell.contentView.backgroundColor = backColor;
+        cell.textViewMsg.textColor = BPheizideColor;
+        cell.contentView.backgroundColor = BPbackColor;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
         
@@ -110,7 +110,7 @@
         cell.MsgTitleLable.hidden = YES;
         cell.referenceVC = self;
         [cell.headImageView sd_setImageWithURL:[NSURL URLWithString:self.model.memberPic] placeholderImage:[UIImage imageNamed:@"bp_addPhoto"]];
-        cell.contentView.backgroundColor = backColor;
+        cell.contentView.backgroundColor = BPbackColor;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
@@ -119,7 +119,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"block"];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = backColor;
+    cell.backgroundColor = BPbackColor;
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -471,8 +471,8 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
-        _tableView.backgroundColor = backColor;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _tableView.backgroundColor = BPbackColor;
         _tableView.delegate =self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

@@ -15,7 +15,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.contentView.backgroundColor = backColor;
+    self.contentView.backgroundColor = BPbackColor;
     self.bgView.layer.cornerRadius = 8;
 
     
@@ -33,8 +33,8 @@
     self.glowMoneyTF.hidden = YES;
     self.no.cornerRadius = 13.5;
     self.yes.cornerRadius = 13.5;
-    self.no.layer.borderColor = xiandeColor.CGColor;
-    self.yes.layer.borderColor = xiandeColor.CGColor;
+    self.no.layer.borderColor = BPxiandeColor.CGColor;
+    self.yes.layer.borderColor = BPxiandeColor.CGColor;
     
     self.no.layer.borderWidth = 1;
     self.yes.layer.borderWidth = 1;
@@ -46,7 +46,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 
@@ -57,13 +57,13 @@
     self.glowMoneyTF.hidden = YES;
     
     self.no.selected = YES;
-    self.no.backgroundColor = TRZXMainColor;
-    self.yes.backgroundColor = backColor;
+    self.no.backgroundColor = BPTRZXMainColor;
+    self.yes.backgroundColor = BPbackColor;
     self.no.cornerRadius = 13.5;
     self.yes.cornerRadius = 13.5;
     
-    self.no.layer.borderColor = xiandeColor.CGColor;
-    self.yes.layer.borderColor = xiandeColor.CGColor;
+    self.no.layer.borderColor = BPxiandeColor.CGColor;
+    self.yes.layer.borderColor = BPxiandeColor.CGColor;
     
     self.no.layer.borderWidth = 1;
     self.yes.layer.borderWidth = 1;
@@ -79,8 +79,8 @@
     self.glowMoneyTF.hidden = NO;
     self.no.selected = NO;
     self.yes.selected = YES;
-    self.no.backgroundColor = backColor;
-    self.yes.backgroundColor = TRZXMainColor;
+    self.no.backgroundColor = BPbackColor;
+    self.yes.backgroundColor = BPTRZXMainColor;
     self.no.cornerRadius = 13.5;
     self.yes.cornerRadius = 13.5;
     

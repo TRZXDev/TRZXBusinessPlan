@@ -22,7 +22,7 @@
     self = [[AJPhotoListView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) collectionViewLayout:flowLayout];
     if (self) {
         [self registerClass:[AJPhotoListCell class] forCellWithReuseIdentifier:@"cell"];
-        self.backgroundColor = backColor;
+        self.backgroundColor = BPbackColor;
         self.userInteractionEnabled = YES;
     }
     return self;

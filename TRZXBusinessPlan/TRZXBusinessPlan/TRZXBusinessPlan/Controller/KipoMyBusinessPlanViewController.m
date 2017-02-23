@@ -94,7 +94,7 @@ static CGFloat cellHeight = 83;
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden = NO;
     [self.saveBtn setTitle:@"一键重置" forState:UIControlStateNormal];
-    [self.saveBtn setTitleColor:moneyColor forState:UIControlStateNormal];
+    [self.saveBtn setTitleColor:BPmoneyColor forState:UIControlStateNormal];
     [self.view addSubview:self.tableView];
     [self.view addSubview:self.putButton];
 }
@@ -255,7 +255,7 @@ static CGFloat cellHeight = 83;
         cell.xuanTianStatus.textColor = [UIColor greenColor];
     }else
     {
-        cell.xuanTianStatus.textColor = zideColor;
+        cell.xuanTianStatus.textColor = [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1];
     }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -491,22 +491,22 @@ static CGFloat cellHeight = 83;
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 50-64) style:UITableViewStylePlain];
-        _tableView.backgroundColor = backColor;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT - 50-64) style:UITableViewStylePlain];
+        _tableView.backgroundColor = BPbackColor;
         _tableView.delegate =self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.rowHeight = cellHeight;
-        //        _tableView.tableHeaderView.backgroundColor = RGBA(235, 235, 241, 1);
+        //        _tableView.tableHeaderView.backgroundColor = BPRGBA(235, 235, 241, 1);
     }
     return _tableView;
 }
 - (UIButton *)putButton
 {
     if (!_putButton) {
-        _putButton = [[UIButton alloc]initWithFrame:CGRectMake(0, SCREEN_HEIGHT - 50, SCREEN_WIDTH, 50)];
+        _putButton = [[UIButton alloc]initWithFrame:CGRectMake(0, BPSCREEN_HEIGHT - 50, BPSCREEN_WIDTH, 50)];
         [_putButton setTitle:@"预览商业计划书" forState:UIControlStateNormal];
-        _putButton.backgroundColor = RGBA(215, 0, 15, 1.0);
+        _putButton.backgroundColor = BPRGBA(215, 0, 15, 1.0);
         [_putButton addTarget:self action:@selector(putButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _putButton;

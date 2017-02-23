@@ -35,7 +35,7 @@
     self.seconTextField.delegate = self;
     [self.seconTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     
-    self.contentView.backgroundColor = backColor;
+    self.contentView.backgroundColor = BPbackColor;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -95,7 +95,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 

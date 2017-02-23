@@ -19,8 +19,8 @@
         self.titleLable.attributedText = [self setLocationAttributeWithStr:self.titleLable.text];
     }
     
-        self.noneWater.layer.borderColor = xiandeColor.CGColor;
-        self.yesWater.layer.borderColor = xiandeColor.CGColor;
+        self.noneWater.layer.borderColor = BPxiandeColor.CGColor;
+        self.yesWater.layer.borderColor = BPxiandeColor.CGColor;
     
         self.noneWater.layer.borderWidth = 1;
         self.yesWater.layer.borderWidth = 1;
@@ -46,13 +46,13 @@
 
 - (IBAction)btn:(id)sender {
     
-    self.noneWater.backgroundColor = TRZXMainColor;
-    self.yesWater.backgroundColor = backColor;
+    self.noneWater.backgroundColor = BPTRZXMainColor;
+    self.yesWater.backgroundColor = BPbackColor;
     self.noneWater.selected = YES;
     self.yesWater.selected = NO;
     
-    self.noneWater.layer.borderColor = xiandeColor.CGColor;
-    self.yesWater.layer.borderColor = xiandeColor.CGColor;
+    self.noneWater.layer.borderColor = BPxiandeColor.CGColor;
+    self.yesWater.layer.borderColor = BPxiandeColor.CGColor;
     
     self.noneWater.layer.borderWidth = 1;
     self.yesWater.layer.borderWidth = 1;
@@ -67,11 +67,11 @@
 }
 - (IBAction)yes:(id)sender {
     
-    self.noneWater.backgroundColor = backColor;
-    self.yesWater.backgroundColor = TRZXMainColor;
+    self.noneWater.backgroundColor = BPbackColor;
+    self.yesWater.backgroundColor = BPTRZXMainColor;
     
-    self.noneWater.layer.borderColor = xiandeColor.CGColor;
-    self.yesWater.layer.borderColor = xiandeColor.CGColor;
+    self.noneWater.layer.borderColor = BPxiandeColor.CGColor;
+    self.yesWater.layer.borderColor = BPxiandeColor.CGColor;
     
     self.noneWater.layer.borderWidth = 1;
     self.yesWater.layer.borderWidth = 1;
@@ -93,7 +93,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 

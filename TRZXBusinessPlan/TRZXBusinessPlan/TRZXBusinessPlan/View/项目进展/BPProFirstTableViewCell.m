@@ -26,7 +26,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        self.contentView.backgroundColor = backColor;
+        self.contentView.backgroundColor = BPbackColor;
 //        [self addUI];
     }
     return  self;
@@ -39,7 +39,7 @@
     lable.frame = CGRectMake(13, 10, 120, 30);
 //    lable.text = @"项目进度 *";
     lable.text = title;
-    lable.textColor = zideColor;
+    lable.textColor = [UIColor colorWithRed:179.0/255.0 green:179.0/255.0 blue:179.0/255.0 alpha:1];
     lable.font = [UIFont systemFontOfSize:15];
     [self.contentView addSubview:lable];
     self.titleLable = lable;
@@ -61,23 +61,23 @@
         gap = 20;
     }else
     {
-       gap = (SCREEN_WIDTH - count*80)/(count+1);
+       gap = (BPSCREEN_WIDTH - count*80)/(count+1);
     }
     
     for (int i =0; i <count; i++) {
         
         UIButton *btn = [[UIButton alloc]init];
-        btn.backgroundColor = backColor;
+        btn.backgroundColor = BPbackColor;
         
         btn.frame = CGRectMake(gap +(gap +width) *i, CGRectGetMaxY(self.titleLable.frame)+10, width, 30);
         [btn setTitle:titleArray[i] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
-        [btn setTitleColor:heizideColor forState:UIControlStateNormal];
+        [btn setTitleColor:BPheizideColor forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont systemFontOfSize:11];
         btn.tag = tagButton +i;
         btn.layer.cornerRadius = btn.frame.size.height/2;
-        btn.layer.borderColor = xiandeColor.CGColor;
+        btn.layer.borderColor = BPxiandeColor.CGColor;
         btn.layer.borderWidth = 1;
         btn.layer.masksToBounds = YES;
         [self.contentView addSubview:btn];
@@ -92,9 +92,9 @@
         
         for (UIButton *button in self.dataSource) {
             button.selected = NO;
-            button.backgroundColor = backColor;
+            button.backgroundColor = BPbackColor;
         }
-        btn.backgroundColor = TRZXMainColor;
+        btn.backgroundColor = BPTRZXMainColor;
         btn.selected = YES;
         NSInteger index = btn.tag -tagButton;
         if (self.clickBlock) {
@@ -106,10 +106,10 @@
         //一个值 返回字符串 0 1
         btn.selected = !btn.selected;
         if (btn.selected == YES) {
-            btn.backgroundColor = TRZXMainColor;
+            btn.backgroundColor = BPTRZXMainColor;
         }else
         {
-            btn.backgroundColor = backColor;
+            btn.backgroundColor = BPbackColor;
         }
         
     
@@ -128,11 +128,11 @@
             UIButton *button = self.dataSource[i];
             if (button.selected == YES) {
                 [array addObject:@"1"];
-                button.backgroundColor = TRZXMainColor;
+                button.backgroundColor = BPTRZXMainColor;
             }else
             {
                 [array addObject:@"0"];
-                 button.backgroundColor = backColor;
+                 button.backgroundColor = BPbackColor;
             }
         }
 
@@ -151,10 +151,10 @@
     _selecteIndex = selecteIndex;
     for (UIButton *button in self.dataSource) {
         button.selected = NO;
-        button.backgroundColor = backColor;
+        button.backgroundColor = BPbackColor;
     }
     UIButton *btn = (UIButton *)[self.dataSource objectAtIndex:selecteIndex];
-    btn.backgroundColor = TRZXMainColor;
+    btn.backgroundColor = BPTRZXMainColor;
     btn.selected = YES;
     
 }
@@ -165,7 +165,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 
@@ -177,7 +177,7 @@
         for (int i = 0; i <self.dataSource.count; i ++) {
             UIButton *button = self.dataSource[i];
             button.selected = YES;
-            button.backgroundColor = TRZXMainColor;
+            button.backgroundColor = BPTRZXMainColor;
         }
     }
 }

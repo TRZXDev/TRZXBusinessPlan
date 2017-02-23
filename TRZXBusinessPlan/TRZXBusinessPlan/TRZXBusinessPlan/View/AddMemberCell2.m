@@ -50,7 +50,7 @@
     
     self.userInteractionEnabled = YES;
     self.headImageView.userInteractionEnabled = YES;
-    self.contentView.backgroundColor = self.backgroundColor = backColor;
+    self.contentView.backgroundColor = self.backgroundColor = BPbackColor;
 
 }
 
@@ -60,7 +60,7 @@
     NSRange ranges = [str rangeOfString:@"*"];
     
     NSMutableAttributedString *attributeText = [[NSMutableAttributedString alloc]initWithString:str];
-    [attributeText setAttributes:@{NSForegroundColorAttributeName:RGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
+    [attributeText setAttributes:@{NSForegroundColorAttributeName:BPRGBA(227, 75, 87, 1.0)} range:NSMakeRange(ranges.location, 1)];
     return attributeText;
 }
 

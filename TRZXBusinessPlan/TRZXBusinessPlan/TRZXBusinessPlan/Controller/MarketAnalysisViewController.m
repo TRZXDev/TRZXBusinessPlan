@@ -68,7 +68,7 @@
         cell                       = [[BPProjectMsgCell alloc]initWithTitle:self.dataSource[indexPath.row] PlaceHoder:self.attributeSource[indexPath.row] CountCharacter:@"30字" TextViewMsg:self.textArray[indexPath.row]];
         cell.textViewMsg.tag       = TagText + indexPath.row;
         cell.textViewMsg.delegate  = self;
-        cell.textViewMsg.textColor = heizideColor;
+        cell.textViewMsg.textColor = BPheizideColor;
         cell.selectionStyle        = UITableViewCellSelectionStyleNone;
         return cell;
     }else if (indexPath.row < self.dataSource.count)
@@ -76,7 +76,7 @@
         cell                       = [[BPProjectMsgCell alloc]initWithTitle:self.dataSource[indexPath.row] PlaceHoder:self.attributeSource[indexPath.row] CountCharacter:@"90字" TextViewMsg:self.textArray[indexPath.row]];
         cell.textViewMsg.tag       = TagText + indexPath.row;
         cell.textViewMsg.delegate  = self;
-        cell.textViewMsg.textColor = heizideColor;
+        cell.textViewMsg.textColor = BPheizideColor;
         cell.selectionStyle        = UITableViewCellSelectionStyleNone;
         return cell;
     }
@@ -86,7 +86,7 @@
         cells                      = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
     cells.selectionStyle       = UITableViewCellSelectionStyleNone;
-    cells.backgroundColor      = backColor;
+    cells.backgroundColor      = BPbackColor;
     return cells;
 }
 
@@ -292,13 +292,13 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
-        _tableView.backgroundColor = backColor;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _tableView.backgroundColor = BPbackColor;
         _tableView.delegate =self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.rowHeight = 175;
-        //        _tableView.tableHeaderView.backgroundColor = RGBA(235, 235, 241, 1);
+        //        _tableView.tableHeaderView.backgroundColor = BPRGBA(235, 235, 241, 1);
     }
     return _tableView;
 }

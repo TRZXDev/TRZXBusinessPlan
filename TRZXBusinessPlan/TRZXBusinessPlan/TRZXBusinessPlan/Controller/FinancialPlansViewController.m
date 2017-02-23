@@ -22,6 +22,9 @@
 
 #define TagText 1231343
 #define SecondTagTextField 320
+#define HEIGTH(view) view.frame.size.height
+#define WIDTH(view) view.frame.size.width
+
 
 
 @interface FinancialPlansViewController ()<UITableViewDataSource,UITableViewDelegate,UITextViewDelegate,UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource>{
@@ -153,7 +156,7 @@
         BPProjectMsgCell *cell = [[BPProjectMsgCell alloc]initWithTitle:self.dataSource[indexPath.row-2] PlaceHoder:self.attributeDataSource[indexPath.row-2] CountCharacter:@"90字" TextViewMsg:self.textArray[indexPath.row]];
         cell.textViewMsg.tag = TagText + indexPath.row;
         cell.textViewMsg.delegate = self;
-        cell.textViewMsg.textColor = heizideColor;
+        cell.textViewMsg.textColor = BPheizideColor;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         return cell;
@@ -399,11 +402,11 @@
     quXiaoBtn.frame = CGRectMake(5, 7, 50, 25);
     [quXiaoBtn setTitle:@"取消" forState:UIControlStateNormal];
     [quXiaoBtn addTarget:self action:@selector(quxiaoBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [quXiaoBtn setTitleColor:TRZXMainColor forState:UIControlStateNormal];
+    [quXiaoBtn setTitleColor:BPTRZXMainColor forState:UIControlStateNormal];
     [actionView addSubview:quXiaoBtn];
     queRenBtn = [UIButton buttonWithType:UIButtonTypeSystem];
     [queRenBtn setTitle:@"完成" forState:UIControlStateNormal];
-    [queRenBtn setTitleColor:TRZXMainColor forState:UIControlStateNormal];
+    [queRenBtn setTitleColor:BPTRZXMainColor forState:UIControlStateNormal];
     [queRenBtn addTarget:self action:@selector(queRenBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     queRenBtn.frame = CGRectMake(WIDTH(self.view)-55, 7, 50, 25);
     [actionView addSubview:queRenBtn];
@@ -634,8 +637,8 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
-        _tableView.backgroundColor = backColor;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, BPSCREEN_WIDTH, BPSCREEN_HEIGHT-64) style:UITableViewStylePlain];
+        _tableView.backgroundColor = BPbackColor;
         _tableView.delegate =self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
