@@ -75,6 +75,8 @@
 		76B549BF1E5E7D4600847D6C /* AJPhotoTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549B11E5E7D4600847D6C /* AJPhotoTapDetectingImageView.m */; };
 		76B549C01E5E7D4600847D6C /* AJPhotoZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549B31E5E7D4600847D6C /* AJPhotoZoomingScrollView.m */; };
 		76B549C11E5E7D4600847D6C /* AJTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549B51E5E7D4600847D6C /* AJTapDetectingView.m */; };
+		76B549C41E5E841300847D6C /* FinancialPlansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549C31E5E841300847D6C /* FinancialPlansViewController.m */; };
+		76B549C71E5E851700847D6C /* cityMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B549C61E5E851700847D6C /* cityMode.m */; };
 		B2C02EF00EE95672FE3203DF /* libPods-TRZXBusinessPlanUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 130037715055EEF01985EA9F /* libPods-TRZXBusinessPlanUITests.a */; };
 		DAEB48F09CB01B8E6B24A372 /* libPods-TRZXBusinessPlan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ED766540383D19484B0704 /* libPods-TRZXBusinessPlan.a */; };
 /* End PBXBuildFile section */
@@ -221,6 +223,10 @@
 		76B549B31E5E7D4600847D6C /* AJPhotoZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJPhotoZoomingScrollView.m; sourceTree = "<group>"; };
 		76B549B41E5E7D4600847D6C /* AJTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTapDetectingView.h; sourceTree = "<group>"; };
 		76B549B51E5E7D4600847D6C /* AJTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTapDetectingView.m; sourceTree = "<group>"; };
+		76B549C21E5E841300847D6C /* FinancialPlansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialPlansViewController.h; sourceTree = "<group>"; };
+		76B549C31E5E841300847D6C /* FinancialPlansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancialPlansViewController.m; sourceTree = "<group>"; };
+		76B549C51E5E851700847D6C /* cityMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cityMode.h; sourceTree = "<group>"; };
+		76B549C61E5E851700847D6C /* cityMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cityMode.m; sourceTree = "<group>"; };
 		B9A06B39E3BA7F87553FE56B /* Pods-TRZXBusinessPlanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlanTests/Pods-TRZXBusinessPlanTests.release.xcconfig"; sourceTree = "<group>"; };
 		D0ED766540383D19484B0704 /* libPods-TRZXBusinessPlan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXBusinessPlan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B2D223D265ABA9439D21DD /* Pods-TRZXBusinessPlanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlanUITests/Pods-TRZXBusinessPlanUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -355,6 +361,8 @@
 				76B549711E5E7AAA00847D6C /* MarketAnalysisViewController.m */,
 				76B549731E5E7C1300847D6C /* BusinessSimulationViewController.h */,
 				76B549741E5E7C1300847D6C /* BusinessSimulationViewController.m */,
+				76B549C21E5E841300847D6C /* FinancialPlansViewController.h */,
+				76B549C31E5E841300847D6C /* FinancialPlansViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,6 +370,8 @@
 		76B548321E5D68EF00847D6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76B549C51E5E851700847D6C /* cityMode.h */,
+				76B549C61E5E851700847D6C /* cityMode.m */,
 				76B548731E5D6CD600847D6C /* NewMyProjectModel.h */,
 				76B548741E5D6CD600847D6C /* NewMyProjectModel.m */,
 				76B548581E5D6CA800847D6C /* lableMonle.h */,
@@ -868,11 +878,13 @@
 				76B548A41E5D6D5800847D6C /* CTTeamTableViewCell.m in Sources */,
 				76B548B31E5D6D5800847D6C /* BPBussinessFlowFlagTableViewCell.m in Sources */,
 				76B5486C1E5D6CA800847D6C /* NewBPCoreTeamModel.m in Sources */,
+				76B549C41E5E841300847D6C /* FinancialPlansViewController.m in Sources */,
 				76B548C11E5D710600847D6C /* UIView+WalletFrame.m in Sources */,
 				76B5486F1E5D6CA800847D6C /* NewBPProjectAbsModel.m in Sources */,
 				76B548C91E5D818600847D6C /* ProjectManagementViewController.m in Sources */,
 				76B548A21E5D6D5800847D6C /* BPCoreTeamMessageCellTableViewCell.m in Sources */,
 				76B548721E5D6CA800847D6C /* NewMyBPTeamMerberModel.m in Sources */,
+				76B549C71E5E851700847D6C /* cityMode.m in Sources */,
 				76B548AC1E5D6D5800847D6C /* BPSelectInfoTableViewCell.m in Sources */,
 				76B548051E5D67B800847D6C /* ViewController.m in Sources */,
 				76B548021E5D67B800847D6C /* AppDelegate.m in Sources */,
