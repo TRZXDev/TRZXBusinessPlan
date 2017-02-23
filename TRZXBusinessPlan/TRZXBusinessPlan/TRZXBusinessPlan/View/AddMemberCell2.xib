@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="240" id="KGk-i7-Jjw" customClass="AddMemberCell2">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="326" height="239"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="5TK-lD-rEr">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="LIp-83-AKL"/>
+                            <constraint firstAttribute="width" constant="140" id="PmW-HN-1QY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传成员头像" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94r-ff-5Re">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(建议图片大小不超过500kb)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcK-K9-Wur">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.92156862750000001" green="0.91764705879999997" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="qcK-K9-Wur" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="0mZ-qM-Emg"/>
+                    <constraint firstItem="94r-ff-5Re" firstAttribute="top" secondItem="5TK-lD-rEr" secondAttribute="bottom" constant="10" id="AjV-1B-bS4"/>
+                    <constraint firstAttribute="bottom" secondItem="qcK-K9-Wur" secondAttribute="bottom" id="djw-nB-kqo"/>
+                    <constraint firstItem="5TK-lD-rEr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mJ9-2o-qNr"/>
+                    <constraint firstItem="94r-ff-5Re" firstAttribute="centerX" secondItem="5TK-lD-rEr" secondAttribute="centerX" id="oCm-Uq-sn3"/>
+                    <constraint firstItem="5TK-lD-rEr" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xtj-gR-AU2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MsgTitleLable" destination="qcK-K9-Wur" id="Lab-SK-OFQ"/>
+                <outlet property="headImageView" destination="5TK-lD-rEr" id="NMh-wk-nUn"/>
+                <outlet property="titleLabel" destination="94r-ff-5Re" id="rAd-dx-iOB"/>
+            </connections>
+            <point key="canvasLocation" x="253" y="354"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addPhoto" width="64" height="64"/>
+    </resources>
+</document>

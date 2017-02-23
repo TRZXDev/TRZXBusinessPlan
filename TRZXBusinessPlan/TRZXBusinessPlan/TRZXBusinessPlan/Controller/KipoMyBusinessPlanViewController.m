@@ -9,12 +9,11 @@
 #import "KipoMyBusinessPlanViewController.h"
 #import "ProjectManagementViewController.h" //项目概述
 #import "MarketAnalysisViewController.h"  //市场分析
-
-//#import "BusinessSimulationViewController.h"
-//#import "ProjectProgressViewController.h"
-//#import "CoreTeamViewController.h"
-//#import "FinancialPlansViewController.h"
-//#import "MyBussinessFinalViewController.h"
+#import "BusinessSimulationViewController.h" //商业模式
+#import "ProjectProgressViewController.h" //项目进展
+#import "CoreTeamViewController.h" //核心团队
+#import "FinancialPlansViewController.h" //融资计划
+#import "MyBussinessFinalViewController.h" //我的商业计划书
 
 #import "KipoMyBusinessPlanViewModel.h"
 #import "NewBPProjectAbsModel.h"
@@ -320,80 +319,80 @@ static CGFloat cellHeight = 83;
             cell.xuanTianStatus.text = str;
             cell.statusButton.selected = YES;
         };
-    } //else if (indexPath.row == 2)
-//    {//商业模式
-//        BusinessSimulationViewController *BSVC = (BusinessSimulationViewController *)vc;
-//        
-//        
-//        if ([BTStaus  isEqualToString:@"0"]) {
-//            
-//        }else
-//        {
-//            BSVC.model = self.businessModel;
-//            BSVC.photoUrlArray = self.photoArray;
-//        }
-//        
-//        BSVC.saveBMBlock = ^(NSString *str)
-//        {
-//            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:2];
-//            cell.xuanTianStatus.text = str;
-//            cell.statusButton.selected = YES;
-//        };
-//    }else if (indexPath.row == 3)
-//    {//项目进度
-//        ProjectProgressViewController *PPVC = (ProjectProgressViewController *)vc;
-//        
-//        if ([BTStaus  isEqualToString:@"0"]) {
-//            
-//        }else
-//        {
-//            PPVC.model = self.progressModel;
-//            PPVC.projectMsg = self.dynamicArray;
-//        }
-//        
-//        PPVC.saveSuccessPP = ^(NSString *str)
-//        {
-//            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:3];
-//            cell.xuanTianStatus.text = str;
-//            cell.statusButton.selected = YES;
-//        };
-//    }else if (indexPath.row == 4)
-//    {//核心团队
-//        CoreTeamViewController *CTVC = (CoreTeamViewController *)vc;
-//        
-//        
-//        if ([BTStaus  isEqualToString:@"0"]) {
-//            
-//        }else
-//        {
-//            CTVC.model = self.teamModel;
-//        }
-//        
-//        CTVC.dataSource = self.teamMembersArr;
-//        CTVC.saveCTBlock = ^()
-//        {
-//            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:4];
-//            cell.statusButton.selected = YES;
-//        };
-//    }else if (indexPath.row == 5)
-//    {//融资计划
-//        FinancialPlansViewController *FPVC = (FinancialPlansViewController *)vc;
-//        
-//        
-//        if ([BTStaus  isEqualToString:@"0"]) {
-//            
-//        }else
-//        {
-//            FPVC.model = self.financePlanModel;
-//        }
-//        
-//        FPVC.saveFPBlock = ^()
-//        {
-//            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:5];
-//            cell.statusButton.selected = YES;
-//        };
-//    }
-//    
+    }else if (indexPath.row == 2)
+    {//商业模式
+        BusinessSimulationViewController *BSVC = (BusinessSimulationViewController *)vc;
+        
+        
+        if ([BTStaus  isEqualToString:@"0"]) {
+            
+        }else
+        {
+            BSVC.model = self.businessModel;
+            BSVC.photoUrlArray = self.photoArray;
+        }
+        
+        BSVC.saveBMBlock = ^(NSString *str)
+        {
+            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:2];
+            cell.xuanTianStatus.text = str;
+            cell.statusButton.selected = YES;
+        };
+    } else if (indexPath.row == 3)
+    {//项目进度
+        ProjectProgressViewController *PPVC = (ProjectProgressViewController *)vc;
+        
+        if ([BTStaus  isEqualToString:@"0"]) {
+            
+        }else
+        {
+            PPVC.model = self.progressModel;
+            PPVC.projectMsg = self.dynamicArray;
+        }
+        
+        PPVC.saveSuccessPP = ^(NSString *str)
+        {
+            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:3];
+            cell.xuanTianStatus.text = str;
+            cell.statusButton.selected = YES;
+        };
+    }else if (indexPath.row == 4)
+    {//核心团队
+        CoreTeamViewController *CTVC = (CoreTeamViewController *)vc;
+        
+        
+        if ([BTStaus  isEqualToString:@"0"]) {
+            
+        }else
+        {
+            CTVC.model = self.teamModel;
+        }
+        
+        CTVC.dataSource = self.teamMembersArr;
+        CTVC.saveCTBlock = ^()
+        {
+            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:4];
+            cell.statusButton.selected = YES;
+        };
+    } else if (indexPath.row == 5)
+    {//融资计划
+        FinancialPlansViewController *FPVC = (FinancialPlansViewController *)vc;
+        
+        
+        if ([BTStaus  isEqualToString:@"0"]) {
+            
+        }else
+        {
+            FPVC.model = self.financePlanModel;
+        }
+        
+        FPVC.saveFPBlock = ^()
+        {
+            MyBusinessListTableViewCell *cell = [weakSelf cellForRow:5];
+            cell.statusButton.selected = YES;
+        };
+    }
+    
     
     [self.navigationController pushViewController:vc animated:YES];
 }
