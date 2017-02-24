@@ -21,7 +21,7 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TRZXKit (0.0.8)
+  - TRZXKit (0.0.9)
   - TRZXNetwork (0.0.7):
     - AFNetworking
     - YYCache
@@ -45,11 +45,11 @@ SPEC CHECKSUMS:
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TRZXKit: bc6878e8c00bce6384300c7200e8408e20b34fba
+  TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
   TRZXNetwork: 971adad8c503f4e1fa21a2a3cfa8b73a7e4f3a13
   TZImagePickerController: 87a138ae5d585225aaa6c8abe2cface0f0ad19dd
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 3f604960afda6a577f844cd39f050fd37044dcd4
+PODFILE CHECKSUM: aaef4ff1d36714206e229025a55e868943c956d6
 
 COCOAPODS: 1.2.0

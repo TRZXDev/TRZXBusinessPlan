@@ -27,7 +27,7 @@
 
 //trzx_红色
 + (UIColor *)trzx_RedColor{
-    return [UIColor trzx_colorWithHexString:@"#ff415b"];
+    return [UIColor trzx_colorWithHexString:@"#D7000F"];
 }
 
 //trzx_黄色

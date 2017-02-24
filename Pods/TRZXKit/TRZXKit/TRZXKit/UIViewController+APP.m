@@ -15,29 +15,29 @@
 
 /* 这个黑魔法不能用 会影响系统其它控件
 
-+ (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        Method originalMethod = class_getInstanceMethod([self class], @selector(viewDidLoad));
-        Method swizzledMethod = class_getInstanceMethod([self class], @selector(swizzled_viewDidLoad));
-        BOOL didAddMethod = class_addMethod([self class], @selector(viewDidLoad), method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
-        if (didAddMethod) {
-            class_replaceMethod([self class], @selector(swizzled_viewDidLoad), method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
-        } else {
-            method_exchangeImplementations(originalMethod, swizzledMethod);
-        }
-    });
-}
-- (void)swizzled_viewDidLoad {
-    [self swizzled_viewDidLoad];
-    //    self.view.backgroundColor = WXGGlobalBackgroundColor;
-    //    NSLog(@"%@ loaded", self);
-    if (![self isKindOfClass:NSClassFromString(@"UIInputWindowController")]) {
-        self.view.backgroundColor = [UIColor trzx_BackGroundColor];  // 这个黑魔法不能用 会影响系统其它控件
-    }
-}
+ + (void)load {
+ static dispatch_once_t onceToken;
+ dispatch_once(&onceToken, ^{
+ Method originalMethod = class_getInstanceMethod([self class], @selector(viewDidLoad));
+ Method swizzledMethod = class_getInstanceMethod([self class], @selector(swizzled_viewDidLoad));
+ BOOL didAddMethod = class_addMethod([self class], @selector(viewDidLoad), method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+ if (didAddMethod) {
+ class_replaceMethod([self class], @selector(swizzled_viewDidLoad), method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+ } else {
+ method_exchangeImplementations(originalMethod, swizzledMethod);
+ }
+ });
+ }
+ - (void)swizzled_viewDidLoad {
+ [self swizzled_viewDidLoad];
+ //    self.view.backgroundColor = WXGGlobalBackgroundColor;
+ //    NSLog(@"%@ loaded", self);
+ if (![self isKindOfClass:NSClassFromString(@"UIInputWindowController")]) {
+ self.view.backgroundColor = [UIColor trzx_BackGroundColor];  // 这个黑魔法不能用 会影响系统其它控件
+ }
+ }
 
-*/
+ */
 
 
 - (void)setLeftBarItemWithString:(NSString*)string
@@ -61,9 +61,9 @@
     negativeSpacer.width = -20;
     self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, btn_right, nil];
 
-//    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc]initWithTitle:string style:UIBarButtonItemStylePlain target:self action:@selector(leftBarItemAction:)];
-//    self.navigationItem.leftBarButtonItem  = leftButtonItem;
-    
+    //    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc]initWithTitle:string style:UIBarButtonItemStylePlain target:self action:@selector(leftBarItemAction:)];
+    //    self.navigationItem.leftBarButtonItem  = leftButtonItem;
+
 }
 - (void)setLeftBarItemWithImage:(NSString *)imageName
 {
@@ -85,8 +85,8 @@
     negativeSpacer.width = -25;
     self.navigationItem.leftBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, btn_right, nil];
 
-//    UIBarButtonItem *leftButtonItem =  [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:imageName] style:UIBarButtonItemStyleDone target:self action:@selector(leftBarItemAction:)];;
-//    self.navigationItem.leftBarButtonItem=leftButtonItem;
+    //    UIBarButtonItem *leftButtonItem =  [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:imageName] style:UIBarButtonItemStyleDone target:self action:@selector(leftBarItemAction:)];;
+    //    self.navigationItem.leftBarButtonItem=leftButtonItem;
 }
 - (void)setRightBarItemWithString:(NSString*)string
 {
@@ -109,8 +109,8 @@
     negativeSpacer.width = -20;
     self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, btn_right, nil];
 
-//    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc]initWithTitle:string style:UIBarButtonItemStylePlain target:self action:@selector(rightBarItemAction:)];
-//    self.navigationItem.rightBarButtonItem  = rightButtonItem;
+    //    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc]initWithTitle:string style:UIBarButtonItemStylePlain target:self action:@selector(rightBarItemAction:)];
+    //    self.navigationItem.rightBarButtonItem  = rightButtonItem;
 }
 - (void)setRightBarItemWithImage:(NSString *)imageName{
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -130,22 +130,23 @@
      */
     negativeSpacer.width = -25;
     self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, btn_right, nil];
-//    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:imageName] style:UIBarButtonItemStyleDone target:self action:@selector(rightBarItemAction:)];
-//    self.navigationItem.rightBarButtonItem = rightItem;
+    //    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:imageName] style:UIBarButtonItemStyleDone target:self action:@selector(rightBarItemAction:)];
+    //    self.navigationItem.rightBarButtonItem = rightItem;
 }
 - (void)setRightBarItemImage:(UIImage *)imgage title:(NSString *)str{
-    UIImage *img=[imgage trzx_imageTintedWithColor:[UIColor whiteColor]];
+    UIImage *img=[imgage trzx_imageTintedWithColor:[UIColor trzx_TitleColor]];
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftButton setFrame:CGRectMake(0, 0, 60, 25)];
-    [leftButton setImage:img forState:UIControlStateNormal];
-    [leftButton setImage:img forState:UIControlStateHighlighted];
-     [leftButton setTitle:str forState:UIControlStateNormal];
-    [leftButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [leftButton setImage:imgage forState:UIControlStateNormal];
+    [leftButton setImage:imgage forState:UIControlStateHighlighted];
+    [leftButton setTitle:str forState:UIControlStateNormal];
+    leftButton.titleLabel.font = [UIFont systemFontOfSize: 14.0];
+    [leftButton setTitleColor:[UIColor trzx_TitleColor] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(rightBarItemAction:)forControlEvents:UIControlEventTouchUpInside];
 
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    
+
     negativeSpacer.width = -15;
     self.navigationItem.rightBarButtonItems = @[negativeSpacer,barButton];
 }
@@ -165,7 +166,7 @@
 }
 - (void)rightBarItemAction:(UIBarButtonItem *)gesture
 {
-    
+
 }
 
 #pragma mark - TabBarItem

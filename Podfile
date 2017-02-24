@@ -16,6 +16,8 @@ target 'TRZXBusinessPlan' do
     pod 'SDWebImage'
     pod 'IQKeyboardManager'
     pod 'TZImagePickerController'
+    #pod 'TRZXTradeInfo'
+
 
   target 'TRZXBusinessPlanTests' do
     inherit! :search_paths

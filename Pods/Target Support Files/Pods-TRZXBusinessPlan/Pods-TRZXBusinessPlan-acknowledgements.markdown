@@ -144,6 +144,11 @@ THE SOFTWARE.
 
 
 
+## TRZXKit
+
+MIT
+
+
 ## TZImagePickerController
 
 The MIT License (MIT)
