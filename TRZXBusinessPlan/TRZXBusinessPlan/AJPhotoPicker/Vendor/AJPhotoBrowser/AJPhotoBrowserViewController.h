@@ -40,7 +40,7 @@
  *
  *  @param photos 需要显示的照片，可以是ALAsset或者UIImage
  *
- *  @return
+ *  @return //
  */
 - (instancetype)initWithPhotos:(NSArray *)photos;
 
@@ -51,7 +51,7 @@
  *  @param photos 需要显示的照片，可以是ALAsset或者UIImage
  *  @param index  显示第几张 index 防止越界
  *
- *  @return
+ *  @return //
  */
 - (instancetype)initWithPhotos:(NSArray *)photos index:(NSInteger)index;
 
