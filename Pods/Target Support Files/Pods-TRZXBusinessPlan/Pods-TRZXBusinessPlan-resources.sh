@@ -79,11 +79,15 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "TRZXTradeInfo/TRZXTradeInfo/TRZXTradeInfo/SCPopCollectionCell.xib"
+  install_resource "TRZXTradeInfo/TRZXTradeInfo/TRZXTradeInfo/tradeInfo_back.png"
   install_resource "TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "TRZXTradeInfo/TRZXTradeInfo/TRZXTradeInfo/SCPopCollectionCell.xib"
+  install_resource "TRZXTradeInfo/TRZXTradeInfo/TRZXTradeInfo/tradeInfo_back.png"
   install_resource "TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle"
 fi
 

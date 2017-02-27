@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CTMediator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -59,6 +64,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TRZXTradeInfo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TZImagePickerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,27 +87,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1FC9CB5A5438022B1C201CEA7D6ACE6A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>46E244943184DE11E59231A0B8062596</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>48DDDBD335E5875435471DD7FBEC1C59</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4E6426AB9BA3F53717553F58617E8272</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>772825539C9404704735A737F8A6A753</key>
+		<key>65C36F016E58B60CBF7AB880E3884C58</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6C2D2E1E4A5D6A369748145E01F6D37E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6FBD1C3D0CA27348A749496BA47CF792</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7DEE06478B3D35D949ECD930241AC1D9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,17 +132,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A29FB651FF3FED4EE7E4E37E7FE66449</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B856B4E2EDC34E4710A2305E0AA04098</key>
+		<key>D06E70B61B3BB6399B7E98EF3D8CF2B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DA1572E3721947A105591AB607C2E20E</key>
+		<key>DDDE0C6D236AA1297F064BE3AE2A68D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E860DBFDF4A7872F6049CBAEAA721AD9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

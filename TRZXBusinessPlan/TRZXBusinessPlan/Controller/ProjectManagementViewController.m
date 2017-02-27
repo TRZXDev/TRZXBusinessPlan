@@ -23,6 +23,8 @@
 #import "BusinessMemoryCacheTool.h"
 #import "TRZXBusinessPlanHeader.h"
 
+#import "CTMediator+TradeInfo.h"
+
 @interface ProjectManagementViewController ()<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate,UITextViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,BPTagCollectionLayoutDelegate>{
     
     BPProjectCommentTableViewCell *cellTime;
@@ -148,27 +150,19 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self.view endEditing:YES];
     [self hideDatePicker];
-//    if (indexPath.row == 2 || indexPath.row == 3) {
-//        
-//        zjself;
-//        TRHelpInfoTypeViewController *tradeInfo = [[TRHelpInfoTypeViewController alloc]init];
-//        tradeInfo.type = HelpInfoType_Business;
-//        tradeInfo.enterButtonClickBlock      = ^(NSArray *tradeInfoArr,NSString *trade)
-//        {
-//            sfself.dataArr                         = tradeInfoArr;
-//            trades                               = trade;
-//            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:3 inSection:0];
-//            
-//            [sfself.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-//            [sfself.collectionView reloadData];
-//        };
-//        if (self.dataArr == nil || self.dataArr.count == 0) {
-//            tradeInfo.seletedTrade = [[NSMutableArray alloc]init];
-//        }else{
-//            tradeInfo.seletedTrade = [[NSMutableArray alloc]initWithArray:self.dataArr];
-//        }
-//        [self.navigationController pushViewController:tradeInfo animated:YES];
-//    }
+    if (indexPath.row == 2 || indexPath.row == 3) {
+        
+        __weak __typeof(self)weakSelf = self;
+        UIViewController *vc = [[CTMediator sharedInstance]selectTradeWithType:3 mid:@"" selectedTrade:self.dataArr Complete:^(NSArray *tradeInfoArr, NSString *trade) {
+        weakSelf.dataArr                     = tradeInfoArr;
+        trades                               = trade;
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:3 inSection:0];
+
+        [weakSelf.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [weakSelf.collectionView reloadData];
+        }];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
