@@ -11,21 +11,18 @@
 #import "BussinessPlanStatusTableViewCell.h"
 
 #import "AJPhotoPickerViewController.h"
-
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "AJPhotoBrowserViewController.h"
+
 #import "NewBPBusinessModel.h"
 #import "BPPhotoShowMsgTableViewCell.h"
 #import "KipoMyBusinessPlanViewModel.h"
 #import "BPBussinessFlowFlagTableViewCell.h"
-//#import "SDWebImageManager.h"
-
 #import "BusinessMemoryCacheTool.h"
 #import "TRZXBusinessPlanHeader.h"
 #import <AVFoundation/AVFoundation.h>
-#import "SDWebImageDownloader.h"
 
-
+#import <SDWebImage/SDWebImageDownloader.h>
 
 
 #define TagText 644766222
@@ -87,36 +84,32 @@ static NSInteger photoCount = 4;
 
 
     if (self.photoUrlArray.count >0) {
-
-
+        
         for (NSString *strImg in self.photoUrlArray) {
 
-            
-//            [[SDWebImageManager sharedManager]downloadImageWithURL:[NSURL URLWithString:strImg] options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-//                
-//            } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
-//                if (error) {
-//                }
-//                if (image) {
-//                    //图片下载完成  在这里进行相关操作，如加到数组里 或者显示在imageView上
-//                    if (self.photoArray.count >= photoCount) {
-//                        [self.photoArray replaceObjectAtIndex:photoCount-1 withObject:image];
-//                    }else
-//                    {
-//                        [self.photoArray addObject:image];
-//                    }
-//                    
-//                    [self.collectionview reloadData];
-//                    
-//                    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-//                    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:0];
-//                    if (self.photoArray.count == self.photoUrlArray.count) {
-//                        
-//                    }
-//                }
-//                
-//            }];
-//            
+            [[SDWebImageManager sharedManager].imageDownloader downloadImageWithURL:[NSURL URLWithString:strImg] options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
+                
+            } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
+                if (error) {
+                }
+                if (image) {
+                    //图片下载完成  在这里进行相关操作，如加到数组里 或者显示在imageView上
+                    if (self.photoArray.count >= photoCount) {
+                        [self.photoArray replaceObjectAtIndex:photoCount-1 withObject:image];
+                    }else
+                    {
+                        [self.photoArray addObject:image];
+                    }
+                    
+                    [self.collectionview reloadData];
+                    
+                    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+                    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:0];
+                    if (self.photoArray.count == self.photoUrlArray.count) {
+                        
+                    }
+                }
+            }];
         }
         
     }
