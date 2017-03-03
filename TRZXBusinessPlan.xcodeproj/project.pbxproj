@@ -63,6 +63,8 @@
 		7662D0211E6952A40027F0D5 /* MyBusinessFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662CFF81E6952A30027F0D5 /* MyBusinessFooterView.m */; };
 		7662D0221E6952A40027F0D5 /* MyBusinessListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662CFFA1E6952A30027F0D5 /* MyBusinessListTableViewCell.m */; };
 		7662D0231E6952A40027F0D5 /* MyBusinessListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7662CFFB1E6952A30027F0D5 /* MyBusinessListTableViewCell.xib */; };
+		7662D0261E6957310027F0D5 /* CTMediator+BusinessPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662D0251E6957310027F0D5 /* CTMediator+BusinessPlan.m */; };
+		7662D0291E69574A0027F0D5 /* Target_BusinessPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662D0281E69574A0027F0D5 /* Target_BusinessPlan.m */; };
 		76B547FF1E5D67B800847D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B547FE1E5D67B800847D6C /* main.m */; };
 		76B548021E5D67B800847D6C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548011E5D67B800847D6C /* AppDelegate.m */; };
 		76B548051E5D67B800847D6C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B548041E5D67B800847D6C /* ViewController.m */; };
@@ -214,6 +216,10 @@
 		7662CFF91E6952A30027F0D5 /* MyBusinessListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBusinessListTableViewCell.h; sourceTree = "<group>"; };
 		7662CFFA1E6952A30027F0D5 /* MyBusinessListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBusinessListTableViewCell.m; sourceTree = "<group>"; };
 		7662CFFB1E6952A30027F0D5 /* MyBusinessListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyBusinessListTableViewCell.xib; sourceTree = "<group>"; };
+		7662D0241E6957310027F0D5 /* CTMediator+BusinessPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+BusinessPlan.h"; sourceTree = "<group>"; };
+		7662D0251E6957310027F0D5 /* CTMediator+BusinessPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+BusinessPlan.m"; sourceTree = "<group>"; };
+		7662D0271E69574A0027F0D5 /* Target_BusinessPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_BusinessPlan.h; sourceTree = "<group>"; };
+		7662D0281E69574A0027F0D5 /* Target_BusinessPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_BusinessPlan.m; sourceTree = "<group>"; };
 		76B547FA1E5D67B800847D6C /* TRZXBusinessPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXBusinessPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B547FE1E5D67B800847D6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76B548001E5D67B800847D6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -588,6 +594,10 @@
 				76B548C31E5D745600847D6C /* BPBaseViewController.m */,
 				76B549E81E5E88A400847D6C /* UIView+BPAlertViewProject.h */,
 				76B549E91E5E88A400847D6C /* UIView+BPAlertViewProject.m */,
+				7662D0241E6957310027F0D5 /* CTMediator+BusinessPlan.h */,
+				7662D0251E6957310027F0D5 /* CTMediator+BusinessPlan.m */,
+				7662D0271E69574A0027F0D5 /* Target_BusinessPlan.h */,
+				7662D0281E69574A0027F0D5 /* Target_BusinessPlan.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -924,6 +934,7 @@
 			files = (
 				76B548381E5D692500847D6C /* KipoMyBusinessPlanViewController.m in Sources */,
 				7662D0211E6952A40027F0D5 /* MyBusinessFooterView.m in Sources */,
+				7662D0261E6957310027F0D5 /* CTMediator+BusinessPlan.m in Sources */,
 				76B5483B1E5D699600847D6C /* KipoMyBusinessPlanViewModel.m in Sources */,
 				76B548D11E5D836100847D6C /* BPTagCollectionLayout.h.m in Sources */,
 				7662D0001E6952A30027F0D5 /* BPButtonTableViewCell.m in Sources */,
@@ -969,6 +980,7 @@
 				76B548051E5D67B800847D6C /* ViewController.m in Sources */,
 				7662D0061E6952A30027F0D5 /* BPProFirstTableViewCell.m in Sources */,
 				7662CFA41E694EB20027F0D5 /* AJPhotoGroupCell.m in Sources */,
+				7662D0291E69574A0027F0D5 /* Target_BusinessPlan.m in Sources */,
 				76B548021E5D67B800847D6C /* AppDelegate.m in Sources */,
 				76B547FF1E5D67B800847D6C /* main.m in Sources */,
 				76B549721E5E7AAA00847D6C /* MarketAnalysisViewController.m in Sources */,
