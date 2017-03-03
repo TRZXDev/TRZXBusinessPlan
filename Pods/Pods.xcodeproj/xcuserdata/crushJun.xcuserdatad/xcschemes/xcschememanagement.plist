@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>LCActionSheet.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -74,11 +69,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TZImagePickerController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>YYCache.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,17 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0A26E9A8D0ECC2BE8AB4AC62F2FEFAD9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1BD6168E26D89D8D1DA0E89E588778E2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2D4C1D1C81ED4586A5EE0C9EAF402B9A</key>
+		<key>3881CE7432C4D338AC720B7139F35CC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>64CE8631B85C4D46F0720B456B571328</key>
+		<key>50CC48B84BE0B94E5283EB6C22098E21</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>745626F29E8005C759CF465FB07CF4C7</key>
+		<key>5936F5CFA9F142F6E76B9D86CE7CD056</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F144635B7345305D48084B9BB5A5A7A</key>
+		<key>880C213E8D6CB31B7CEC29E75D268A0C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,12 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>986FB655D2954F78977104D641A3C494</key>
+		<key>989086682BF5F4B3FB637225543E3DDE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>989086682BF5F4B3FB637225543E3DDE</key>
+		<key>996D532B7B8B447F2BE59CCF57B4EA3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,17 +137,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CAA28F1B1A9DDDAFC67C03A664679531</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E860DBFDF4A7872F6049CBAEAA721AD9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F5943B898C03142C1E7A5BF8A803916B</key>
+		<key>EEC76B0E7E85CF18E3AF5B2A9B5AB2AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
