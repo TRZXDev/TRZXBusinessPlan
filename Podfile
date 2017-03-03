@@ -18,6 +18,7 @@ target 'TRZXBusinessPlan' do
    # pod 'TZImagePickerController'
     pod 'TRZXTradeInfo'
    # pod 'LCActionSheet'
+     pod ‘CTMediator’
 
 
   target 'TRZXBusinessPlanTests' do
