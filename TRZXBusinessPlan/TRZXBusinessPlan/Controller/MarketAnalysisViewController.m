@@ -42,7 +42,7 @@
 }
 - (void)setNaviBar
 {
-    self.mainTitle.text = @"市场分析";
+    self.title = @"市场分析";
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden = NO;
     [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
@@ -190,7 +190,7 @@
     return cell;
 }
 
-- (void)saveAction
+- (void)saveAction:(UIButton *)btn
 {
     self.selectedCount     = 0;
     NSString *messageAlert = nil;

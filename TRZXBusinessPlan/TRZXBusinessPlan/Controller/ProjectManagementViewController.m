@@ -55,7 +55,7 @@
 }
 - (void)setNaviBar
 {
-    self.mainTitle.text       = @"项目概述";
+    self.title    = @"项目概述";
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden       = NO;

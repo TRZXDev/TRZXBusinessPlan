@@ -72,7 +72,7 @@
 }
 - (void)setNaviBar
 {
-    self.mainTitle.text = @"核心团队";
+    self.title = @"核心团队";
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden = NO;
     [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
@@ -355,7 +355,7 @@
     self.model.slogan = textView.text;
 }
 
-- (void)saveAction
+- (void)saveAction:(UIButton *)btn
 {
     [self.view endEditing:YES];
     NSString *messageAlert =nil;

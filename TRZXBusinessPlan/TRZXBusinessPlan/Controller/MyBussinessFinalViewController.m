@@ -67,16 +67,10 @@
     [_putButton addTarget:self action:@selector(putButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.putButton];
 
-
-
-
-
-
-
 }
 - (void)setNaviBar
 {
-    self.mainTitle.text = _titleStr;
+    self.title = _titleStr;
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
 
     NSArray *array = [self.myBussinessUrl componentsSeparatedByString:@"userId="]; //从字符A中分隔成2个元素的数组

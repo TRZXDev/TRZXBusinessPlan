@@ -59,7 +59,7 @@
 
 - (void)setNaviBar
 {
-    self.mainTitle.text = @"项目进展";
+    self.title = @"项目进展";
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden = NO;
     [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
@@ -306,7 +306,7 @@
     return cell;
 }
 
-- (void)saveAction
+- (void)saveAction:(UIButton *)btn
 {
     [self.view endEditing:YES];
     self.selectedCount = 0;

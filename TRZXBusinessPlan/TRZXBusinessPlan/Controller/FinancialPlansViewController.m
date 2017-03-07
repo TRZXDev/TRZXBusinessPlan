@@ -68,7 +68,7 @@
 
 - (void)setNaviBar
 {
-    self.mainTitle.text = @"融资计划";
+    self.title = @"融资计划";
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden = NO;
     [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
@@ -506,7 +506,7 @@
     FinancingSourceTableViewCell *cell  = [self.tableView cellForRowAtIndexPath:indexPath];
     cell.stageLable.text = cityModel.name;
 }
-- (void)saveAction
+- (void)saveAction:(UIButton *)btn
 {
     [self.view endEditing:YES];
     NSString *messageAlert =nil;

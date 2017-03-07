@@ -39,7 +39,7 @@
 - (void)setNaviBar
 {
     
-    self.mainTitle.text = @"添加新事件";
+    self.title = @"添加新事件";
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden = NO;
     [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
@@ -389,7 +389,7 @@
     return _model;
 }
 #pragma makr  保存````````````````````````
-- (void)saveAction
+- (void)saveAction:(UIButton *)btn
 {
     NSString *messageAlert =nil;
     NSString *time =  self.model.dynamicDate;

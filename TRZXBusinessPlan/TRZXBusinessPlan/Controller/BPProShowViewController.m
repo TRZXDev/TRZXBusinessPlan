@@ -37,7 +37,7 @@
 
 - (void)setNaviBar
 {
-    self.mainTitle.text = @"项目里程碑";
+    self.title = @"项目里程碑";
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden = NO;
     [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
@@ -255,7 +255,7 @@
     return attributeText;
 }
 
-- (void)saveAction
+- (void)saveAction:(UIButton *)btn
 {
     
     NSString *messageAlert = nil;

@@ -41,7 +41,7 @@
 
 - (void)setNaviBar
 {
-    self.mainTitle.text = @"添加团队成员";
+    self.title = @"添加团队成员";
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden = NO;
     [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
@@ -411,7 +411,7 @@
     
 }
 
-- (void)saveAction
+- (void)saveAction:(UIButton *)btn
 {
     [self.view endEditing:YES];
     

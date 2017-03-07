@@ -72,9 +72,6 @@ static CGFloat cellHeight = 83;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
-    self.navigationController.navigationBar.translucent = YES;
-    [self setAutomaticallyAdjustsScrollViewInsets:NO];
     [self loadData];
 }
 
@@ -88,18 +85,31 @@ static CGFloat cellHeight = 83;
 #pragma mark - createUI
 - (void)createUI
 {
-    self.navigationView.hidden = NO;
-    self.mainTitle.text = _titleStr;
+    self.title = _titleStr;
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
-    self.saveBtn.hidden = NO;
-    [self.saveBtn setTitle:@"一键重置" forState:UIControlStateNormal];
-    [self.saveBtn setTitleColor:BPmoneyColor forState:UIControlStateNormal];
     [self.view addSubview:self.tableView];
     [self.view addSubview:self.putButton];
 }
 
-- (void)saveAction
+- (void)setRightNavigation:(NSString *)title{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.frame= CGRectMake(0, 0, 100, 44);
+    [btn setTitle:@"一键重置"  forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize: 16.0];
+    self.saveBtn = btn;
+    [btn addTarget:self action:@selector(saveAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *btn_right = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                       target:nil action:nil];
+    negativeSpacer.width = -20;
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, btn_right, nil];
+    [self.saveBtn setTitleColor:BPmoneyColor forState:UIControlStateNormal];
+    self.saveBtn.hidden = NO;
+}
+
+- (void)saveAction:(UIButton *)btn
 {
     [self alertViewStr:@"" and:@"将清空商业计划书的所有内容,是否确定重置?"];
 }

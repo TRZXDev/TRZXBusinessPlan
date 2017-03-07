@@ -60,15 +60,11 @@ static NSInteger photoCount = 4;
     [self initData];
     [self createUI];
     [self loadPhoto];
-    
-
-
-
 }
 
 - (void)setNaviBar
 {
-    self.mainTitle.text = @"商业模式";
+    self.title = @"商业模式";
     [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
     self.saveBtn.hidden = NO;
     [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
@@ -87,7 +83,7 @@ static NSInteger photoCount = 4;
         
         for (NSString *strImg in self.photoUrlArray) {
 
-            [[SDWebImageManager sharedManager].imageDownloader downloadImageWithURL:[NSURL URLWithString:strImg] options:SDWebImageCacheMemoryOnly progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
+            [[SDWebImageManager sharedManager].imageDownloader downloadImageWithURL:[NSURL URLWithString:strImg] options:SDWebImageDownloaderIgnoreCachedResponse progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
                 
             } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
                 if (error) {
@@ -128,7 +124,7 @@ static NSInteger photoCount = 4;
     
     im.userInteractionEnabled  = YES;
     if (indexPath.row == self.photoArray.count) {
-        im.image = [UIImage imageNamed:@"AlbumAddBtn"];
+        im.image = [UIImage imageNamed:@"bp_addPhoto@2x"];
     }else{
         im.image = self.photoArray[indexPath.row];
     }
@@ -602,7 +598,7 @@ static NSInteger photoCount = 4;
 }
 
 
-- (void)saveAction
+- (void)saveAction:(UIButton *)btn
 {
     self.selectedCount = 0;
     NSString *messageAlert =nil;

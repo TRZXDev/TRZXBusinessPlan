@@ -21,7 +21,6 @@
     self.navigationController.navigationBarHidden = YES;
     self.navigationController.navigationBar.translucent = YES;
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
-
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
