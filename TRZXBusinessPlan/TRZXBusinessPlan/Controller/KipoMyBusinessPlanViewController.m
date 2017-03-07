@@ -463,26 +463,26 @@ static CGFloat cellHeight = 83;
 
 - (void)postData
 {
-//    self.saveBtn.enabled = NO;
-//    [KipoMyBusinessPlanViewModel createBusinessPlanMID:nil success:^(id json) {
-//        NSDictionary *dict = json;
-//        if ([dict[@"status_code"] isEqualToString:@"200"]) {
+    self.saveBtn.enabled = NO;
+    [KipoMyBusinessPlanViewModel createBusinessPlanMID:nil success:^(id json) {
+        NSDictionary *dict = json;
+        if ([dict[@"status_code"] isEqualToString:@"200"]) {
 //            [LCProgressHUD showSuccess:@"生成成功"];
-//            self.url = dict[@"url"];
-//            [_putButton setTitle:@"预览商业计划书" forState:UIControlStateNormal];
-//            MyBussinessFinalViewController *myBPVC = [[MyBussinessFinalViewController alloc]init];
-//            myBPVC.myBussinessUrl = self.url;
-//            myBPVC.image = self.imageShare;
-//            [self.navigationController pushViewController:myBPVC animated:YES];
-//            self.saveBtn.enabled = YES;
-//            return;
-//        }
-//        self.saveBtn.enabled = YES;
+            self.url = dict[@"url"];
+            [_putButton setTitle:@"预览商业计划书" forState:UIControlStateNormal];
+            MyBussinessFinalViewController *myBPVC = [[MyBussinessFinalViewController alloc]init];
+            myBPVC.myBussinessUrl = self.url;
+            myBPVC.image = self.imageShare;
+            [self.navigationController pushViewController:myBPVC animated:YES];
+            self.saveBtn.enabled = YES;
+            return;
+        }
+        self.saveBtn.enabled = YES;
 //        [LCProgressHUD showInfoMsg:@"生成失败"];
-//    } failure:^(NSError *error) {
+    } failure:^(NSError *error) {
 //        [LCProgressHUD showInfoMsg:@"网络异常"];
-//        self.saveBtn.enabled = YES;
-//    }];
+        self.saveBtn.enabled = YES;
+    }];
     
 }
 
