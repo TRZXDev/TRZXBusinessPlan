@@ -41,4 +41,8 @@
 #define BPbackColor [UIColor colorWithRed:240.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1]
 
 
+//弃用方法去除警告
+#define BPBeginIgnoreDeprecatedWarning _Pragma("clang diagnostic push") _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")
+#define BPEndIgnoreDeprecatedWarning _Pragma("clang diagnostic pop")
+
 #endif /* TRZXBusinessPlanHeader_h */

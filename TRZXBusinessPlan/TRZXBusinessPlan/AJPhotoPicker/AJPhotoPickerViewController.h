@@ -24,6 +24,7 @@
 //取消选中
 - (void)photoPicker:(AJPhotoPickerViewController *)picker didDeselectAsset:(ALAsset*)asset;
 
+
 //点击相机按钮相关操作
 - (void)photoPickerTapCameraAction:(AJPhotoPickerViewController *)picker;
 

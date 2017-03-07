@@ -154,7 +154,7 @@
     }else{
         [cell.placeHoderLable setHidden:YES];
     }
-
+BPBeginIgnoreDeprecatedWarning
     NSString *toBeString = textView.text;
     NSString *lang = [[UITextInputMode currentInputMode] primaryLanguage]; // 键盘输入模式
     if ([lang isEqualToString:@"zh-Hans"]) { // 简体中文输入，包括简体拼音，健体五笔，简体手写
@@ -186,6 +186,7 @@
     
     self.model.abstractz = textView.text;
 }
+
 //改变字体颜色
 - (NSAttributedString *)setLocationAttributeWithStr:(NSString *)str
 {
@@ -201,6 +202,7 @@
     UIAlertView *alertM = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
     [alertM show];
 }
+BPEndIgnoreDeprecatedWarning
 #pragma mark - 时间选择器相关
 /**
  *  显示 pickerView
