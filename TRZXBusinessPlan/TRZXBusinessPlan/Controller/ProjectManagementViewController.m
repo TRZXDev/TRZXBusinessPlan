@@ -211,13 +211,14 @@
     }
 }
 
+BPBeginIgnoreDeprecatedWarning
 - (void)alertWithTitle:(NSString *)title message:(NSString *)message
 {
     UIAlertView *alertM = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
     [alertM show];
 }
 
-
+BPBeginIgnoreDeprecatedWarning
 
 
 #pragma mark- collectionView

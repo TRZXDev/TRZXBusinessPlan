@@ -18,9 +18,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = YES;
-    self.navigationController.navigationBar.translucent = YES;
-    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+- (void)test{
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i < 100000; i++) {
+        dispatch_async(queue, ^{
+            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            NSLog(@"addd :%d", i);
+            
+            [array addObject:[NSNumber numberWithInt:i]];
+            
+            dispatch_semaphore_signal(semaphore);
+        });
+    }
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
