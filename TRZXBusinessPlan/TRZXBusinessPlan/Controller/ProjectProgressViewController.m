@@ -113,7 +113,7 @@
         return cell;
     }else if (indexPath.row == 1)
     {
-        BPProSecondsTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"BPProSecondsTableViewCell" owner:self options:nil] firstObject];
+        BPProSecondsTableViewCell *cell = [[TRZXBPBundle loadNibNamed:@"BPProSecondsTableViewCell" owner:self options:nil] firstObject];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.userConut.delegate = self;
         cell.richangHuoYue.delegate = self;
@@ -139,7 +139,7 @@
         return cell;
     }else if (indexPath.row == 4)
     {
-        BPSelectInfoTableViewCell *cell =[[[NSBundle mainBundle]loadNibNamed:@"BPSelectInfoTableViewCell" owner:self options:nil] firstObject];
+        BPSelectInfoTableViewCell *cell =[[TRZXBPBundle loadNibNamed:@"BPSelectInfoTableViewCell" owner:self options:nil] firstObject];
         cell.titleLable.text = @"项目里程碑 *";
         cell.title =  @"ss";
         cell.selectionStyle = UITableViewCellSelectionStyleNone;

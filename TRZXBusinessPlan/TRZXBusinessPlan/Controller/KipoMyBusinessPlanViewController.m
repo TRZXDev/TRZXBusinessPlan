@@ -237,7 +237,7 @@ static CGFloat cellHeight = 83;
 {
     MyBusinessListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"MyBusinessListTableViewCell" owner:self options:nil] firstObject];
+        cell = [[TRZXBPBundle loadNibNamed:@"MyBusinessListTableViewCell" owner:self options:nil] firstObject];
     }
     cell.titleLable.text = self.dataSource[indexPath.row];
     //是否显示选填的状态

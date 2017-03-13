@@ -30,7 +30,7 @@
 
 
 -(instancetype)initWithTitle:(NSString *)title PlaceHoder:(NSString *)placeHoder CountCharacter:(NSString *)countCharacter TextViewMsg:(NSString *)textViewStr{
-    self = [[[NSBundle mainBundle]loadNibNamed:@"BPProjectMsgCell" owner:nil options:nil]lastObject];
+    self = [[TRZXBPBundle loadNibNamed:@"BPProjectMsgCell" owner:nil options:nil]lastObject];
     
     if ([title hasSuffix:@"*"]) {
         self.titleLable.attributedText = [self setLocationAttributeWithStr:title];

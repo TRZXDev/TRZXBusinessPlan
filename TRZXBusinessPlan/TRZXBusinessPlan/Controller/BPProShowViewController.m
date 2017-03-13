@@ -81,7 +81,7 @@
         {
             BPProjectDynamicCell1 *cell = [tableView dequeueReusableCellWithIdentifier:@"team"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle]loadNibNamed:@"BPProjectDynamicCell1" owner:self options:nil] firstObject];
+                cell = [[TRZXBPBundle loadNibNamed:@"BPProjectDynamicCell1" owner:self options:nil] firstObject];
             }
             cell.contentView.backgroundColor = BPbackColor;
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -92,7 +92,7 @@
         {
             BPButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"add"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle]loadNibNamed:@"BPButtonTableViewCell" owner:self options:nil] firstObject];
+                cell = [[TRZXBPBundle loadNibNamed:@"BPButtonTableViewCell" owner:self options:nil] firstObject];
             }
             cell.contentView.backgroundColor = BPbackColor;
             cell.bgView.backgroundColor = BPbackColor;
@@ -106,7 +106,7 @@
             BPDynamicList *model = self.dataSource[indexPath.row - 2];
             BPProjectDynamicCell2 *cell = [tableView dequeueReusableCellWithIdentifier:@"team"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle]loadNibNamed:@"BPProjectDynamicCell2" owner:self options:nil] firstObject];
+                cell = [[TRZXBPBundle loadNibNamed:@"BPProjectDynamicCell2" owner:self options:nil] firstObject];
             }
             cell.titleLabel.text = model.dynamicDate;
             cell.detailLabel.text = model.abstractz;
@@ -122,7 +122,7 @@
         {
             BPButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"add"];
             if (!cell) {
-                cell = [[[NSBundle mainBundle]loadNibNamed:@"BPButtonTableViewCell" owner:self options:nil] firstObject];
+                cell = [[TRZXBPBundle loadNibNamed:@"BPButtonTableViewCell" owner:self options:nil] firstObject];
             }
             cell.contentView.backgroundColor = BPbackColor;
             cell.bgView.backgroundColor = BPbackColor;

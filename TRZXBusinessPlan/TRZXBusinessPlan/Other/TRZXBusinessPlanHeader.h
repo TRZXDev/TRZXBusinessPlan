@@ -27,6 +27,8 @@
 #define BPSCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 
 
+#define TRZXBPBundle [NSBundle bundleForClass:[self class]]
+
 /** 主题颜色 */
 #define BPTRZXMainColor [UIColor colorWithRed:215.0/255.0 green:0/255.0 blue:15.0/255.0 alpha:1]
 

@@ -201,7 +201,7 @@
 #pragma mark - 修改我的商业计划书
 - (void)updateButtonClick
 {
-    BPProjectAlertView *alert = [[[NSBundle mainBundle] loadNibNamed:@"ProjectAlertView" owner:nil options:nil] firstObject];
+    BPProjectAlertView *alert = [[TRZXBPBundle loadNibNamed:@"ProjectAlertView" owner:nil options:nil] firstObject];
     alert.topLable.text = @"商业计划书修改后";
     alert.leftLable.text = @"需要重新生成";
     alert.delegate = self;

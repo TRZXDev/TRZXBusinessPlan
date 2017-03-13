@@ -63,7 +63,7 @@
     if (indexPath.row == 0) {
         BPProjectMsgCell2 *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
         if (cell == nil) {
-            cell = [[[NSBundle mainBundle]loadNibNamed:@"BPProjectMsgCell2" owner:self options:nil] firstObject];
+            cell = [[TRZXBPBundle loadNibNamed:@"BPProjectMsgCell2" owner:self options:nil] firstObject];
         }
         cellTime = cell;
         cell.stratDateStr = self.model.dynamicDate;

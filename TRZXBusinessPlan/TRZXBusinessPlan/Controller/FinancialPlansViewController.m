@@ -107,7 +107,7 @@
 {
     
     if (indexPath.row == 0) {
-        FinancingSourceTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"FinancingSourceTableViewCell" owner:self options:nil] firstObject];
+        FinancingSourceTableViewCell *cell = [[TRZXBPBundle loadNibNamed:@"FinancingSourceTableViewCell" owner:self options:nil] firstObject];
         cell.firstView.userInteractionEnabled = YES;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(showPickerView)];
         [cell.firstView addGestureRecognizer:tap];
@@ -134,7 +134,7 @@
         return cell;
     }else if (indexPath.row == 1)
     {
-        FinancingSourceTwoTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"FinancingSourceTwoTableViewCell" owner:self options:nil] firstObject];
+        FinancingSourceTwoTableViewCell *cell = [[TRZXBPBundle loadNibNamed:@"FinancingSourceTwoTableViewCell" owner:self options:nil] firstObject];
         cell.textfield1.delegate = self;
         cell.textfield2.delegate = self;
         cell.textfield3.delegate = self;

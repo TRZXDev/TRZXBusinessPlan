@@ -64,7 +64,7 @@
 {
     if (indexPath.row == 0)
     {
-        CTTeamTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"CTTeamTableViewCell" owner:self options:nil] firstObject];
+        CTTeamTableViewCell *cell = [[TRZXBPBundle loadNibNamed:@"CTTeamTableViewCell" owner:self options:nil] firstObject];
         cell.nameText.delegate = self;
         cell.positionText.delegate = self;
         cell.gufenText.delegate = self;
@@ -104,7 +104,7 @@
         
     }else if (indexPath.row == 3)
     {
-        BPAddMemberCell2 *cell = [[[NSBundle mainBundle]loadNibNamed:@"BPAddMemberCell2" owner:self options:nil] firstObject];
+        BPAddMemberCell2 *cell = [[TRZXBPBundle loadNibNamed:@"BPAddMemberCell2" owner:self options:nil] firstObject];
         
         cell.MsgTitleLable.hidden = YES;
         cell.referenceVC = self;

@@ -86,7 +86,7 @@
         return cell;
     }else if (indexPath.row == 1)
     {//团队人数
-        BPProjectCommentTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"BPProjectCommentTableViewCell" owner:self options:nil] firstObject];
+        BPProjectCommentTableViewCell *cell = [[TRZXBPBundle loadNibNamed:@"BPProjectCommentTableViewCell" owner:self options:nil] firstObject];
         cell.teamCountLable.delegate        = self;
         cell.teamCountLable.textColor       = BPheizideColor;
         [cell.teamCountLable addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventAllEditingEvents];
@@ -105,7 +105,7 @@
         return cell;
     }else if (indexPath.row == 2)
     { //创建时间
-        BPSelectInfoTableViewCell *cell =[[[NSBundle mainBundle]loadNibNamed:@"BPSelectInfoTableViewCell" owner:self options:nil] firstObject];
+        BPSelectInfoTableViewCell *cell =[[TRZXBPBundle loadNibNamed:@"BPSelectInfoTableViewCell" owner:self options:nil] firstObject];
         cell.selectionStyle                 = UITableViewCellSelectionStyleNone;
         
         return cell;

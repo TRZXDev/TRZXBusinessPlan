@@ -18,7 +18,7 @@
 
 -(instancetype)initWithName:(NSString *)name Position:(NSString *)position Detail:(NSString *)detail HeadImage:(UIImage *)headImage{
     
-    self = [[[NSBundle mainBundle]loadNibNamed:@"BPCoreTeamMessageCellTableViewCell" owner:nil options:nil]lastObject];
+    self = [[TRZXBPBundle loadNibNamed:@"BPCoreTeamMessageCellTableViewCell" owner:nil options:nil]lastObject];
     
     self.headImageView.image = headImage;
     self.headImageView.bp_cornerRadius = 6;

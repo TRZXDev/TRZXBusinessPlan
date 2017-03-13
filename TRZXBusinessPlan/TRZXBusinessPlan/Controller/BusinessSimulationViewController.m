@@ -334,7 +334,7 @@ static NSInteger photoCount = 4;
         return cells;
     }else if (indexPath.row == 1) {
         //上传照片说明
-        BPPhotoShowMsgTableViewCell *cells = [[[NSBundle mainBundle]loadNibNamed:@"BPPhotoShowMsgTableViewCell" owner:self options:nil] firstObject];
+        BPPhotoShowMsgTableViewCell *cells = [[TRZXBPBundle loadNibNamed:@"BPPhotoShowMsgTableViewCell" owner:self options:nil] firstObject];
         //        cell = [[BPBPProjectMsgCell alloc]initWithTitle:self.dataSource[indexPath.row] PlaceHoder:self.attributeDataSource[indexPath.row] CountCharacter:@"" TextViewMsg:@""];
         //        cell.textViewMsg.editable = NO;
         //        cell.textViewMsg.scrollEnabled = NO;
@@ -346,7 +346,7 @@ static NSInteger photoCount = 4;
         if (self.plan != nil) {
             return self.plan;
         }
-        BussinessPlanStatusTableViewCell *cells = [[[NSBundle mainBundle]loadNibNamed:@"BussinessPlanStatusTableViewCell" owner:self options:nil] firstObject];
+        BussinessPlanStatusTableViewCell *cells = [[TRZXBPBundle loadNibNamed:@"BussinessPlanStatusTableViewCell" owner:self options:nil] firstObject];
         self.plan = cells;
         self.liushuiStatus = self.model.flow;
         if ([self.model.flow isEqualToString:@"0"]) {
@@ -377,7 +377,7 @@ static NSInteger photoCount = 4;
     }else if (indexPath.row == 7){
         //盈利状况
         
-        BPBussinessFlowFlagTableViewCell *cells = [[[NSBundle mainBundle]loadNibNamed:@"BPBussinessFlowFlagTableViewCell" owner:self options:nil] firstObject];
+        BPBussinessFlowFlagTableViewCell *cells = [[TRZXBPBundle loadNibNamed:@"BPBussinessFlowFlagTableViewCell" owner:self options:nil] firstObject];
         [self initPlanStatus:cells];
         return cells;
     }

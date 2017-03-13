@@ -104,7 +104,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        BPAddMemberCell2 *cell = [[[NSBundle mainBundle]loadNibNamed:@"BPAddMemberCell2" owner:self options:nil] firstObject];
+        BPAddMemberCell2 *cell = [[TRZXBPBundle loadNibNamed:@"BPAddMemberCell2" owner:self options:nil] firstObject];
         cell.titleLabel.text = @"* 上传团队合影";
         
         if ([cell.titleLabel.text hasPrefix:@"*"]) {
@@ -140,7 +140,7 @@
     {
         BPButtonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"add"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle]loadNibNamed:@"BPButtonTableViewCell" owner:self options:nil] firstObject];
+            cell = [[TRZXBPBundle loadNibNamed:@"BPButtonTableViewCell" owner:self options:nil] firstObject];
         }
         cell.contentView.backgroundColor = BPbackColor;
         cell.bgView.backgroundColor = BPbackColor;
@@ -153,7 +153,7 @@
     {
         BPCoreTeamMessageCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"team"];
         if (!cell) {
-            cell = [[[NSBundle mainBundle]loadNibNamed:@"BPCoreTeamMessageCellTableViewCell" owner:self options:nil] firstObject];
+            cell = [[TRZXBPBundle loadNibNamed:@"BPCoreTeamMessageCellTableViewCell" owner:self options:nil] firstObject];
         }
         cell.lineView.hidden = YES;
         NewBPTeamMemberModel *model = self.dataSource[indexPath.row -2];
