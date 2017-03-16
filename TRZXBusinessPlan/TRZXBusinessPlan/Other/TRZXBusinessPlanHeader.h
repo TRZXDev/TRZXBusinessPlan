@@ -19,7 +19,7 @@
 #import "KipoMyBusinessPlanViewModel.h"
 #import "UIView+BPFrame.h"
 #import "UIImageView+WebCache.h"
-
+#import "UIImage+BPLoad.h"
 
 
 

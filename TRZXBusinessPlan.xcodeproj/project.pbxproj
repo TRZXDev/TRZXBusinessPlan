@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		204229253C6CD1A1680E7A9F /* libPods-TRZXBusinessPlanTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9398B750F7B764E3B129F6 /* libPods-TRZXBusinessPlanTests.a */; };
+		764CAC761E7A8BB600ED2CB8 /* UIImage+BPLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 764CAC751E7A8BB600ED2CB8 /* UIImage+BPLoad.m */; };
 		7662CFA21E694EB20027F0D5 /* AJGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662CF8C1E694EB20027F0D5 /* AJGradientView.m */; };
 		7662CFA31E694EB20027F0D5 /* AJPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662CF8E1E694EB20027F0D5 /* AJPhotoBrowserViewController.m */; };
 		7662CFA41E694EB20027F0D5 /* AJPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7662CF901E694EB20027F0D5 /* AJPhotoGroupCell.m */; };
@@ -129,6 +130,8 @@
 		130037715055EEF01985EA9F /* libPods-TRZXBusinessPlanUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXBusinessPlanUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9398B750F7B764E3B129F6 /* libPods-TRZXBusinessPlanTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXBusinessPlanTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		756C9A9CF31858821D2F9359 /* Pods-TRZXBusinessPlanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXBusinessPlanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXBusinessPlanUITests/Pods-TRZXBusinessPlanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		764CAC741E7A8BB600ED2CB8 /* UIImage+BPLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BPLoad.h"; sourceTree = "<group>"; };
+		764CAC751E7A8BB600ED2CB8 /* UIImage+BPLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BPLoad.m"; sourceTree = "<group>"; };
 		7662CF8B1E694EB20027F0D5 /* AJGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJGradientView.h; sourceTree = "<group>"; };
 		7662CF8C1E694EB20027F0D5 /* AJGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJGradientView.m; sourceTree = "<group>"; };
 		7662CF8D1E694EB20027F0D5 /* AJPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJPhotoBrowserViewController.h; sourceTree = "<group>"; };
@@ -598,6 +601,8 @@
 				7662D0251E6957310027F0D5 /* CTMediator+BusinessPlan.m */,
 				7662D0271E69574A0027F0D5 /* Target_BusinessPlan.h */,
 				7662D0281E69574A0027F0D5 /* Target_BusinessPlan.m */,
+				764CAC741E7A8BB600ED2CB8 /* UIImage+BPLoad.h */,
+				764CAC751E7A8BB600ED2CB8 /* UIImage+BPLoad.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -991,6 +996,7 @@
 				76B548701E5D6CA800847D6C /* NewBPProjectProgressModel.m in Sources */,
 				7662D01B1E6952A30027F0D5 /* CTTeamTableViewCell.m in Sources */,
 				7662D00F1E6952A30027F0D5 /* BPProjectMsgCell.m in Sources */,
+				764CAC761E7A8BB600ED2CB8 /* UIImage+BPLoad.m in Sources */,
 				7662CFFC1E6952A30027F0D5 /* BPAddMemberCell2.m in Sources */,
 				76B548711E5D6CA800847D6C /* NewBPTeamMemberModel.m in Sources */,
 				76B548BE1E5D6DDC00847D6C /* BusinessMemoryCacheTool.m in Sources */,

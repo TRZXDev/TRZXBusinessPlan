@@ -124,7 +124,7 @@ static NSInteger photoCount = 4;
     
     im.userInteractionEnabled  = YES;
     if (indexPath.row == self.photoArray.count) {
-        im.image = [UIImage imageNamed:@"bp_addPhoto@2x"];
+        im.image = [UIImage bp_loadImage:@"bp_addPhoto@2x" class:[self class]];
     }else{
         im.image = self.photoArray[indexPath.row];
     }
