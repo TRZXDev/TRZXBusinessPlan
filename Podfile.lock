@@ -26,7 +26,13 @@ PODS:
   - TRZXNetwork (0.0.7):
     - AFNetworking
     - YYCache
-  - TRZXTradeInfo (0.0.6):
+  - TRZXShare (0.0.2):
+    - TRZXShare/Openshare (= 0.0.2)
+    - TRZXShareView
+  - TRZXShare/Openshare (0.0.2):
+    - TRZXShareView
+  - TRZXShareView (0.0.1)
+  - TRZXTradeInfo (0.0.7):
     - CTMediator
     - Masonry
     - MJExtension
@@ -42,6 +48,7 @@ DEPENDENCIES:
   - SDWebImage
   - TRZXKit
   - TRZXNetwork
+  - TRZXShare
   - TRZXTradeInfo
 
 SPEC CHECKSUMS:
@@ -54,9 +61,11 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   TRZXKit: af6dc2bcca593585d079d59ca10c8912ddc81b56
   TRZXNetwork: d6ce75a420218ed4b6b95f10220442f175947125
-  TRZXTradeInfo: 581e4ab055ea711d2fed4de1b8cd9c1cd0afc56a
+  TRZXShare: c1b6e84f5379a30ccacec23591ef9a442c818e3f
+  TRZXShareView: b35a8aaafe753e1005c73272177867dd14066e13
+  TRZXTradeInfo: 8bee22588a03f5d305fe706be1cd3a7f72fcb72d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 5d4d2d218566d953fc4bf1127b9fbf61fcddf376
+PODFILE CHECKSUM: 5a445906ddccf88129e3ff3369cc254c5e595960
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1.beta.1

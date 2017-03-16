@@ -55,6 +55,9 @@
 @property (nonatomic,assign)NSInteger maxSelect;//最大选择数
 @property (nonatomic,copy)NSString *typeStr;
 @property (nonatomic,copy)NSString *authTypeStr;
+@property (strong, nonatomic)UILabel *mainTitle;
+@property (strong, nonatomic)UIButton *saveBtn;
+
 
 @end
 
@@ -90,7 +93,6 @@
         self.mainTitle.text = [NSString stringWithFormat:@"选择行业领域\n最多选%ld个",(long)self.maxSelect];
     }
     
-    
     self.mainTitle.textColor = [UIColor colorWithRed:90.0/255.0 green:90.0/255.0 blue:90.0/255.0 alpha:1];
     NSString *str = @"\n";
     NSRange range = [self.mainTitle.text rangeOfString:str];
@@ -106,8 +108,23 @@
     self.mainTitle.attributedText = attribute;
     
     self.mainTitle.numberOfLines = 2;
-    [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
-    
+    [self.mainTitle sizeToFit];
+    self.navigationItem.titleView = self.mainTitle;
+//    [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.frame= CGRectMake(0, 0, 80, 44);
+    [btn setTitle:@"保存"  forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor colorWithRed:209.0/255.0 green:187.0/255.0 blue:114.0/255.0 alpha:1] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize: 15.0];
+    [btn addTarget:self action:@selector(rightBarItemAction:
+                                         ) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *btn_right = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+                                       target:nil action:nil];
+    negativeSpacer.width = -20;
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:negativeSpacer, btn_right, nil];
+    self.saveBtn = btn;
     [self.saveBtn setTitle:@"保存" forState:UIControlStateNormal];
     [self.saveBtn setTitle:@"保存" forState:UIControlStateHighlighted];
 }
@@ -278,8 +295,7 @@
 /**
  *  保存
  */
--(void)saveAction
-{
+- (void)rightBarItemAction:(UIButton *)gesture{
  
     if (self.seletedTrade.count == 0) {
 //        [LCProgressHUD showInfoMsg:@"至少选择一项"];
@@ -378,7 +394,7 @@
         
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         
-        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
         _collectionView.backgroundColor = backColor;
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
@@ -387,6 +403,20 @@
         
     }
     return _collectionView;
+}
+
+- (UILabel *)mainTitle{
+    if (!_mainTitle) {
+        _mainTitle = [[UILabel alloc]init];
+        _mainTitle.font = [UIFont boldSystemFontOfSize:19];
+        _mainTitle.textColor = [UIColor colorWithRed:90 /255.0 green:90 /255.0 blue:90 /255.0 alpha:1];
+        //对齐
+        _mainTitle.textAlignment = NSTextAlignmentCenter;
+        _mainTitle.lineBreakMode = 1;
+        _mainTitle.lineBreakMode = NSLineBreakByTruncatingTail;
+        
+    }
+    return _mainTitle;
 }
 
 -(void)dealloc{

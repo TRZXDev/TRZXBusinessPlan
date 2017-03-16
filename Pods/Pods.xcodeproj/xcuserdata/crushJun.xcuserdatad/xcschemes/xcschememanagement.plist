@@ -64,6 +64,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TRZXShare.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TRZXShareView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TRZXTradeInfo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,7 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3881CE7432C4D338AC720B7139F35CC6</key>
+		<key>3D4166E54015D60DB1A106006E938668</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,17 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>50CC48B84BE0B94E5283EB6C22098E21</key>
+		<key>5C89058D84304A6448D9162123D09058</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5936F5CFA9F142F6E76B9D86CE7CD056</key>
+		<key>78275EF2662DA49D3D25CE89CCD585E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>880C213E8D6CB31B7CEC29E75D268A0C</key>
+		<key>9037F68B74C732F5C0CEB1004EF20EAD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,7 +127,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>996D532B7B8B447F2BE59CCF57B4EA3F</key>
+		<key>9AD8EE1DCA9143C5697F94CEF38EC83A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,12 +147,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E860DBFDF4A7872F6049CBAEAA721AD9</key>
+		<key>B2D6651507A52F8057E18D258FB71053</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EEC76B0E7E85CF18E3AF5B2A9B5AB2AB</key>
+		<key>CD923CFC6B374B886367F9B2BDDCF11F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB0CD3B8725414E22B5AAB953F1F7AD7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E860DBFDF4A7872F6049CBAEAA721AD9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

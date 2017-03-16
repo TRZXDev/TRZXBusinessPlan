@@ -19,6 +19,7 @@ target 'TRZXBusinessPlan' do
     pod 'TRZXTradeInfo'
    # pod 'LCActionSheet'
      pod ‘CTMediator’
+     pod ‘TRZXShare’
 
 
   target 'TRZXBusinessPlanTests' do

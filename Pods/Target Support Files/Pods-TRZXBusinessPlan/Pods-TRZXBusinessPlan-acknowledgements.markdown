@@ -154,6 +154,16 @@ THE SOFTWARE.
 MIT
 
 
+## TRZXShare
+
+MIT
+
+
+## TRZXShareView
+
+MIT
+
+
 ## TRZXTradeInfo
 
 MIT License

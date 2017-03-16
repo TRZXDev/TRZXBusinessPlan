@@ -431,6 +431,7 @@ static NSInteger photoCount = 4;
     };
     
 }
+
 - (void)changeHeight
 {
     CGFloat frame;

@@ -8,21 +8,27 @@
 
 #import "ViewController.h"
 #import "KipoMyBusinessPlanViewController.h"
+
+#import <UIKit+AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
 #define UIColorFromRGB(rgbValue)            [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @interface ViewController ()
-
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view addSubview:self.imageView];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 }
+
 - (void)test{
     
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
@@ -55,5 +61,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UIImageView *)imageView{
+    if (!_imageView) {
+        _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
+    }
+    return _imageView;
+}
 
 @end
